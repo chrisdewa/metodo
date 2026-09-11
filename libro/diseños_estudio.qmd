@@ -1,0 +1,142 @@
+---
+title: Diseños de estudio
+---
+
+El **diseño** define la selección de participantes, la exposición o intervención y la medición del desenlace. Debe corresponder a la [pregunta y los objetivos](objetivos_hipotesis.qmd). [@grimes2002_overview]
+
+## Taxonomía {#disenos-taxonomia}
+
+Cada eje describe un aspecto del estudio. [@grimes2002_overview; @vandenbroucke2007_strobe]
+
+| Eje | Categorías |
+|---|---|
+| **Maniobra o asignación** | **Observacional:** el protocolo no asigna la exposición. **Intervencional:** asigna la intervención, con o sin aleatorización. |
+| **Objetivo o alcance** | **Descriptivo:** caracteriza o estima frecuencias. **Analítico:** compara grupos o evalúa asociaciones y efectos. |
+| **Temporalidad** | **Prospectiva:** observa eventos futuros. **Retrospectiva:** reconstruye hechos ocurridos. **Ambispectiva:** combina ambos periodos. |
+| **Direccionalidad** | **Hacia adelante:** exposición → desenlace. **Hacia atrás:** desenlace → exposición previa. **Sin dirección temporal establecida:** evaluación transversal. |
+| **Mediciones en el tiempo** | **Transversal:** un corte, sin seguimiento del desenlace. **Longitudinal:** evolución observada o reconstruida. |
+| **Selección** | Por población, exposición, desenlace o elegibilidad para una intervención. |
+| **Unidad de análisis** | **Individual:** personas o episodios. **Ecológica:** grupos o periodos con datos agregados. |
+| **Comparador** | Sin comparador, grupo concurrente, control histórico o la misma persona/unidad. |
+
+**Otros descriptores:** fuente de datos, muestreo, centros participantes, unidad de asignación y enmascaramiento.
+
+::: {.callout-important}
+## Temporalidad ≠ direccionalidad
+
+Una **cohorte retrospectiva** reconstruye exposición → desenlace, aunque ambos ya hayan ocurrido. «Retrospectivo» no significa «casos y controles». [@grimes2002_cohort; @schulz2002_casecontrol]
+:::
+
+## Diseños observacionales {#disenos-observacionales}
+
+| Diseño | Estructura y utilidad | Limitación clave |
+|---|---|---|
+| **Reporte de caso** | Un caso relevante; genera hipótesis. | No estima frecuencia ni demuestra causalidad. |
+| **Serie de casos** | Varios casos con una condición o resultado de interés. | Sin denominador para estimar el riesgo de ese resultado. |
+| **Transversal descriptivo** | Muestra evaluada en un corte; estima prevalencia. | No estima incidencia por seguimiento. |
+| **Transversal analítico** | Relaciona exposición y desenlace en un corte. | Frecuente ambigüedad temporal y causalidad inversa. |
+| **Cohorte** | Población en riesgo, clasificada por exposición; observa o reconstruye desenlaces posteriores. | Confusión y pérdidas de seguimiento. |
+| **Casos y controles** | Selección por desenlace; comparación de exposiciones previas. | Sesgos de selección y recuerdo; confusión. |
+| **Ecológico** | Compara datos agregados entre grupos o periodos. | Falacia ecológica: trasladar asociaciones grupales al individuo. |
+
+[@grimes2002_overview; @dekkers2012_series; @grimes2002_cohort; @schulz2002_casecontrol; @chidambaram2019_designs]
+
+### Cohorte frente a casos y controles
+
+| Característica | Cohorte | Casos y controles |
+|---|---|---|
+| **Especialmente útil para** | Incidencia, pronóstico, exposiciones raras, varios desenlaces. | Desenlaces raros o de larga latencia, varias exposiciones. |
+| **Medidas habituales** | Riesgo, tasa; con comparador: RR, diferencias de riesgos o tasas, HR. | OR; interpretación según el muestreo de controles. |
+| **Variantes** | Prospectiva, retrospectiva, ambispectiva. | Casos históricos o incidentes; anidado en una cohorte. |
+
+**RR:** riesgo relativo. **HR:** razón de riesgos instantáneos. **OR:** odds ratio. [@grimes2002_cohort; @schulz2002_casecontrol]
+
+::: {.callout-caution}
+## Selección y denominador
+
+- **Cohorte:** puede ser descriptiva y carecer de comparador; eso no la convierte en serie de casos.
+- **Casos y controles:** los controles deben proceder de la población que originó los casos, no ser necesariamente «sanos».
+- La proporción de casos fijada por el muestreo **no estima el riesgo poblacional**; el OR no equivale siempre al RR.
+
+[@dekkers2012_series; @schulz2002_casecontrol]
+:::
+
+### Mismos expedientes, distintos diseños {#disenos-mapa}
+
+La fuente de datos no determina el diseño. Ejemplo con registros de hospitalización: [@vandenbroucke2007_strobe]
+
+```{mermaid}
+flowchart LR
+    A[Expedientes hospitalarios] -->|Estado en una fecha| B[Transversal]
+    A -->|Exposición al ingreso y evolución posterior| C[Cohorte retrospectiva]
+    A -->|Selección por desenlace y exposición previa| D[Casos y controles]
+```
+
+## Ensayos e intervenciones no aleatorizadas {#disenos-intervencionales}
+
+### Ensayo controlado aleatorizado (ECA o RCT)
+
+Asigna al azar la intervención y el comparador. Reduce la confusión en promedio; no elimina otros sesgos. **RCT:** *randomized controlled trial*. [@hopewell2025_consort]
+
+| Variante | Organización | Consideración clave |
+|---|---|---|
+| **Paralelo** | Cada participante recibe la intervención asignada. | Comparación entre grupos. |
+| **Cruzado (crossover)** | Cada participante recibe varias intervenciones en secuencia aleatoria. | Efectos de periodo y arrastre; evitar efectos irreversibles. |
+| **Por conglomerados (cluster)** | Aleatorización de hospitales, escuelas o comunidades. | Considerar correlación dentro de cada grupo. |
+| **Factorial** | Asignación de combinaciones, como A/no A y B/no B. | Considerar interacción entre intervenciones. |
+
+[@chidambaram2019_designs; @hopewell2025_consort]
+
+::: {.callout-note}
+## Tres procedimientos distintos
+
+
+* **Aleatorización:** genera una secuencia de asignación mediante un procedimiento basado en el azar.
+
+* **Ocultamiento de la asignación:** impide conocer o anticipar la siguiente asignación antes de que esta ocurra.
+
+* **Cegamiento:** impide que determinadas personas conozcan la intervención asignada después de la asignación. Debe especificarse quién estuvo cegado: participantes, personal asistencial, evaluadores de desenlaces, analistas u otros.
+
+[@hopewell2025_consort]
+:::
+
+### Cuasiexperimentales y antes-después
+
+Evaluación sin aleatorización; la intervención puede asignarse por protocolo o provenir de una política o programa externo. [@bernal2017_its]
+
+| Diseño | Estructura | Limitación clave |
+|---|---|---|
+| **Ensayo controlado no aleatorizado** | Asignación por una regla no aleatoria. | Diferencias iniciales entre grupos. |
+| **Antes-después sin control** | Comparación previa y posterior en una población. | Cambios temporales ajenos a la intervención; suele considerarse preexperimental. |
+| **Antes-después con control** | Ambos periodos en grupos intervenido y control. | Justificar que el control representa la evolución sin intervención. |
+| **Serie temporal interrumpida** | Múltiples mediciones antes y después; cambios de nivel y tendencia. | Estacionalidad, autocorrelación y eventos simultáneos. |
+
+[@chidambaram2019_designs; @bernal2017_its]
+
+## Diseños según el propósito {#disenos-propositos}
+
+Estas denominaciones requieren precisar también la estructura del estudio.
+
+| Propósito | Elementos esenciales |
+|---|---|
+| **Exactitud diagnóstica** | Prueba índice, estándar de referencia, selección e intervalo entre pruebas; frecuentemente transversal. |
+| **Pronóstico** | Cohorte, punto clínico inicial, desenlace futuro y horizonte de seguimiento. |
+| **Concordancia** | Métodos u observadores, repeticiones e independencia de evaluaciones. No equivale a exactitud. |
+
+[@bossuyt2015_stard; @grimes2002_cohort; @chidambaram2019_designs]
+
+**Investigación secundaria:** la revisión sistemática sintetiza estudios mediante métodos explícitos; el metaanálisis combina sus resultados estadísticamente cuando corresponde. [@chidambaram2019_designs]
+
+## Declaración en el protocolo {#disenos-redaccion}
+
+**Diseño + selección + exposición/intervención + comparador + desenlace y periodo.** [@vandenbroucke2007_strobe]
+
+> Cohorte retrospectiva de pacientes operados durante 2024. Se comparará la infección a 30 días según la profilaxis recibida, mediante revisión de expedientes.
+
+| Guía de reporte | Aplicación |
+|---|---|
+| **STROBE** | Cohortes, casos y controles, transversales. |
+| **CONSORT 2025** | Ensayos aleatorizados. |
+| **STARD 2015** | Exactitud diagnóstica. |
+
+[@vandenbroucke2007_strobe; @hopewell2025_consort; @bossuyt2015_stard]

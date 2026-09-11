@@ -1,0 +1,37 @@
+# Entornos locales de Pixi (conservar pixi.toml y pixi.lock)
+.pixi/*
+!.pixi/config.toml
+
+# Salida y caché de Quarto
+/.quarto/
+/_book/
+.ipynb_checkpoints/
+**/*.quarto_ipynb
+
+# Caché y entornos de Python
+__pycache__/
+*.py[cod]
+/.venv/
+/venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Configuración local del editor y asistentes
+/.vscode/
+/.agents/
+/.codex/
+
+# Variables de entorno locales (conservar plantillas)
+.env
+.env.*
+!.env.example
+!.env.sample
+
+# Archivos temporales del sistema y del editor
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~

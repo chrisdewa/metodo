@@ -1,0 +1,123 @@
+---
+title: Consideraciones bioéticas y de bioseguridad
+---
+
+Este apartado explica **por qué es éticamente aceptable realizar el estudio, qué compromisos asumen los investigadores y cómo se protegerá a los participantes**. Debe describir decisiones concretas del proyecto, sustentadas en los principios bioéticos y la normativa aplicable.
+
+El consentimiento, el asentimiento y el aviso de privacidad se desarrollarán en un capítulo independiente.
+
+## Qué debe contener el apartado {#consideraciones-redaccion}
+
+| Componente | Contenido necesario |
+|---|---|
+| **Pertinencia ética** | Justificación de la población y los procedimientos; beneficios esperados y cargas que implica participar |
+| **Compromiso de los investigadores con el paciente** | Prioridad del bienestar sobre los intereses del estudio, trato digno, respeto a sus decisiones y atención ante daños relacionados con la investigación |
+| **Principios y fundamentos** | Aplicación de los principios bioéticos y de los códigos, leyes y normas pertinentes |
+| **Nivel de riesgo y protección** | Categoría del artículo 17 del Reglamento, justificación, medidas preventivas y responsables de atender incidentes |
+| **Bioseguridad** | Peligros de los materiales y procedimientos, controles, manejo de residuos y respuesta ante accidentes, o justificación de su ausencia |
+| **Revisión y seguimiento** | Comités, autorizaciones previas, notificación de incidencias, modificaciones e informes |
+
+::: {.callout-tip}
+## Criterio de redacción
+
+Cada medida debe relacionar **situación del estudio → protección prevista → responsable**. Por ejemplo: «Las mediciones se realizarán en un espacio individual; el personal evaluador verificará esta condición antes de cada sesión».
+:::
+
+## Compromiso con el paciente {#consideraciones-compromiso}
+
+El apartado debe expresar las responsabilidades que adquiere el equipo investigador: **anteponer el bienestar del paciente a los objetivos científicos**, evitar daños innecesarios, respetar sus decisiones sin afectar la atención que le corresponde y responder ante problemas derivados del estudio. Estos compromisos también protegen a los participantes que no son pacientes. [@wma_helsinki2024; @reglamento_investigacion2014]
+
+Una redacción adaptable es:
+
+> Los investigadores se comprometen a anteponer la salud, la dignidad y el bienestar de los participantes a los intereses del estudio. La decisión de participar o retirarse no afectará la atención que les corresponda. Se evitarán procedimientos innecesarios y, ante riesgos o daños que ameriten suspender la investigación, se actuará de inmediato. El investigador responsable coordinará la atención de los daños relacionados con el estudio mediante [servicio y ruta institucional] y su notificación a [instancias correspondientes].
+
+El compromiso debe respaldarse con **responsables y recursos disponibles**. El artículo 14 del Reglamento atribuye a la institución la atención de daños directamente relacionados con la investigación, sin perjuicio de la indemnización legal correspondiente. [@reglamento_investigacion2014]
+
+## Principios aplicados al estudio {#consideraciones-principios}
+
+| Principio | Qué debe quedar explicado |
+|---|---|
+| **Autonomía y respeto por las personas** | Cómo se evitarán presiones, especialmente ante dependencia asistencial, académica o laboral |
+| **Beneficencia** | Qué utilidad se espera y para quién; distinguir beneficio individual de generación de conocimiento |
+| **No maleficencia** | Qué molestias o daños se prevén y cómo se reducirán |
+| **Justicia** | Por qué son adecuados los criterios de selección y las protecciones ante situaciones de vulnerabilidad |
+
+La justificación debe considerar también si el diseño permite responder la pregunta sin imponer cargas innecesarias. No debe prometerse beneficio terapéutico cuando el estudio no lo ofrece. [@belmont1979; @unesco_bioetica2005; @cioms2016]
+
+### Códigos y declaraciones de referencia {#consideraciones-fundamentos}
+
+Basta con vincular los documentos pertinentes con las decisiones del protocolo:
+
+| Documento | Fundamento que aporta |
+|---|---|
+| **Código de Núremberg, 1947** | Necesidad científica, prevención del sufrimiento y responsabilidad del investigador |
+| **Declaración de Helsinki, revisión de 2024** | Prioridad del bienestar, revisión ética independiente y vigilancia del estudio |
+| **Informe Belmont, 1979** | Respeto por las personas, beneficencia y justicia |
+| **Pautas CIOMS, 2016** | Valor social, selección de participantes y protección ante vulnerabilidad |
+| **Declaración Universal sobre Bioética y Derechos Humanos, UNESCO, 2005** | Dignidad, autonomía, igualdad y responsabilidad social y ambiental |
+
+Estos referentes tienen distinto origen y alcance; no equivalen a leyes mexicanas. [@nuremberg1947; @wma_helsinki2024; @belmont1979; @cioms2016; @unesco_bioetica2005]
+
+## Nivel de riesgo y medidas de protección {#consideraciones-riesgo}
+
+La categoría se justifica con los procedimientos reales y las características de la población, conforme al **artículo 17 del Reglamento de la LGS en Materia de Investigación para la Salud**. [@reglamento_investigacion2014]
+
+| Categoría | Criterio resumido |
+|---|---|
+| **Sin riesgo — fracción I** | Estudios documentales retrospectivos y sin modificación intencionada de variables; contempla cuestionarios, entrevistas y expedientes bajo condiciones de no identificación ni tratamiento de aspectos sensitivos de la conducta |
+| **Riesgo mínimo — fracción II** | Procedimientos comunes de evaluación rutinaria, como pesar, obtener un electrocardiograma o recolectar saliva, bajo las condiciones previstas en la fracción |
+| **Mayor que el mínimo — fracción III** | Procedimientos con probabilidad significativa de afectación; incluye cirugía, determinados ensayos con medicamentos o dispositivos, asignación aleatoria a esquemas terapéuticos y controles con placebo |
+
+La tabla orienta la clasificación; debe consultarse la fracción completa. Por ejemplo, las condiciones de extracción sanguínea previstas para adultos sanos no pueden trasladarse automáticamente a población pediátrica. «Retrospectivo» no basta para justificar ausencia de riesgo, ni una encuesta sobre temas sensibles es automáticamente sin riesgo.
+
+**Estructura de redacción:**
+
+> Se propone clasificar el estudio como [categoría], conforme al artículo 17, fracción [número], debido a [procedimientos y condiciones]. Se prevén [molestias o daños], que se reducirán mediante [medidas]. Ante [situación], [responsable] realizará [respuesta y notificación].
+
+La propuesta se somete a evaluación del comité. La categoría «sin riesgo» no elimina las obligaciones éticas ni constituye una aprobación. [@reglamento_investigacion2014]
+
+## Bioseguridad {#consideraciones-bioseguridad}
+
+La descripción debe cubrir **materiales y procedimientos → peligros → controles → responsables**, considerando participantes, personal y ambiente. [@reglamento_investigacion2014; @lgs2026]
+
+| Cuando se utilizan muestras, agentes o equipos con peligros específicos | Cuando el estudio es exclusivamente documental |
+|---|---|
+| Identificar materiales, instalaciones y personal; describir obtención, procesamiento, almacenamiento, traslado, protección, residuos y respuesta a incidentes | Explicar que no se obtendrán ni manipularán muestras, no se emplearán radiaciones o ingeniería genética ni se generarán residuos experimentales, si efectivamente corresponde |
+
+Los procedimientos institucionales utilizados deben identificarse por nombre o clave. La ausencia de estos peligros debe justificarse para la revisión correspondiente; no basta con escribir «no aplica». La valoración de bioseguridad es distinta de la categoría de riesgo: una encuesta sin muestras puede producir malestar psicológico.
+
+## Fundamento normativo {#consideraciones-marco-mexicano}
+
+| Disposición | Aplicación en el apartado |
+|---|---|
+| **Ley General de Salud, artículos 96 y 100** | Contribución del estudio, justificación científica y ética, protección y responsabilidad profesional |
+| **LGS, artículos 41 Bis y 98** | Revisión por comités |
+| **Reglamento, artículos 13, 14 y 17** | Dignidad, condiciones de realización, atención de daños y clasificación del riesgo |
+| **LGS, artículo 102; NOM-012-SSA3-2012** | Autorización sanitaria y requisitos de ejecución y seguimiento, conforme a los supuestos aplicables |
+
+La **NOM-012-SSA3-2012, Que establece los criterios para la ejecución de proyectos de investigación para la salud en seres humanos**, regula presentación, seguridad, recursos y seguimiento. Sus numerales 1 y 2 delimitan su campo de aplicación a investigación con medicamentos o materiales sin evidencia suficiente de eficacia terapéutica o rehabilitatoria, o que busque modificar indicaciones terapéuticas de productos conocidos. Debe verificarse si el estudio corresponde a esos supuestos. [@lgs2026; @reglamento_investigacion2014; @nom0122012; @nom012_catalogo]
+
+## Comités, autorizaciones y seguimiento {#consideraciones-reforma-comites}
+
+La reforma de la LGS del **15 de enero de 2026** modificó los artículos 41 Bis y 98. El protocolo debe contemplar la siguiente revisión: [@lgs2026]
+
+| Comité | Dictaminación y contenido que requiere |
+|---|---|
+| **Comité de Ética e Investigación (CEI)** | Evalúa el contenido científico-metodológico, ético y regulatorio: congruencia del protocolo, riesgos y beneficios, protección, responsables y recursos; supervisa hasta la conclusión |
+| **Comité de Bioseguridad (CBS), en conjunto con el CEI** | Dictamina bioseguridad e impacto ambiental: materiales, peligros, controles, residuos y respuesta a incidentes; el CBS también norma el uso institucional de radiaciones ionizantes e ingeniería genética |
+
+Para la presentación se preparan versión y fecha, equipo, sede, cronograma, presupuesto, apoyos, conflictos de interés y permisos aplicables, según los formatos institucionales. El Reglamento y la NOM conservan denominaciones anteriores de los comités; debe atenderse al esquema de la LGS reformada y al procedimiento institucional vigente. [@nom0122012; @reglamento_investigacion2014; @lgs2026]
+
+En el **protocolo**, las revisiones pendientes se describen como tales y el inicio se condiciona a los dictámenes favorables y autorizaciones aplicables. En la **tesis terminada**, se consignan instancias, folios, fechas, versión aprobada y modificaciones relevantes. También se documentan incidencias, informes y cierre. El dictamen de un comité no sustituye la autorización sanitaria cuando esta proceda.
+
+::: {.callout-important}
+## Revisión del apartado
+
+Debe existir correspondencia entre los procedimientos, los riesgos, las medidas de protección y los compromisos asumidos. Cada compromiso necesita un responsable y condiciones que permitan cumplirlo.
+:::
+
+## Consulta normativa {#consideraciones-fuentes}
+
+Textos oficiales: [LGS](https://www.diputados.gob.mx/LeyesBiblio/pdf/LGS.pdf), [Reglamento en Materia de Investigación para la Salud](https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LGS_MIS.pdf) y [NOM-012-SSA3-2012](https://sidof.segob.gob.mx/notas/docFuente/5284148). Los códigos y declaraciones se encuentran en las referencias citadas.
+
+**Revisión normativa: 8 de septiembre de 2026.** Al presentar el protocolo deben comprobarse las disposiciones y los procedimientos institucionales aplicables.

@@ -1,0 +1,89 @@
+---
+title: Metodología de muestreo
+---
+
+Establece **cómo se seleccionarán e incorporarán las unidades** de la [población definida](poblacion.qmd). El [tamaño de muestra](calculo_tamano_muestra.qmd) determina cuántas se requieren.
+
+## Decisiones previas {#muestreo-preparacion}
+
+| Elemento | Especificación mínima |
+|---|---|
+| Elegibilidad | [Criterios de selección](criterios_seleccion.qmd#seleccion-criterios) verificables |
+| Marco muestral | Fuente, fecha de corte, cobertura y depuración de duplicados y registros no elegibles |
+| Unidad de muestreo | Persona, institución u otra unidad; etapas si corresponde |
+| Reclutamiento | Lugar, periodo, horarios, contacto e incorporación |
+
+Si no existe un listado previo completo, debe describirse cómo se identificarán los elegibles durante el reclutamiento.
+
+## Métodos de muestreo {#muestreo-metodos}
+
+### Probabilísticos
+
+La selección utiliza azar y probabilidades de inclusión **conocidas y mayores que cero** para las unidades de la población cubierta; no necesariamente son iguales. [@lohr2021_sampling]
+
+| Método | Procedimiento | Aspecto que debe documentarse |
+|---|---|---|
+| **Aleatorio simple** | Selección al azar desde un marco; cada muestra posible del tamaño fijado tiene igual probabilidad | Listado y procedimiento aleatorio |
+| **Sistemático** | Inicio aleatorio y selección cada *k* unidades | Intervalo, inicio y revisión de periodicidad del listado |
+| **Estratificado** | División en estratos mutuamente excluyentes y selección aleatoria dentro de cada uno | Definición de estratos y tamaño asignado a cada uno |
+| **Por conglomerados** | Selección aleatoria de grupos naturales, como hospitales | Grupos seleccionados y selección de unidades dentro de ellos |
+| **Multietápico** | Selección sucesiva, por ejemplo hospitales y después personas | Marco y procedimiento en cada etapa |
+
+### No probabilísticos
+
+El procedimiento no proporciona probabilidades de inclusión conocidas. [@hulley2013_dcr; @lohr2021_sampling]
+
+| Método | Procedimiento | Aspecto que debe documentarse |
+|---|---|---|
+| **Consecutivo** | Invitación a todos los elegibles conforme se presentan | Periodo, horarios y regla de cierre del reclutamiento |
+| **Conveniencia** | Selección por disponibilidad o facilidad de acceso | Lugares y condiciones de acceso |
+| **Cuotas** | Incorporación hasta completar cantidades por categorías | Categorías, cantidades y selección dentro de ellas |
+| **Intencional** | Selección deliberada de unidades con características de interés | Características y justificación |
+| **Bola de nieve** | Participantes iniciales refieren a otros | Selección inicial y procedimiento de referencia |
+
+::: {.callout-important}
+## Selección y asignación
+
+El **muestreo** decide qué unidades se seleccionan; la **asignación aleatoria** decide qué intervención recibe cada participante. Un ensayo puede reclutar consecutivamente y asignar tratamientos al azar. Véanse [ensayos clínicos](diseños_estudio.qmd#disenos-intervencionales).
+:::
+
+## Registro del proceso {#muestreo-registro}
+
+Los números y motivos deben permitir reconstruir el paso de las unidades seleccionadas a las analizadas. [@vandenbroucke2007_strobe]
+
+```{mermaid}
+flowchart TD
+    A["Unidades seleccionadas"] --> B["Verificación de elegibilidad e incorporación"]
+    B --> C["Participantes incorporados"]
+    B --> D["No incorporados: número y motivos"]
+    C --> E["Unidades analizadas por desenlace"]
+    C --> F["Sin información para ese análisis: número y motivos"]
+```
+
+**Orden:** la elegibilidad puede verificarse antes de la selección si el marco ya está depurado. En muestreo consecutivo, se registran los elegibles conforme se presentan.
+
+::: {.callout-caution}
+## Alcance y análisis
+
+- Una muestra grande no corrige por sí sola los sesgos de cobertura o participación.
+- La selección aleatoria en un hospital no garantiza representatividad regional.
+- Los estratos, conglomerados y ponderaciones deben incorporarse al análisis cuando corresponda.
+
+[@lohr2021_sampling; @rudolph2023_representatividad]
+:::
+
+## Redacción mínima {#muestreo-redaccion}
+
+| Producto | Información requerida |
+|---|---|
+| **Protocolo** | Método, marco, procedimiento, reclutamiento y tamaño previsto con su justificación |
+| **Informe o tesis** | Procedimiento realizado, fechas, cantidades por etapa, motivos de no participación y desviaciones respecto del plan |
+
+**Plantilla:** «Se utilizará muestreo [método]. Se seleccionarán [n y unidad] mediante [procedimiento], a partir de [marco y depuración]. El reclutamiento se realizará en [lugar, periodo y horarios]. Se documentarán las unidades seleccionadas, incorporadas y analizadas, con los motivos de no participación o información faltante».
+
+**Tamaño requerido:** [selección del cálculo](calculo_tamano_muestra.qmd#muestra-guia-rapida-de-seleccion) y [ajustes por pérdidas](calculo_tamano_muestra.qmd#muestra-perdidas-o-datos-no-analizables).
+
+## Referencias {#muestreo-referencias}
+
+::: {#refs}
+:::

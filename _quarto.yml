@@ -1,0 +1,49 @@
+project:
+  type: book
+  output-dir: _book
+
+lang: es
+
+book:
+  title: "Manual Metodológico y Estadístico"
+  description: "Manual metodológico y estadístico para investigación en ciencias de la salud."
+
+  author:
+    - name: Christian Alejandro Delaflor Wagner
+      orcid: 0000-0003-3529-8938
+      email: christian.delaflor@outlook.com
+      corresponding: true
+      url: https://github.com/chrisdewa
+
+    - name: Juán Antonio Suárez Cuenca
+      orcid: 0000-0002-2098-5658
+      email: suarej05@gmail.com
+
+  chapters:
+    - index.qmd
+    - libro/mapa_tesis.qmd
+    - libro/planteamiento_problema.qmd
+    - libro/objetivos_hipotesis.qmd
+    - libro/concordancia_general.qmd
+    - libro/diseños_estudio.qmd
+    - libro/poblacion.qmd
+    - libro/criterios_seleccion.qmd
+    - libro/metodologia_muestreo.qmd
+    - libro/variables.qmd
+    - libro/calculo_tamano_muestra.qmd
+    - libro/consideraciones.qmd
+    - libro/pruebas_diagnostico.qmd
+    - libro/pruebas_estadisticas.qmd
+    - libro/tamanos_efecto.qmd
+    - libro/galeria_graficos.ipynb
+
+  sidebar:
+    title: "Manual Metodológico y Estadístico"
+    search: true
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+    toc: true

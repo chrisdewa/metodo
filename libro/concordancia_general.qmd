@@ -1,0 +1,81 @@
+---
+title: Concordancia entre título, pregunta, objetivos e hipótesis
+---
+
+::: {.callout-important}
+## Regla central
+
+**Los cuatro elementos deben referirse al mismo estudio:** misma población, variables, comparación y tiempo, con un alcance compatible con el diseño.
+:::
+
+```{mermaid}
+flowchart TD
+    P["Pregunta: ¿qué se busca responder?"] --> T["Título: resume lo que se estudiará"]
+    P --> O["Objetivo: indica qué se va a estimar o evaluar"]
+    P --> H["Hipótesis: anticipa la respuesta, cuando corresponde"]
+```
+
+## Qué debe concordar
+
+Debe conservarse **todo componente que defina la pregunta o modifique su interpretación**: población y unidad de estudio, fenómeno o variables, relación o comparación de interés y delimitación espacial y temporal, según corresponda al diseño.
+
+La concordancia se establece por la relación entre los enunciados:
+
+- **El título sintetiza el contenido de la pregunta**, con el mismo alcance.
+- **El objetivo expresa qué se estimará o evaluará para responderla**, conservando sus componentes.
+- **La hipótesis propone una respuesta a esa pregunta**, con las mismas variables y condiciones.
+
+El título puede abreviar detalles si conserva el sentido y los límites del estudio. Los objetivos específicos desarrollan componentes del objetivo general. No se requiere repetición literal, sino correspondencia conceptual y metodológica.
+
+## Por qué debe concordar
+
+La concordancia permite que **los datos y el análisis respondan a la pregunta planteada**, que la hipótesis pueda contrastarse y que el título represente el contenido del estudio. La pregunta y los objetivos orientan las decisiones metodológicas. [@farrugia2010_objectives]
+
+Por ejemplo, una pregunta sobre asociación corresponde con un objetivo de evaluar esa asociación y con un análisis que estime su dirección y magnitud.
+
+## Cómo establecer la concordancia
+
+1. **Formular la pregunta:** especificar qué se busca conocer, en qué población y durante qué periodo.
+2. **Derivar el objetivo:** utilizar un verbo como *estimar*, *comparar* o *evaluar la asociación*, conservando los componentes de la pregunta.
+3. **Plantear la hipótesis, cuando corresponda:** proponer una respuesta a la misma pregunta, sustentada en los antecedentes.
+4. **Redactar el título:** sintetizar el contenido del estudio sin ampliar su alcance.
+5. **Revisar la correspondencia metodológica:** verificar que el método permita cumplir el objetivo y contrastar la hipótesis.
+
+### Un ejemplo concordante
+
+**Ejemplo:** asociación entre obesidad e hipertensión arterial en adultos de 30 a 60 años.
+
+| Elemento | Ejemplo |
+|---|---|
+| **Título** | Asociación entre obesidad e hipertensión arterial en adultos de 30 a 60 años |
+| **Pregunta de investigación** | ¿Existe asociación entre obesidad e hipertensión arterial en adultos de 30 a 60 años? |
+| **Objetivo general** | Determinar la asociación entre obesidad e hipertensión arterial en adultos de 30 a 60 años. |
+| **Hipótesis principal** | La obesidad se asocia con una mayor frecuencia de hipertensión arterial en adultos de 30 a 60 años. |
+
+La concordancia del ejemplo se reconoce en cuatro aspectos:
+
+- **Misma población:** adultos de 30 a 60 años en los cuatro enunciados.
+- **Mismas variables:** obesidad como exposición e hipertensión arterial como desenlace.
+- **Misma relación:** el título anuncia una asociación, la pregunta plantea si existe y el objetivo propone determinarla.
+- **Respuesta correspondiente:** la hipótesis anticipa una mayor frecuencia de hipertensión arterial en adultos con obesidad respecto de aquellos sin obesidad.
+
+La pregunta y el objetivo no presuponen el resultado; la hipótesis especifica la dirección esperada de la asociación. Para completar el protocolo deben definirse el lugar y periodo del estudio, los criterios de obesidad e hipertensión arterial y la medida de asociación que se estimará.
+
+::: {.callout-note}
+## Nota
+
+Considérese que no todos los estudios requieren una [hipótesis](objetivos_hipotesis.qmd#objetivos-formulacion-hipotesis).
+:::
+
+### Comprobación final
+
+La revisión conjunta de los cuatro enunciados debe comprobar lo siguiente:
+
+- ¿Se refieren a la misma población, variables, comparación y tiempo?
+- ¿Cumplir el objetivo permitiría responder la pregunta?
+- ¿La hipótesis propone una respuesta a esa pregunta?
+- ¿El título y el método corresponden con lo que se pretende estudiar?
+
+Si se identifica una discordancia, debe corregirse el apartado correspondiente y revisarse su relación con los demás.
+
+El desarrollo de cada elemento se presenta en [Pregunta de investigación](planteamiento_problema.qmd) y [Objetivos e hipótesis](objetivos_hipotesis.qmd).

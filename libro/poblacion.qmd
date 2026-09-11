@@ -1,0 +1,64 @@
+---
+title: Población
+---
+
+Define **a quiénes se refieren los resultados** y **qué unidades se estudiarán**, de acuerdo con la [pregunta de investigación](planteamiento_problema.qmd#planteamiento-la-pregunta-de-investigacion).
+
+## Conceptos básicos {#poblacion-conceptos}
+
+| Concepto | Definición |
+|---|---|
+| **Universo de estudio** | Conjunto amplio de unidades del que parte el estudio. Si el formato lo distingue de población, debe explicitarse su alcance. |
+| **Población de estudio** | Conjunto de unidades delimitado para responder la pregunta de investigación. Deben especificarse características, lugar y periodo. |
+| **Población objetivo o diana** | Conjunto al que se pretende aplicar o referir los resultados. |
+| **Población fuente** | Conjunto del que proceden las unidades seleccionadas. |
+| **Población accesible** | Unidades que pueden identificarse y abordarse con los centros, registros y recursos disponibles durante el periodo definido. |
+| **Población elegible** | Unidades que cumplen los [criterios de inclusión y exclusión](criterios_seleccion.qmd#seleccion-criterios). |
+| **Muestra** | Subconjunto seleccionado para el estudio. Debe distinguirse entre unidades seleccionadas, incorporadas y analizadas. |
+| **Marco muestral** | Lista, mapa o sistema que identifica las unidades desde las que se seleccionará la muestra. |
+| **Censo** | Estudio de todas las unidades de una población delimitada; deben documentarse las unidades sin información. |
+
+[@sampieri2014_metodologia; @hulley2013_dcr; @lohr2021_sampling]
+
+::: {.callout-note}
+## Universo y población
+
+Las fuentes no utilizan estos términos de manera uniforme. En esta guía, si el formato solicita ambos, **universo** designa el conjunto amplio y **población** el conjunto específicamente delimitado. La fuente de datos, como un registro hospitalario, debe identificarse por separado. [@gea2021_protocolo; @barraza2021_nodales; @uninav2016_metodologia]
+:::
+
+## Delimitación {#poblacion-delimitacion}
+
+| Componente | Contenido | Ejemplo hipotético |
+|---|---|---|
+| Características | Condición clínica y características demográficas | Personas de 18 años o más con diabetes tipo 2 |
+| Lugar | Institución, servicio, comunidad o región | Consulta externa del Hospital A |
+| Periodo | Fechas y evento que determina la pertenencia | Al menos una consulta entre enero y junio de 2025 |
+| Unidad | Entidad que se estudiará | Persona |
+
+## Unidades y fuente de datos {#poblacion-unidades}
+
+| Concepto | Definición | Ejemplo |
+|---|---|---|
+| **Unidad de muestreo** | Elemento seleccionable en cada etapa | Hospital en la primera etapa; persona en la segunda |
+| **Unidad de observación** | Elemento sobre el que se registra información | Visita de una persona |
+| **Unidad de análisis** | Entidad sobre la que se estima o compara el resultado | Persona |
+| **Fuente de datos** | Soporte o procedimiento del que se obtiene la información | Expediente clínico |
+
+::: {.callout-important}
+Un expediente puede aportar información sobre una persona sin ser la unidad de análisis. Varias visitas de una persona no equivalen a participantes independientes. Véanse [mediciones repetidas](variables.qmd#variables-mediciones-repetidas).
+:::
+
+## Redacción y enlaces {#poblacion-protocolo}
+
+**Plantilla:** «La población objetivo estará constituida por [unidades y características, lugar y periodo]. La población fuente será [conjunto de procedencia] y la accesible comprenderá [conjunto disponible]. La unidad de análisis será [unidad] y la fuente de datos será [fuente]».
+
+| Información complementaria | Capítulo |
+|---|---|
+| Quién puede participar | [Criterios de selección](criterios_seleccion.qmd) |
+| Cómo se seleccionan las unidades | [Metodología de muestreo](metodologia_muestreo.qmd) |
+| Cuántas unidades se requieren | [Cálculo del tamaño de muestra](calculo_tamano_muestra.qmd) |
+
+## Referencias {#poblacion-referencias}
+
+::: {#refs}
+:::

@@ -1,0 +1,50 @@
+---
+title: Mapa de una tesis
+---
+
+Esquema de consulta; el orden y los apartados se ajustan al formato institucional.
+
+## Estructura general
+
+| Apartado | Contenido esencial y ligas |
+|---|---|
+| Portada | Título, autor, institución, grado y fecha |
+| Firmas y autorizaciones | Avales institucionales |
+| Agradecimientos | Reconocimiento de apoyos; opcional |
+| Resumen | Objetivo, método, resultados y conclusión |
+| Índice | Secciones, tablas, figuras y anexos |
+| Introducción | [Contexto del tema](planteamiento_problema.qmd#planteamiento-1-contexto) |
+| Antecedentes o marco teórico | [Evidencia previa](planteamiento_problema.qmd#planteamiento-2-que-se-conoce) y conceptos de referencia |
+| Planteamiento del problema | [Vacío de conocimiento](planteamiento_problema.qmd#planteamiento-3-que-falta-por-conocer) y [delimitación](planteamiento_problema.qmd#planteamiento-5-delimitacion) |
+| Justificación | [Relevancia de resolver la pregunta](planteamiento_problema.qmd#planteamiento-4-por-que-importa-resolverlo) |
+| Pregunta de investigación | [Formulación](planteamiento_problema.qmd#planteamiento-la-pregunta-de-investigacion), [PICO](planteamiento_problema.qmd#planteamiento-pico-estructurar-la-pregunta) y [FINER](planteamiento_problema.qmd#planteamiento-finer-evaluar-si-la-pregunta-funciona) |
+| Objetivos | [General](objetivos_hipotesis.qmd#objetivos-objetivo-general) y [específicos](objetivos_hipotesis.qmd#objetivos-objetivos-especificos) |
+| Hipótesis | [Respuesta esperada](objetivos_hipotesis.qmd#objetivos-formulacion-hipotesis), [cuando corresponde](objetivos_hipotesis.qmd#objetivos-cuando-no-se-necesita-una-hipotesis) |
+| Metodología | [Componentes y capítulos de consulta](#mapa-metodologia) |
+| Resultados | Estimaciones, incertidumbre, [tamaños del efecto](tamanos_efecto.qmd) y [gráficos](galeria_graficos.ipynb) |
+| Discusión | Interpretación, contraste con antecedentes, limitaciones e implicaciones |
+| Conclusiones | Respuesta a la pregunta, respaldada por los resultados |
+| Perspectivas | Preguntas pendientes y siguientes estudios; opcional |
+| Referencias | Fuentes citadas |
+| Anexos | Instrumentos, formatos y documentación complementaria |
+
+## Metodología {#mapa-metodologia}
+
+| Componente | Contenido esencial o sección de consulta |
+|---|---|
+| Diseño, lugar y periodo | Tipo de estudio, contexto y fechas |
+| Población | [Conceptos](poblacion.qmd#poblacion-conceptos) · [Delimitación](poblacion.qmd#poblacion-delimitacion) · [Unidades](poblacion.qmd#poblacion-unidades) |
+| Criterios de selección | [Inclusión, exclusión y eliminación](criterios_seleccion.qmd#seleccion-criterios) · [Registro y redacción](criterios_seleccion.qmd#seleccion-redaccion) |
+| Metodología de muestreo | [Métodos](metodologia_muestreo.qmd#muestreo-metodos) · [Registro del proceso](metodologia_muestreo.qmd#muestreo-registro) · [Redacción](metodologia_muestreo.qmd#muestreo-redaccion) |
+| Variables | [Definición conceptual y operacional](variables.qmd#variables-definicion-conceptual-y-operacional) · [Plantilla](variables.qmd#variables-plantilla) |
+| Procedimientos e instrumentos | Actividades, mediciones y control de sesgos |
+| Tamaño de muestra | [Selección del cálculo](calculo_tamano_muestra.qmd#muestra-guia-rapida-de-seleccion) · [Redacción en el protocolo](calculo_tamano_muestra.qmd#muestra-que-escribir-en-el-protocolo) |
+| Análisis estadístico | [Elección de pruebas](pruebas_estadisticas.qmd#estadistica-resumen-rapido) · [Interpretación](pruebas_estadisticas.qmd#estadistica-como-interpretar-cualquier-resultado) |
+| Evaluación diagnóstica, si aplica | [Pruebas diagnósticas](pruebas_diagnostico.qmd) |
+| Bioética y bioseguridad | [Contenido del apartado](consideraciones.qmd#consideraciones-redaccion) |
+
+## Etapa y concordancia
+
+- **Protocolo:** pregunta, sustento y método previsto; resultados, discusión y conclusiones pendientes.
+- **Tesis terminada:** método realizado, resultados, discusión y conclusiones.
+- **Revisión transversal:** [Concordancia entre título, pregunta, objetivos e hipótesis](concordancia_general.qmd).
