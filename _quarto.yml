@@ -36,6 +36,7 @@ book:
     - libro/pruebas_estadisticas.qmd
     - libro/tamanos_efecto.qmd
     - libro/galeria_graficos.ipynb
+    - libro/resumen.qmd
 
   sidebar:
     title: "Manual Metodológico y Estadístico"
