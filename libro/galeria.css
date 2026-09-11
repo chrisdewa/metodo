@@ -1,0 +1,11 @@
+/* El tamaño en pantalla es independiente de la resolución de los gráficos. */
+main .cell-output-display figure {
+  width: 100%;
+  max-width: 100%;
+}
+
+main .cell-output-display img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}

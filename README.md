@@ -26,6 +26,8 @@ pixi run --locked preview
 
 Inicia la vista previa local con actualización al guardar cambios. Detén el servidor con `Ctrl+C`. Después de modificar el código de la galería, ejecuta `build` para verificarlo desde un kernel nuevo.
 
+La galería produce las figuras a 600 dpi. `libro/galeria.css` ajusta su ancho al contenido y mantiene la proporción en HTML; la resolución de la imagen es independiente de su tamaño en pantalla.
+
 ## Archivos principales
 
 - `_quarto.yml`: configuración, formato y orden de capítulos.
