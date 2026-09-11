@@ -6,15 +6,16 @@ El **diseño** define la selección de participantes, la exposición o intervenc
 
 ## Taxonomía {#disenos-taxonomia}
 
-Cada eje describe un aspecto del estudio. [@grimes2002_overview; @vandenbroucke2007_strobe]
+Cada eje describe un aspecto distinto del estudio; las etiquetas se combinan, no se sustituyen. Aquí se usa la siguiente convención. Como la terminología varía, en el protocolo o artículo hay que precisar **cuándo ocurrieron los eventos y cómo se obtuvieron los datos**. [@grimes2002_overview; @vandenbroucke2007_strobe]
 
 | Eje | Categorías |
 |---|---|
 | **Maniobra o asignación** | **Observacional:** el protocolo no asigna la exposición. **Intervencional:** asigna la intervención, con o sin aleatorización. |
 | **Objetivo o alcance** | **Descriptivo:** caracteriza o estima frecuencias. **Analítico:** compara grupos o evalúa asociaciones y efectos. |
-| **Temporalidad** | **Prospectiva:** observa eventos futuros. **Retrospectiva:** reconstruye hechos ocurridos. **Ambispectiva:** combina ambos periodos. |
-| **Direccionalidad** | **Hacia adelante:** exposición → desenlace. **Hacia atrás:** desenlace → exposición previa. **Sin dirección temporal establecida:** evaluación transversal. |
-| **Mediciones en el tiempo** | **Transversal:** un corte, sin seguimiento del desenlace. **Longitudinal:** evolución observada o reconstruida. |
+| **Temporalidad de los eventos respecto al inicio del estudio** | **Prospectivo:** los desenlaces de interés aún no han ocurrido al inicio y se observarán hacia el futuro. **Retrospectivo:** los eventos de interés ya ocurrieron al inicio. **Ambispectivo:** reconstruye un periodo pasado y continúa el seguimiento hacia el futuro. |
+| **Obtención de los datos** | **Prolectivo:** genera datos para el estudio con instrumentos o mediciones previstos en el protocolo. **Retrolectivo:** utiliza datos ya registrados para otro propósito o antes del protocolo actual. **Ambilectivo:** combina ambas formas. |
+| **Dimensión temporal de las observaciones** | **Transversal:** un corte por unidad, sin estudiar su evolución. **Longitudinal:** estudia la evolución de las mismas unidades mediante seguimiento observado o reconstruido. |
+| **Dirección del estudio** | **Exposición → desenlace:** parte de la exposición y evalúa desenlaces posteriores (cohorte). **Desenlace → exposición previa:** selecciona por desenlace y compara antecedentes de exposición (casos y controles). **Sin recorrido de seguimiento:** relaciona variables en un corte (transversal). |
 | **Selección** | Por población, exposición, desenlace o elegibilidad para una intervención. |
 | **Unidad de análisis** | **Individual:** personas o episodios. **Ecológica:** grupos o periodos con datos agregados. |
 | **Comparador** | Sin comparador, grupo concurrente, control histórico o la misma persona/unidad. |
@@ -22,9 +23,16 @@ Cada eje describe un aspecto del estudio. [@grimes2002_overview; @vandenbroucke2
 **Otros descriptores:** fuente de datos, muestreo, centros participantes, unidad de asignación y enmascaramiento.
 
 ::: {.callout-important}
-## Temporalidad ≠ direccionalidad
+## Cuatro preguntas distintas
 
-Una **cohorte retrospectiva** reconstruye exposición → desenlace, aunque ambos ya hayan ocurrido. «Retrospectivo» no significa «casos y controles». [@grimes2002_cohort; @schulz2002_casecontrol]
+- **¿Cuándo ocurrieron los eventos?** Prospectivo / retrospectivo / ambispectivo, respecto al inicio del estudio; no a la fecha del análisis.
+- **¿Cómo se obtuvieron los datos?** Prolectivo / retrolectivo / ambilectivo. Entrevistar hoy sobre hechos pasados genera datos nuevos sobre eventos previos; transcribir hoy un expediente no lo vuelve prolectivo.
+- **¿Se estudia un corte o una evolución?** Transversal / longitudinal. Una encuesta transversal puede recolectarse durante meses; una cohorte histórica sigue siendo longitudinal aunque los expedientes se revisen una sola vez.
+- **¿De qué se parte?** Exposición o desenlace. La flecha indica el recorrido del estudio, no una causalidad demostrada: en casos y controles se busca una exposición anterior al desenlace.
+
+Una **cohorte retrospectiva con expedientes** es retrolectiva y longitudinal, con dirección exposición → desenlace. «Retrospectivo» no significa «casos y controles», ni «ambilectivo» equivale necesariamente a «ambispectivo». [@grimes2002_cohort; @schulz2002_casecontrol; @vandenbroucke2007_strobe]
+
+**Ejemplo de redacción:** «Estudio transversal, prolectivo, con medición retrospectiva de la exposición mediante cuestionario». Evalúa a cada participante en un corte y genera datos nuevos sobre una exposición pasada, sin reconstruir una trayectoria de seguimiento. Aquí, «retrospectiva» califica la medición de la exposición, no al estudio completo.
 :::
 
 ## Diseños observacionales {#disenos-observacionales}
@@ -63,7 +71,7 @@ Una **cohorte retrospectiva** reconstruye exposición → desenlace, aunque ambo
 
 ### Mismos expedientes, distintos diseños {#disenos-mapa}
 
-La fuente de datos no determina el diseño. Ejemplo con registros de hospitalización: [@vandenbroucke2007_strobe]
+La fuente de datos no determina el diseño. Ejemplo con expedientes de hospitalizaciones ya concluidas al iniciar el estudio: los tres usos son **retrolectivos**, pero su estructura difiere. [@vandenbroucke2007_strobe]
 
 ```{mermaid}
 flowchart LR
@@ -120,7 +128,7 @@ Estas denominaciones requieren precisar también la estructura del estudio.
 | Propósito | Elementos esenciales |
 |---|---|
 | **Exactitud diagnóstica** | Prueba índice, estándar de referencia, selección e intervalo entre pruebas; frecuentemente transversal. |
-| **Pronóstico** | Cohorte, punto clínico inicial, desenlace futuro y horizonte de seguimiento. |
+| **Pronóstico** | Cohorte, punto clínico inicial, desenlace posterior a ese punto y horizonte de seguimiento; puede observarse hacia el futuro o reconstruirse con registros. |
 | **Concordancia** | Métodos u observadores, repeticiones e independencia de evaluaciones. No equivale a exactitud. |
 
 [@bossuyt2015_stard; @grimes2002_cohort; @chidambaram2019_designs]
@@ -131,7 +139,9 @@ Estas denominaciones requieren precisar también la estructura del estudio.
 
 **Diseño + selección + exposición/intervención + comparador + desenlace y periodo.** [@vandenbroucke2007_strobe]
 
-> Cohorte retrospectiva de pacientes operados durante 2024. Se comparará la infección a 30 días según la profilaxis recibida, mediante revisión de expedientes.
+Precisa el inicio del estudio, el periodo de los eventos y la fuente y fechas de obtención de datos; las etiquetas no sustituyen esa descripción.
+
+> Cohorte retrospectiva, longitudinal y retrolectiva de pacientes operados durante 2024. El estudio iniciará en febrero de 2025; entre febrero y marzo de 2025 se revisarán expedientes existentes para comparar la infección durante los 30 días posteriores a la cirugía según la profilaxis recibida. Ese periodo de seguimiento ya habrá concluido para todos los pacientes.
 
 | Guía de reporte | Aplicación |
 |---|---|
