@@ -2,32 +2,22 @@
 title: Objetivos e hipótesis
 ---
 
-Los objetivos definen **qué debe responder el estudio**. Deben derivarse de la pregunta de investigación y conectar directamente con las [variables](variables.qmd), el [análisis estadístico](pruebas_estadisticas.qmd) y el [cálculo del tamaño de muestra](calculo_tamano_muestra.qmd). Un objetivo bien formulado especifica con claridad qué se estimará, comparará o relacionará. [@farrugia2010_objectives; @browner2022_dcr]
+Los **objetivos** indican qué se busca conocer; las **hipótesis** proponen respuestas que se evaluarán con los datos. Ambos deben derivarse de la [pregunta de investigación](planteamiento_problema.qmd#planteamiento-la-pregunta-de-investigacion). Este capítulo se centra en estudios cuantitativos en salud. [@farrugia2010_objectives; @browner2022_dcr]
 
-::: {.callout-important}
-## Regla básica
-
-Cada objetivo debe poder traducirse en:
-
-1. variables observables;
-2. una medida, comparación o parámetro concreto;
-3. un análisis capaz de responderlo.
-
-Si no puede hacerse esa traducción, el objetivo es demasiado ambiguo.
-:::
+Para formular un objetivo, precisar qué se describirá, estimará o comparará, en quiénes y en qué momento. Después, identificar las [variables](variables.qmd#variables-definicion-operacional), el parámetro de interés —la cantidad poblacional que se desea estimar— y el análisis que permitirá responderlo.
 
 ## El problema define el objetivo {#objetivos-el-problema-define-el-objetivo}
 
-La pregunta y el objetivo expresan la misma intención de investigación en formas distintas.
+La pregunta y el objetivo expresan la misma intención de investigación en formas distintas. Estos ejemplos muestran la operación principal; en el protocolo deben completarse con la población, las mediciones y el periodo pertinentes.
 
 | Pregunta | Objetivo |
 |---|---|
 | ¿Cuál es la prevalencia de anemia en esta población? | **Estimar** la prevalencia de anemia en la población estudiada. |
 | ¿El tratamiento A reduce más el puntaje que el tratamiento B? | **Comparar** el cambio en el puntaje entre los grupos A y B. |
 | ¿La exposición X se asocia con el desenlace Y? | **Evaluar la asociación** entre la exposición X y el desenlace Y. |
-| ¿Qué tan bien discrimina una prueba entre sujetos con y sin la condición? | **Evaluar la capacidad discriminativa** de la prueba mediante el AUC. |
+| ¿Qué tan bien discrimina una prueba entre personas con y sin la condición? | **Estimar** el área bajo la curva ROC (AUC) de la prueba. |
 
-Los objetivos deben indicar la población, exposición o intervención, comparador y desenlace cuando estos elementos sean relevantes. En estudios observacionales, STROBE recomienda declarar objetivos específicos e hipótesis preespecificadas cuando existan. [@vandenbroucke2007_strobe]
+Los objetivos deben indicar la población, exposición o intervención, comparador y desenlace cuando estos elementos sean relevantes. Para reportar estudios de cohortes, de casos y controles y transversales, STROBE recomienda declarar los objetivos específicos e incluir las hipótesis preespecificadas cuando existan. Es una guía de reporte, no una exigencia de formular hipótesis para todo estudio. [@vandenbroucke2007_strobe]
 
 ## Objetivo general {#objetivos-objetivo-general}
 
@@ -35,67 +25,60 @@ El objetivo general expresa la **respuesta principal que busca el estudio**.
 
 Una estructura útil es:
 
-```text
-[verbo analítico] + [desenlace o parámetro] + [exposición/intervención o comparación] + [población] + [momento, si es necesario]
-```
+> Verbo en infinitivo + característica, desenlace o parámetro + exposición, intervención o comparación, si corresponde + población + momento o periodo pertinente.
 
 Ejemplo:
 
-> Comparar el cambio en el puntaje de síntomas entre los pacientes que reciben el tratamiento A y los que reciben el tratamiento B después de 12 semanas.
+> Comparar la reducción media del puntaje de síntomas entre el inicio y las 12 semanas en adolescentes de 12 a 17 años con la condición X que reciben el tratamiento A o B.
 
 El objetivo identifica:
 
-- qué se comparará: cambio en el puntaje;
-- entre quiénes: tratamiento A frente a B;
-- cuándo: después de 12 semanas.
+- qué se comparará: reducción media del puntaje de síntomas;
+- entre quiénes: adolescentes de 12 a 17 años con la condición X, tratados con A o B;
+- cuándo: entre el inicio y las 12 semanas.
+
+El ejemplo es hipotético y continúa el del [planteamiento del problema](planteamiento_problema.qmd#planteamiento-ejemplo-estudio-de-intervencion). En un protocolo real deben nombrarse la condición, los tratamientos y la escala de medición.
 
 ## Objetivos específicos {#objetivos-objetivos-especificos}
 
-Los objetivos específicos descomponen el objetivo general en preguntas necesarias para responderlo.
+Los objetivos específicos precisan los aspectos que se estudiarán para desarrollar el objetivo general. Cada uno debe aportar un resultado identificable; no es obligatorio convertir cada descripción o paso del análisis en un objetivo separado.
 
-Por ejemplo, para un estudio cuyo objetivo general es evaluar la relación entre una exposición y un desenlace:
+Por ejemplo, para una cohorte que busca evaluar la asociación entre la exposición X al inicio y la aparición del desenlace Y durante 12 meses, pueden formularse:
 
-1. **Describir** las características de la población estudiada.
-2. **Estimar** la frecuencia del desenlace.
-3. **Comparar** la frecuencia del desenlace entre expuestos y no expuestos.
-4. **Estimar** la asociación entre la exposición y el desenlace mediante una medida apropiada.
+1. Estimar el riesgo de presentar Y durante 12 meses en participantes expuestos y no expuestos a X, libres de Y al inicio.
+2. Estimar la asociación entre X y Y mediante el riesgo relativo ajustado por los factores de confusión definidos en el protocolo.
 
-No es necesario convertir cada procedimiento del protocolo en un objetivo.
+El primer objetivo describe la frecuencia en cada grupo; el segundo cuantifica la asociación considerando posibles factores de confusión. La descripción de las características iniciales puede formar parte del análisis sin constituir otro objetivo.
 
 ::: {.callout-caution}
 ## Los procedimientos no son objetivos
 
-No deben formularse como objetivos:
-
-- aplicar un cuestionario;
-- revisar expedientes;
-- recolectar muestras;
-- construir una base de datos;
-- realizar una prueba estadística.
-
-Son actividades del método. El objetivo debe expresar **qué se pretende obtener de los datos**.
+Aplicar un cuestionario, revisar expedientes, recolectar muestras o construir una base de datos son actividades del método. El objetivo debe indicar qué conocimiento se obtendrá. Si el estudio busca desarrollar un instrumento, formular el objetivo en términos del instrumento y de las propiedades de medición que se evaluarán.
 :::
 
-La formulación de los objetivos debe revisarse junto con la [tabla de variables](variables.qmd). Si un objetivo menciona un desenlace, una exposición, una intervención o un predictor, estos elementos deben estar definidos y operacionalizados.
+La formulación de los objetivos debe revisarse junto con la [tabla de variables](variables.qmd#variables-plantilla). Si un objetivo menciona un desenlace, una exposición, una intervención o un predictor, estos elementos deben estar definidos y operacionalizados.
 
 ## Objetivo primario y objetivos secundarios {#objetivos-objetivo-primario-y-objetivos-secundarios}
 
-El **objetivo general** describe el propósito central del estudio. El **objetivo primario** establece la pregunta analítica principal. Con frecuencia coinciden, pero no son necesariamente sinónimos.
+Las clasificaciones general/específicos y primario/secundarios cumplen funciones distintas:
+
+| Clasificación | Qué distingue |
+|---|---|
+| **General y específicos** | El propósito global y los aspectos concretos que lo desarrollan. |
+| **Primario y secundarios** | La prioridad de las preguntas para el diseño, el análisis y la interpretación. |
+
+El objetivo primario puede coincidir con el general o corresponder a uno de los específicos. Los objetivos específicos no son automáticamente secundarios.
 
 Cuando existen varios objetivos analíticos, conviene identificar cuál es el primario. Este determina normalmente:
 
 - el desenlace principal;
 - el análisis principal;
 - la estimación o contraste principal;
-- el [tamaño de muestra](calculo_tamano_muestra.qmd).
+- el [tamaño de muestra](calculo_tamano_muestra.qmd#muestra-del-objetivo-al-calculo), por precisión o por potencia, según el propósito.
 
-Los objetivos secundarios responden preguntas adicionales, pero no deben competir con el objetivo primario como si todos fueran igualmente centrales.
+Los objetivos secundarios amplían o complementan la pregunta principal. Una muestra suficiente para el objetivo primario puede ser insuficiente para ellos.
 
-::: {.callout-important}
-## Una tesis no necesita muchos objetivos
-
-Agregar objetivos aumenta variables, análisis y resultados que deberán justificarse e interpretarse. Deben incluirse solo los necesarios para responder la pregunta de investigación.
-:::
+Puede haber varios objetivos o desenlaces primarios si el diseño lo justifica. En ese caso, deben predefinirse los criterios de éxito, las consecuencias para el tamaño de muestra y el tratamiento de la multiplicidad: la posibilidad de aumentar los falsos positivos al realizar varios contrastes. [@ich1998_e9]
 
 ## Verbos útiles para redactar objetivos {#objetivos-verbos-utiles-para-redactar-objetivos}
 
@@ -111,51 +94,33 @@ El verbo debe anticipar **qué resultado producirá el estudio**. No existe un v
 | **Construir o evaluar una predicción** | desarrollar, predecir, evaluar | Desarrollar un modelo para predecir hospitalización a partir de variables clínicas. |
 | **Evaluar desempeño diagnóstico o discriminativo** | estimar, evaluar, comparar | Estimar la sensibilidad y especificidad de una prueba para detectar la enfermedad. |
 | **Evaluar propiedades de una medición o instrumento** | estimar, comparar, evaluar | Estimar la concordancia entre dos métodos de medición. |
-| **Explorar relaciones no preespecificadas** | explorar, identificar | Explorar patrones clínicos asociados con la respuesta al tratamiento. |
+| **Explorar relaciones o generar hipótesis** | explorar, identificar | Explorar patrones clínicos asociados con la respuesta al tratamiento. |
 
-::: {.callout-note}
-## Preferir el verbo más específico
+Verbos generales como *analizar*, *evaluar* o *determinar* pueden ser adecuados cuando se precisa el resultado que se obtendrá. Una asociación no demuestra por sí misma causalidad; un objetivo que busca estimar un efecto causal requiere un diseño y supuestos que permitan esa interpretación. Consultar [asociación y causalidad](tamanos_efecto.qmd#efecto-correlaciones-r-y-rho).
 
-Si el resultado esperado puede expresarse como una cantidad, conviene usar un verbo que lo haga explícito.
-
-- **Estimar** una prevalencia, una media, un riesgo, una sensibilidad o un efecto.
-- **Comparar** grupos o momentos.
-- **Evaluar una asociación** entre variables.
-- **Predecir** un desenlace.
-- **Describir** una población.
-
-Verbos generales como **analizar** o **evaluar** son aceptables cuando el objeto del análisis queda claramente definido.
-:::
+Un objetivo exploratorio puede planearse antes de analizar los datos. Si una hipótesis surge al examinarlos, debe identificarse como generada a partir de esos datos y distinguirse de las hipótesis preespecificadas. [@vandenbroucke2007_strobe]
 
 ### Verbos que suelen producir objetivos imprecisos {#objetivos-verbos-que-suelen-producir-objetivos-imprecisos}
 
-| Evitar como verbo principal | Problema | Preferir |
+| Verbo que requiere revisión | Problema habitual | Alternativa más precisa |
 |---|---|---|
 | **conocer** | No define un resultado observable | describir, estimar |
 | **saber** | No especifica qué se medirá | estimar, comparar |
 | **estudiar** | Puede significar prácticamente cualquier cosa | describir, comparar, evaluar |
 | **investigar** | Describe la actividad general, no el objetivo | especificar la operación analítica |
-| **demostrar** | Supone de antemano cuál será el resultado | comparar, estimar, evaluar |
+| **demostrar** | Puede presentar el resultado esperado como una conclusión que debe alcanzarse | comparar, estimar, evaluar |
 | **comprobar** | Sugiere que se busca confirmar una conclusión previa | contrastar, evaluar |
 | **determinar** | Puede ser demasiado general si no se especifica el parámetro | estimar, comparar, evaluar |
 
 ## Hipótesis {#objetivos-formulacion-hipotesis}
 
-La hipótesis expresa una **respuesta anticipada a la pregunta de investigación**. Debe derivarse del problema y corresponder directamente con el objetivo principal. [@farrugia2010_objectives; @browner2022_dcr]
+La hipótesis expresa una respuesta anticipada y contrastable a la pregunta de investigación. Debe sustentarse en los antecedentes y corresponder con el objetivo que se evaluará. Cuando existe una hipótesis principal, se vincula con el objetivo primario. [@farrugia2010_objectives; @browner2022_dcr]
 
-No toda investigación necesita una hipótesis. Los estudios cuyo propósito principal es **describir o estimar** un parámetro pueden formularse únicamente mediante una pregunta y objetivos.
-
-::: {.callout-important}
-## Una hipótesis principal
-
-En una tesis suele definirse **una hipótesis principal**, correspondiente a la pregunta y al objetivo primario.
-
-Los objetivos secundarios pueden generar análisis adicionales, pero no es necesario convertir cada uno en una nueva hipótesis dentro del protocolo.
-:::
+No toda investigación necesita una hipótesis. Los estudios cuyo propósito principal es describir o estimar un parámetro pueden formularse mediante una pregunta y objetivos. Un estudio puede incluir hipótesis principales y secundarias; su número depende de las preguntas y del diseño, no de que el producto sea una tesis o un artículo.
 
 ## De la hipótesis científica al análisis {#objetivos-de-la-hipotesis-cientifica-al-analisis}
 
-La hipótesis puede expresarse en términos científicos y traducirse a un contraste estadístico. No es necesario redactar tres hipótesis separadas.
+La hipótesis científica puede concretarse para el estudio y, cuando corresponda, expresarse mediante hipótesis estadísticas. La denominación «hipótesis de trabajo» varía entre manuales e instituciones; aquí se usa para la formulación específica que se evaluará. Estas distinciones no exigen tres apartados separados en el protocolo.
 
 ### Hipótesis científica o sustantiva {#objetivos-hipotesis-cientifica-o-sustantiva}
 
@@ -165,48 +130,40 @@ Es la proposición científica acerca del fenómeno que se pretende estudiar. Su
 
 ### Hipótesis de trabajo {#objetivos-hipotesis-de-trabajo}
 
-Es la formulación concreta de la hipótesis principal para el estudio. Debe especificar la población, las variables, la comparación y, cuando corresponda, el momento de medición.
+Es la formulación concreta de una hipótesis científica para el estudio. Debe especificar la población, las variables, la comparación y, cuando corresponda, el momento de medición.
 
-> En niños con la condición X, el tratamiento A producirá una mayor reducción del puntaje de síntomas a las 12 semanas que el tratamiento B.
+> En adolescentes de 12 a 17 años con la condición X, la reducción media del puntaje de síntomas entre el inicio y las 12 semanas será mayor con A que con B.
 
-En la práctica, esta es la hipótesis que suele declararse formalmente en la tesis.
-
-Debe corresponder de manera directa con la pregunta y con el objetivo primario:
-
-> **Pregunta:** ¿El tratamiento A reduce más el puntaje de síntomas que el tratamiento B después de 12 semanas?
-
-> **Objetivo:** Comparar el cambio en el puntaje de síntomas entre los grupos A y B después de 12 semanas.
-
-> **Hipótesis de trabajo:** El tratamiento A producirá una mayor reducción del puntaje de síntomas a las 12 semanas que el tratamiento B.
-
-La pregunta, el objetivo y la hipótesis deben referirse al **mismo fenómeno, las mismas variables, la misma población y la misma comparación**.
+La pregunta, el objetivo y la hipótesis deben coincidir en fenómeno, variables, población, comparación y momento de evaluación.
 
 ### Hipótesis analíticas o estadísticas {#objetivos-hipotesis-analiticas-o-estadisticas}
 
-Son las proposiciones que se contrastan durante el análisis estadístico.
+Son proposiciones acerca de parámetros poblacionales. La **hipótesis nula** ($H_0$) delimita el valor o conjunto de valores que se contrasta; la **alternativa** ($H_1$) expresa la opción frente a ella.
 
-Si $\Delta_A$ y $\Delta_B$ representan el cambio medio poblacional (puntaje final menos basal) en los dos grupos, un contraste bilateral se expresa así:
-
-$$
-H_0:\Delta_A-\Delta_B=0
-$$
+En el ejemplo, un puntaje menor indica menos síntomas. Definir la reducción individual como puntaje basal menos puntaje a las 12 semanas: una reducción positiva indica mejoría. Si $\mu_A$ y $\mu_B$ son las reducciones medias poblacionales, en puntos de la escala, el parámetro de interés es $\theta=\mu_A-\mu_B$. Un contraste bilateral se expresa así:
 
 $$
-H_1:\Delta_A-\Delta_B\neq0
+H_0:\theta=0
 $$
 
-Estas hipótesis no sustituyen a la hipótesis de trabajo. Son su **traducción al parámetro que será analizado**. En este ejemplo, una reducción mayor con A corresponde a $\Delta_A-\Delta_B<0$; el contraste bilateral también permite detectar una diferencia en sentido contrario.
+$$
+H_1:\theta\neq0
+$$
+
+La hipótesis de trabajo anticipa $\theta>0$. El contraste bilateral permite detectar diferencias en cualquiera de las dos direcciones; por ello, rechazar $H_0$ no basta para concluir que A es mejor. También debe examinarse el signo y la magnitud de la diferencia estimada, junto con su intervalo de confianza.
+
+Por ejemplo, reducciones medias muestrales de 8 puntos con A y 5 con B producen una diferencia estimada de $8-5=3$ puntos a favor de A. Este valor por sí solo no informa sobre su precisión ni establece relevancia clínica.
 
 Un estudio puede requerir varias hipótesis estadísticas para análisis secundarios sin que por ello deba declarar múltiples hipótesis principales.
 
 ::: {.callout-note}
-## La hipótesis no es el valor p
+## Significación estadística y respuesta científica
 
 No debe formularse como:
 
 > «Existe una diferencia estadísticamente significativa entre los grupos».
 
-La significación estadística es un resultado del análisis. La hipótesis debe expresar la diferencia, asociación o efecto que se espera encontrar.
+La hipótesis debe expresar la diferencia, asociación o efecto esperado. Un resultado no significativo no prueba que los grupos sean iguales; uno significativo no establece por sí solo relevancia clínica. Consultar [interpretación de resultados](pruebas_estadisticas.qmd#estadistica-como-interpretar-cualquier-resultado).
 :::
 
 ## Cuando no se necesita una hipótesis {#objetivos-cuando-no-se-necesita-una-hipotesis}
@@ -215,41 +172,38 @@ Un objetivo de estimación no requiere necesariamente una hipótesis nula.
 
 Por ejemplo:
 
-> **Pregunta:** ¿Cuál es la prevalencia de anemia en esta población?
+> **Pregunta:** ¿Cuál es la prevalencia de anemia en niños de 1 a 5 años atendidos en la unidad X durante el periodo definido?
 
-> **Objetivo:** Estimar la prevalencia de anemia y su intervalo de confianza del 95 %.
+> **Objetivo:** Estimar la prevalencia de anemia en niños de 1 a 5 años atendidos en la unidad X durante el periodo definido, con un intervalo de confianza del 95 %.
 
 El propósito es estimar un parámetro, no probar que sea diferente de un valor arbitrario.
 
-Lo mismo puede ocurrir al estimar:
+Lo mismo puede ocurrir al estimar una media, sensibilidad, especificidad, concordancia o AUC. Lo que determina la necesidad de un contraste es la pregunta: estimar sensibilidad no exige $H_0$, pero evaluar si supera un mínimo aceptable predefinido sí puede requerirla.
 
-- una media;
-- una prevalencia;
-- sensibilidad y especificidad;
-- concordancia;
-- un AUC;
-- otros parámetros con sus intervalos de confianza.
+En estos estudios, el [cálculo del tamaño de muestra](calculo_tamano_muestra.qmd#muestra-guia-rapida-de-seleccion) puede basarse en la precisión deseada de la estimación.
 
-En estos estudios, el [cálculo del tamaño de muestra](calculo_tamano_muestra.qmd) puede basarse en la precisión deseada de la estimación.
-
-Para sensibilidad, especificidad, valores predictivos, razones de verosimilitud y AUC, consultar [Pruebas diagnósticas](pruebas_diagnostico.qmd).
+Para sensibilidad y especificidad, consultar [sus definiciones y cálculo](pruebas_diagnostico.qmd#diagnostico-sensibilidad-y-especificidad); para AUC, consultar [curva ROC](pruebas_diagnostico.qmd#diagnostico-curva-roc).
 
 ## Hipótesis estadísticas frecuentes {#objetivos-hipotesis-estadisticas-frecuentes}
 
-La forma de $H_0$ depende del parámetro analizado.
+La forma de $H_0$ depende del parámetro y de la pregunta. La tabla presenta contrastes habituales de ausencia de diferencia o asociación; en sus versiones bilaterales, $H_1$ sustituye la igualdad por $\neq$.
 
 | Análisis principal | Parámetro | Hipótesis nula |
 |---|---|---|
-| Comparación de medias | Diferencia de medias | $\mu_1-\mu_2=0$ |
-| Comparación de proporciones | Diferencia de proporciones | $p_1-p_2=0$ |
-| Correlación | Correlación poblacional | $\rho=0$ |
-| Riesgo relativo | RR | $RR=1$ |
-| Odds ratio | OR | $OR=1$ |
-| Regresión lineal | Coeficiente | $\beta=0$ |
-| Regresión logística | Coeficiente / OR | $\beta=0$ o $OR=1$ |
-| Discriminación frente al azar | AUC | $AUC=0.5$ |
+| Comparación de medias | $\mu_1$, $\mu_2$: medias poblacionales | $\mu_1-\mu_2=0$ |
+| Comparación de proporciones | $p_1$, $p_2$: proporciones poblacionales | $p_1-p_2=0$ |
+| Correlación de Pearson | $\rho$: correlación lineal poblacional | $\rho=0$ |
+| Riesgo relativo | $RR$: cociente de riesgos | $RR=1$ |
+| Razón de momios (*odds ratio*) | $OR$: cociente de momios | $OR=1$ |
+| Regresión lineal | $\beta_j$: coeficiente del predictor evaluado | $\beta_j=0$ |
+| Regresión logística | $\beta_j$: coeficiente en escala logarítmica de momios; $OR_j=e^{\beta_j}$ | $\beta_j=0$, equivalente a $OR_j=1$ |
+| Discriminación mediante una puntuación | $AUC$: área bajo la curva ROC | $AUC=0.5$ |
 
-Estas hipótesis pertenecen principalmente al **plan de análisis**. La prueba correspondiente y su interpretación se describen en [Interpretación de pruebas estadísticas](pruebas_estadisticas.qmd). Para interpretar la magnitud de diferencias y asociaciones, consultar [Tamaños del efecto](tamanos_efecto.qmd).
+Las diferencias de medias se expresan en las unidades de la variable; los riesgos relativos, las razones de momios, las correlaciones y el AUC son adimensionales. Para interpretar los coeficientes de regresión, especificar la escala y la codificación del predictor. Su contraste es condicional a los demás términos incluidos en el modelo. Una correlación lineal nula no descarta relaciones no lineales; un AUC de 0.5 no demuestra ausencia de toda información diagnóstica.
+
+Estas hipótesis se especifican en el plan de análisis. La elección de prueba depende también del diseño y de sus supuestos; consultar [criterios para elegir una prueba](pruebas_estadisticas.qmd#estadistica-antes-de-elegir-una-prueba) y [medidas del tamaño del efecto](tamanos_efecto.qmd#efecto-medidas-segun-el-analisis).
+
+En estudios de **equivalencia o no inferioridad**, las hipótesis se definen respecto a márgenes clínicamente justificados y establecidos de antemano. No se demuestra equivalencia por obtener un resultado no significativo al contrastar una diferencia de cero. [@ich1998_e9]
 
 ## Dirección de la hipótesis {#objetivos-direccion-de-la-hipotesis}
 
@@ -257,7 +211,7 @@ La hipótesis de trabajo puede expresar una dirección cuando existe una justifi
 
 > El tratamiento A producirá una reducción mayor que el tratamiento B.
 
-Esto no obliga automáticamente a utilizar una prueba estadística unilateral. La decisión entre un contraste unilateral y bilateral es una decisión analítica que debe definirse **antes de observar los resultados** y estar metodológicamente justificada. [@browner2022_dcr]
+Esto no obliga a utilizar una prueba unilateral. La elección entre un contraste unilateral y bilateral debe justificarse antes de observar los resultados. Para el parámetro $\theta$ definido arriba, un contraste unilateral de superioridad de A sería $H_0:\theta\leq0$ frente a $H_1:\theta>0$. No debe elegirse la dirección después de ver los datos. [@ich1998_e9]
 
 ## Correspondencia entre pregunta, objetivo, hipótesis y análisis {#objetivos-correspondencia-entre-pregunta-objetivo-hipotesis-y-analisis}
 
@@ -267,30 +221,29 @@ Antes de cerrar el protocolo, conviene comprobar la cadena completa:
 |---|---|
 | **Pregunta de investigación** | ¿Qué se quiere conocer o resolver? |
 | **Objetivo primario** | ¿Qué se quiere estimar, comparar o relacionar? |
-| **Hipótesis de trabajo** | ¿Qué respuesta se anticipa para esa pregunta? |
+| **Hipótesis de trabajo, cuando corresponda** | ¿Qué respuesta se anticipa para esa pregunta? |
 | **Variables** | ¿Qué datos permiten responderla? |
 | **Parámetro** | ¿Qué medida resume la respuesta? |
 | **Hipótesis estadística** | ¿Existe un valor nulo que se pretende contrastar? |
 | **Análisis** | ¿Qué método estima o contrasta ese parámetro? |
 | **Tamaño de muestra** | ¿Se calculó para ese objetivo primario? |
 
-Ejemplo:
+Ejemplo hipotético de un ensayo con asignación aleatoria individual a dos grupos independientes, A y B. La población son adolescentes de 12 a 17 años con la condición X; el seguimiento es de 12 semanas y un puntaje menor indica menos síntomas.
 
 | Elemento | Definición |
 |---|---|
-| Pregunta | ¿El tratamiento A reduce más el puntaje que el tratamiento B? |
-| Objetivo primario | Comparar el cambio medio de puntaje entre A y B |
-| Hipótesis de trabajo | El tratamiento A producirá una mayor reducción del puntaje que B |
-| Desenlace | Cambio de puntaje a 12 semanas = final menos basal |
-| Parámetro | Diferencia de cambios medios poblacionales: $\mu_A-\mu_B$ |
-| $H_0$ | $\mu_A-\mu_B=0$ |
-| $H_1$ | $\mu_A-\mu_B\neq0$ |
-| Análisis | Comparación de dos medias independientes |
-| Tamaño de muestra | Calculado para detectar una diferencia mínima de interés $\Delta$ entre cambios medios |
+| Pregunta | En esta población, ¿A produce una mayor reducción media del puntaje de síntomas que B entre el inicio y las 12 semanas? |
+| Objetivo primario | Comparar la reducción media del puntaje de síntomas entre A y B en esta población y periodo |
+| Hipótesis de trabajo | La reducción media será mayor con A que con B |
+| Desenlace individual | Reducción en puntos = puntaje basal menos puntaje a las 12 semanas |
+| Parámetro | $\theta=\mu_A-\mu_B$, diferencia de reducciones medias poblacionales, en puntos |
+| Hipótesis estadísticas | $H_0:\theta=0$; $H_1:\theta\neq0$, para el contraste bilateral predefinido |
+| Análisis ilustrativo | Estimar la diferencia de medias y su intervalo de confianza del 95 %; contrastarla con una t de Welch si sus supuestos son adecuados |
+| Tamaño de muestra | Basado en la diferencia mínima de interés clínico $\delta$ en puntos, la variabilidad de las reducciones, el nivel de significación, la potencia, la asignación entre grupos y las pérdidas previstas |
 
-El cambio se calcula dentro de cada participante, pero la comparación principal es **entre dos grupos independientes**. Comparar por separado el antes y después de cada grupo no responde si los tratamientos difieren.
+La reducción se calcula dentro de cada participante, pero la comparación principal es **entre dos grupos independientes**. Comparar por separado el antes y después de cada grupo no responde si los tratamientos difieren. Consultar los [supuestos de la t de Welch](pruebas_estadisticas.qmd#estadistica-t-de-student-t-de-welch) y el [cálculo de muestra para dos medias independientes](calculo_tamano_muestra.qmd#muestra-comparar-dos-medias-independientes-sin-asumir-varianzas-iguales).
 
-Esta correspondencia evita un problema frecuente: plantear una pregunta, formular una hipótesis distinta, calcular el tamaño de muestra para otra comparación y terminar analizando una tercera.
+La comparación de reducciones ilustra la correspondencia entre componentes. También puede preespecificarse un modelo del puntaje final ajustado por el basal; el análisis y el cálculo de muestra deben corresponder al método elegido. [@vickers2001_baseline] El protocolo debe definir además cómo se manejarán los datos faltantes.
 
 ## Errores frecuentes {#objetivos-errores-frecuentes}
 
@@ -300,21 +253,8 @@ Esta correspondencia evita un problema frecuente: plantear una pregunta, formula
 | «Demostrar que el tratamiento funciona.» | **Comparar** un desenlace predefinido entre los grupos. |
 | «Aplicar la escala X.» | La aplicación de la escala pertenece al método. |
 | Formular $H_0$ y $H_1$ para una prevalencia que solo se desea estimar | Reportar la estimación y su intervalo de confianza. |
-| Objetivo principal sin desenlace claramente definido | Definir y operacionalizar el desenlace en [Variables](variables.qmd). |
+| Objetivo principal sin desenlace claramente definido | Definir y [operacionalizar el desenlace](variables.qmd#variables-definicion-operacional). |
 | Hipótesis de trabajo que no corresponde con el objetivo primario | Reformularla para que responda exactamente a la misma pregunta. |
 | Hipótesis estadística que no corresponde al análisis | Expresarla en términos del parámetro realmente evaluado. |
-| Varios objetivos primarios sin jerarquía | Identificar un objetivo principal y separar los secundarios. |
-
-## Revisión final {#objetivos-revision-final}
-
-Antes de considerar terminada esta sección del protocolo:
-
-- el objetivo general responde directamente a la pregunta de investigación;
-- el objetivo primario identifica claramente el desenlace o parámetro principal;
-- los objetivos específicos no son una lista de procedimientos;
-- cada objetivo puede traducirse a variables observables;
-- la hipótesis principal, cuando existe, corresponde con la pregunta y el objetivo primario;
-- la hipótesis de trabajo está separada de las hipótesis estadísticas;
-- los estudios puramente descriptivos o de estimación no fuerzan una hipótesis innecesaria;
-- el análisis estadístico responde al mismo objetivo;
-- el cálculo del tamaño de muestra corresponde al objetivo primario.
+| Varios objetivos primarios sin justificación ni criterio de éxito | Justificar su necesidad y planear el análisis conjunto, la multiplicidad y el tamaño de muestra. |
+| Presentar una hipótesis surgida de los resultados como si fuera previa | Declarar su carácter exploratorio y su origen. |

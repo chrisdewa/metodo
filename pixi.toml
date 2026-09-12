@@ -3,7 +3,7 @@ authors = ["chrisdewa <christian.delaflor@gmail.com>"]
 channels = ["conda-forge"]
 name = "Método"
 platforms = ["linux-64", "win-64"]
-version = "0.1.5"
+version = "0.1.6"
 
 [tasks]
 build = "quarto render --execute"

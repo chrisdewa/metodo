@@ -4,9 +4,9 @@ Esta guía está dirigida a cualquier persona que escriba, corrija, revise u org
 
 ## Propósito y lectores
 
-- El libro es un manual metodológico y estadístico de consulta para profesionales de la salud: un manual de «bata» que permita localizar y utilizar la información de forma rápida y efectiva mientras se trabaja en la investigación.
-- Debe ayudar a diseñar y ejecutar una investigación y a comunicarla mediante una tesis, un artículo u otro producto académico de calidad.
-- El lector puede tener poca experiencia en metodología o estadística. Respetar su formación profesional y explicar los términos necesarios sin infantilizar ni dar por conocidos los pasos indispensables.
+- El libro es un manual metodológico y estadístico de consulta para profesionales de la salud: un manual de "bata" que permita localizar y utilizar la información de forma rápida y efectiva mientras se trabaja en la investigación.
+- Su propósito es ayudar a diseñar y ejecutar una investigación y a comunicarla mediante una tesis, un artículo u otro producto académico de calidad.
+- El lector puede tener poca experiencia en metodología o estadística; es fundamental respetar su formación profesional y explicar los términos necesarios sin infantilizar ni dar por conocidos los pasos indispensables.
 - Priorizar la utilidad práctica sobre la exposición exhaustiva. El manual debe servir también como una buena introducción para profundizar después.
 
 ## Criterios de utilidad
@@ -16,7 +16,7 @@ Todo contenido debe ser:
 | Criterio | Aplicación editorial |
 |---|---|
 | Fácil de encontrar | Usar títulos reconocibles, términos que el lector buscaría, tablas de consulta y enlaces a secciones específicas |
-| Fácil de leer | Presentar una idea por párrafo, explicaciones puntuales y esquemas con una jerarquía clara |
+| Fácil de leer | Presentar una idea de forma clara, explicaciones puntuales y esquemas con una jerarquía clara |
 | Fácil de interpretar | Indicar qué significa la información, cuándo corresponde usarla y cuáles son sus límites relevantes |
 | Fácil de aplicar | Dar los datos, fórmulas, criterios o pasos necesarios para realizar la tarea y comprobar el resultado |
 
@@ -35,9 +35,9 @@ Todo contenido debe ser:
 ## Lenguaje y tono
 
 - Escribir en español de uso académico en México, natural, preciso y sobrio.
-- Preferir palabras habituales y verbos directos. El registro académico no requiere solemnidad, abstracciones innecesarias ni frases burocráticas.
+- Preferir palabras habituales y verbos directos. El registro académico no requiere solemnidad, abstracciones innecesarias ni frases burocráticas o rimbombantes.
 - Usar cada término técnico de manera consistente. Definirlo brevemente al introducirlo si es necesario para aplicar el contenido.
-- Evitar regionalismos ajenos al uso mexicano y traducciones literales poco naturales. Por ejemplo, para una tesis usar «entrega de la tesis» o «examen de grado», según la acción; no «deposición».
+- Evitar regionalismos ajenos al uso mexicano y traducciones literales poco naturales.
 - Evitar anglicismos innecesarios. Conservar términos técnicos en inglés cuando ayuden a reconocer una herramienta o concepto, acompañados de su equivalente o explicación cuando sea útil.
 - Reservar las negritas para facilitar la consulta: nombres, parámetros o condiciones relevantes. No destacar frases completas como consignas.
 
