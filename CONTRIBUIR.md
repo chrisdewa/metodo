@@ -4,7 +4,7 @@ Esta guía está dirigida a cualquier persona que escriba, corrija, revise u org
 
 ## Propósito y lectores
 
-- El libro es un manual metodológico y estadístico de consulta para profesionales de la salud: un manual de «bata» que permita localizar y utilizar la información durante el trabajo cotidiano.
+- El libro es un manual metodológico y estadístico de consulta para profesionales de la salud: un manual de «bata» que permita localizar y utilizar la información de forma rápida y efectiva mientras se trabaja en la investigación.
 - Debe ayudar a diseñar y ejecutar una investigación y a comunicarla mediante una tesis, un artículo u otro producto académico de calidad.
 - El lector puede tener poca experiencia en metodología o estadística. Respetar su formación profesional y explicar los términos necesarios sin infantilizar ni dar por conocidos los pasos indispensables.
 - Priorizar la utilidad práctica sobre la exposición exhaustiva. El manual debe servir también como una buena introducción para profundizar después.
@@ -30,6 +30,7 @@ Todo contenido debe ser:
 - Enlazar las explicaciones ya disponibles en el libro. Evitar repetirlas completas y comprobar los destinos de los enlaces modificados.
 - Conservar la distinción entre componentes de una investigación, etapas de ejecución y apartados del documento que la comunica.
 - Adaptar la estructura al tema. No agregar secciones, resúmenes, advertencias o listas de revisión por rutina.
+- El capítulo «Mapa de una investigación» es un esquema de los componentes del estudio y un índice de consulta del libro. Incluir solo una descripción mínima de cada apartado para identificar su contenido y enlaces precisos para consultarlo. Reservar el desarrollo metodológico para los capítulos correspondientes.
 
 ## Lenguaje y tono
 

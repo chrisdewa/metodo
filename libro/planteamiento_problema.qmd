@@ -2,24 +2,13 @@
 title: Planteamiento del problema y pregunta de investigación
 ---
 
-El planteamiento del problema explica **qué problema se estudiará, qué aspecto permanece sin resolver y por qué es necesario investigarlo**. No es una guía para elegir un tema ni una revisión extensa de la literatura. En muchos protocolos el tema ya está definido; esta sección debe convertirlo en un problema de investigación claro que conduzca directamente a una pregunta respondible. [@farrugia2010_objectives; @browner2022_dcr]
+El **planteamiento del problema** delimita qué se estudiará, qué falta por conocer y por qué es necesario investigarlo. Debe conducir a una pregunta que pueda responderse mediante un estudio. Por ejemplo, la anemia infantil es un tema; desconocer su frecuencia en una población para la que se necesita planear la atención es un problema de investigación. [@farrugia2010_objectives; @browner2022_dcr]
 
-::: {.callout-important}
-## Regla básica
-
-Al terminar de leer el planteamiento debe ser posible anticipar la pregunta de investigación.
-
-Si la pregunta introduce una población, exposición, intervención, comparación o desenlace que no apareció antes, el planteamiento está incompleto.
-:::
-
+Los antecedentes aportan la evidencia previa; el planteamiento identifica la incertidumbre que se investigará; la justificación desarrolla la relevancia y la contribución esperada. Aunque el formato institucional los solicite en apartados separados, deben mantener esta relación y evitar repeticiones. Consultar la [estructura del protocolo](mapa.qmd#mapa-protocolo).
 
 ## Qué debe contener el planteamiento {#planteamiento-que-debe-contener-el-planteamiento}
 
-No existe una extensión obligatoria pero se sugiere que sea concreto. Debe incluir, en una secuencia lógica, los elementos necesarios para justificar la pregunta.
-
-Una estructura útil es:
-
-**contexto → problema → evidencia disponible → brecha de conocimiento → relevancia → pregunta**
+La extensión depende del problema y de los requisitos institucionales. Incluir la información necesaria para comprender la incertidumbre y justificar la pregunta, con la siguiente organización como apoyo.
 
 ### 1. Contexto {#planteamiento-1-contexto}
 
@@ -37,17 +26,15 @@ No es necesario comenzar con definiciones generales si estas no ayudan a delimit
 
 ### 2. Qué se conoce {#planteamiento-2-que-se-conoce}
 
-Debe resumirse la evidencia directamente relacionada con la pregunta.
+Resumir la evidencia directamente relacionada con el problema: hallazgos principales, poblaciones estudiadas y limitaciones que dejan una incertidumbre relevante. Sustentar las afirmaciones con referencias pertinentes y actualizadas; cuando los resultados difieran, explicar qué diferencias de población, medición o diseño podrían contribuir a ello.
 
-El objetivo no es enumerar todos los estudios encontrados, sino establecer el punto desde el cual surge la incertidumbre.
-
-Por ejemplo:
+Ejemplo hipotético:
 
 > Los tratamientos A y B han mostrado reducir el desenlace X. Sin embargo, los estudios disponibles han evaluado principalmente población adulta y existen pocos datos comparativos en adolescentes.
 
 ### 3. Qué falta por conocer {#planteamiento-3-que-falta-por-conocer}
 
-La **brecha de conocimiento** es la parte central del planteamiento.
+La **brecha de conocimiento** es la incertidumbre específica que el estudio busca resolver o reducir.
 
 Puede consistir en:
 
@@ -61,77 +48,43 @@ Puede consistir en:
 - resultados contradictorios entre estudios;
 - evidencia que no puede extrapolarse razonablemente a la población de interés.
 
-La brecha debe formularse con precisión. Expresiones como «se sabe poco», «no hay suficiente información» o «es un tema poco estudiado» requieren sustento.
+La brecha debe apoyarse en una búsqueda bibliográfica y formularse con precisión. Indicar qué resultado falta, es impreciso o presenta limitaciones de aplicación. Expresiones como «se sabe poco» o «no existen estudios» no bastan sin sustento.
 
 ::: {.callout-caution}
-## La novedad no significa que nunca se haya estudiado
+## Justificación de un estudio local
 
-Que un estudio no se haya realizado en un hospital, ciudad o institución específica **no constituye por sí solo una brecha de conocimiento**.
+Que un estudio no se haya realizado en un hospital, ciudad o institución específica no basta para justificarlo.
 
 Un estudio local puede estar plenamente justificado cuando la estimación local es necesaria para tomar decisiones, cuando la población difiere de aquella en la que se generó la evidencia o cuando existe otra razón científica o asistencial explícita.
 :::
 
 ### 4. Por qué importa resolverlo {#planteamiento-4-por-que-importa-resolverlo}
 
-Después de identificar la brecha debe quedar claro por qué vale la pena responderla.
+Explicar qué conocimiento aportaría el estudio, quién podría utilizarlo y para qué decisión o investigación posterior serviría. Por ejemplo, una estimación de frecuencia puede ayudar a planear servicios; una comparación terapéutica puede informar la elección entre alternativas.
 
-La relevancia puede ser:
-
-- clínica;
-- diagnóstica;
-- terapéutica;
-- pronóstica;
-- epidemiológica;
-- metodológica;
-- organizacional;
-- relacionada con decisiones de salud.
-
-Esta parte responde, en esencia:
-
-**¿Qué información útil se obtendría al resolver esta incertidumbre?**
-
-No es necesario prometer que un solo estudio «resolverá» el problema clínico completo. Debe explicarse qué conocimiento concreto aportará.
+Distinguir la contribución esperada de sus posibles aplicaciones. Obtener una estimación o evaluar una asociación no garantiza por sí mismo una mejora en la atención.
 
 ### 5. Delimitación {#planteamiento-5-delimitacion}
 
 Antes de llegar a la pregunta, el planteamiento debe haber dejado suficientemente delimitados los componentes centrales del estudio:
 
-- población;
+- [población y ámbito de atención](poblacion.qmd#poblacion-delimitacion);
 - exposición, intervención, prueba o fenómeno de interés;
 - comparación, cuando exista;
-- desenlace principal;
+- desenlace, característica o fenómeno principal, según el tipo de pregunta;
 - contexto o periodo, cuando sean relevantes.
 
-Estos componentes reaparecerán en la pregunta, el [objetivo general](objetivos_hipotesis.qmd#objetivos-objetivo-general), las [variables](variables.qmd) y el análisis.
+La pregunta debe utilizar los componentes delimitados aquí. En estudios cuantitativos, estos deben corresponder con el [objetivo general](objetivos_hipotesis.qmd#objetivos-objetivo-general), las [variables](variables.qmd#variables-papel-de-cada-variable) y el análisis.
 
 ## Una forma práctica de escribirlo {#planteamiento-una-forma-practica-de-escribirlo}
 
-El planteamiento puede construirse en pocos párrafos siguiendo esta lógica:
+1. Escribir una pregunta provisional para orientar la búsqueda bibliográfica.
+2. Sintetizar qué se conoce y precisar qué incertidumbre permanece.
+3. Delimitar la población y los componentes pertinentes; explicar la utilidad de obtener la respuesta.
+4. Redactar los párrafos en ese orden y ajustar la pregunta a lo que el planteamiento sustenta.
+5. Comprobar la factibilidad con el diseño y los recursos previstos; reformular si es necesario.
 
-```text
-1. Este es el problema y esta es su relevancia.
-
-2. Esto es lo que actualmente se conoce sobre el aspecto específico
-   que se pretende estudiar.
-
-3. Esto es lo que permanece incierto, insuficientemente estimado
-   o no resuelto.
-
-4. Resolver esta incertidumbre es importante porque...
-
-5. Por lo tanto, se plantea la siguiente pregunta de investigación:
-   ...
-```
-
-No es una plantilla rígida. Sirve para comprobar que cada párrafo acerque al lector a la pregunta.
-
-::: {.callout-warning}
-## Evitar una introducción enciclopédica
-
-El planteamiento no necesita recorrer la historia completa de una enfermedad, describir toda su fisiopatología ni definir conceptos que no intervienen en la pregunta.
-
-Los antecedentes deben servir para **delimitar la incertidumbre**, no para demostrar cuánto se ha leído sobre el tema.
-:::
+La [plantilla breve](#planteamiento-plantilla-breve) puede servir como borrador. Conservar solo los antecedentes que ayuden a comprender o delimitar el problema.
 
 ## Errores frecuentes en el planteamiento {#planteamiento-errores-frecuentes-en-el-planteamiento}
 
@@ -142,13 +95,13 @@ Los antecedentes deben servir para **delimitar la incertidumbre**, no para demos
 | «No existen estudios sobre...» sin comprobarlo | Puede ser falso o exagerado | Describir exactamente qué evidencia falta |
 | «Nunca se ha estudiado en nuestro hospital» | La localización no justifica por sí sola el estudio | Explicar por qué la información local es necesaria |
 | Plantear un problema demasiado amplio | No puede responderse con un solo estudio | Delimitar población, variables y desenlace |
-| Introducir procedimientos | Mezcla el problema con el método | Reservar instrumentos, muestreo y análisis para metodología |
+| Describir procedimientos que no ayudan a delimitar el problema | Dificulta identificar la incertidumbre | Reservar los detalles de muestreo, medición y análisis para metodología; identificar aquí una prueba o instrumento cuando sea el objeto de estudio |
 | Anticipar que una intervención «será efectiva» | Convierte la justificación en conclusión | Formular la incertidumbre sin asumir el resultado |
 | Terminar sin una brecha explícita | La pregunta aparece de forma abrupta | Explicar qué aspecto concreto permanece sin resolver |
 
 ## La pregunta de investigación {#planteamiento-la-pregunta-de-investigacion}
 
-La pregunta de investigación expresa **qué respuesta debe producir el estudio**. Debe ser suficientemente específica para orientar el diseño, las variables, el análisis y el tamaño de muestra. [@farrugia2010_objectives; @browner2022_dcr]
+La **pregunta de investigación** expresa qué se busca conocer. En un estudio cuantitativo debe orientar el diseño, las variables, el análisis y el tamaño de muestra. Los ejemplos siguientes se centran en este tipo de estudios. [@farrugia2010_objectives; @browner2022_dcr]
 
 Una buena pregunta permite identificar:
 
@@ -158,30 +111,24 @@ Una buena pregunta permite identificar:
 - qué desenlace o parámetro se evaluará;
 - cuándo o en qué contexto, si estos elementos modifican la interpretación.
 
-::: {.callout-important}
-## La pregunta y el objetivo general deben decir lo mismo
-
-La pregunta se formula en forma interrogativa. El objetivo general expresa la misma intención mediante un verbo analítico.
-
-La correspondencia se desarrolla en [Objetivos e hipótesis](objetivos_hipotesis.qmd).
-:::
+El [objetivo general](objetivos_hipotesis.qmd#objetivos-objetivo-general) expresa el propósito de la pregunta mediante un verbo preciso, como estimar, comparar o describir. Si hay varias preguntas, identificar la principal y su [objetivo primario](objetivos_hipotesis.qmd#objetivos-objetivo-primario-y-objetivos-secundarios), que orientará el análisis principal y el cálculo de muestra.
 
 ### PICO: estructurar la pregunta {#planteamiento-pico-estructurar-la-pregunta}
 
-PICO es una forma práctica de comprobar que una pregunta clínica tiene definidos sus elementos centrales. [@farrugia2010_objectives]
+**PICO** permite organizar los componentes de una pregunta sobre intervenciones. Puede adaptarse a otras preguntas, según lo que se quiera conocer. [@farrugia2010_objectives]
 
 | Elemento | Significado | Pregunta práctica |
 |---|---|---|
 | **P** | Población | ¿En quiénes se estudiará el problema? |
-| **I** | Intervención o exposición de interés | ¿Qué tratamiento, exposición, prueba o factor se evaluará? |
+| **I** | Intervención | ¿Qué tratamiento o estrategia se evaluará? |
 | **C** | Comparación | ¿Contra qué se comparará? |
 | **O** | Desenlace (*outcome*) | ¿Qué resultado principal se medirá? |
 
 Por ejemplo:
 
-> En adultos con hipertensión grado 1 (**P**), ¿el tratamiento A (**I**), comparado con el tratamiento B (**C**), produce una mayor reducción de la presión arterial sistólica a las 12 semanas (**O**)?
+> En adultos con hipertensión arterial (**P**), ¿el tratamiento A (**I**), comparado con el tratamiento B (**C**), produce una mayor reducción de la presión arterial sistólica respecto al valor basal a las 12 semanas (**O**)?
 
-Cuando el tiempo es indispensable para definir el desenlace puede añadirse explícitamente, dando lugar a **PICOT**. No es necesario agregarlo cuando ya está contenido en la definición del resultado o no modifica la pregunta. [@farrugia2010_objectives]
+El tiempo de seguimiento o el momento de evaluación puede identificarse como **T**, dando lugar a **PICOT**. En el ejemplo corresponde a 12 semanas. Debe quedar explícito cuando cambie el significado del desenlace, aunque se incluya en su redacción sin usar la sigla PICOT. [@farrugia2010_objectives]
 
 #### PICO no es una plantilla rígida {#planteamiento-pico-no-es-una-plantilla-rigida}
 
@@ -191,21 +138,15 @@ No todas las investigaciones son ensayos clínicos y no todas las preguntas nece
 |---|---|---|
 | **Intervención** | P + I + C + O | En pacientes con X, ¿A comparado con B reduce Y? |
 | **Exposición / etiología** | P + E + C + O | En niños con X, ¿la exposición E, comparada con ausencia de E, se asocia con Y? |
-| **Diagnóstico** | P + prueba índice + referencia + resultado diagnóstico | En pacientes con sospecha de X, ¿qué desempeño tiene la prueba A respecto al estándar B? |
-| **Pronóstico** | P + predictor + O + tiempo | En pacientes con X, ¿el factor A predice Y durante 12 meses? |
-| **Descriptiva** | P + parámetro o característica + contexto | ¿Cuál es la prevalencia de X en la población Y? |
+| **Exactitud diagnóstica** | P + condición de interés + prueba índice + referencia + medida de exactitud | En pacientes con sospecha de X, ¿cuáles son la sensibilidad y la especificidad de A para identificar X, usando B como estándar de referencia? |
+| **Factor pronóstico** | P + factor + comparación + O + tiempo | En pacientes con X, ¿la presencia de A al diagnóstico, frente a su ausencia, se asocia con mayor mortalidad a 12 meses? |
+| **Descriptiva** | P + parámetro o característica + contexto o periodo pertinente | ¿Cuál es la prevalencia de X en la población Y durante el periodo Z? |
 
-En preguntas de exposición suele utilizarse la adaptación **PECO**: población, exposición, comparador y desenlace.
+En preguntas de exposición suele utilizarse la adaptación **PECO**: población, exposición, comparador y desenlace. Una asociación observada no demuestra causalidad; una pregunta causal requiere un diseño y un análisis que permitan abordar esa intención. Asimismo, estudiar la asociación de un factor con un desenlace futuro no equivale a validar un modelo de predicción individual.
 
-En estudios diagnósticos, la pregunta debe permitir identificar la población, la prueba índice, el estándar de referencia y el resultado diagnóstico que se evaluará. El objetivo primario debe especificar qué medida se estimará: sensibilidad, especificidad o AUC, por ejemplo. Esa elección determina las variables, el análisis y el tamaño de muestra. Consultar [Pruebas diagnósticas](pruebas_diagnostico.qmd), en particular [Sensibilidad y especificidad](pruebas_diagnostico.qmd#diagnostico-sensibilidad-y-especificidad) y [Curva ROC](pruebas_diagnostico.qmd#diagnostico-curva-roc).
+En exactitud diagnóstica, la **prueba índice** es la que se evalúa y el **estándar de referencia** es el método utilizado para establecer si la condición está presente. La referencia cumple esa función; no es un grupo control. Delimitar el uso previsto de la prueba y las medidas que se estimarán, como [sensibilidad y especificidad](pruebas_diagnostico.qmd#diagnostico-sensibilidad-y-especificidad) o [área bajo la curva ROC (AUC)](pruebas_diagnostico.qmd#diagnostico-curva-roc). Si se clasifican resultados mediante un punto de corte, precisar si está predefinido o si se pretende explorarlo. [@bossuyt2015_stard]
 
-::: {.callout-note}
-## No forzar PICO
-
-PICO ayuda a estructurar preguntas, pero no debe utilizarse para agregar comparadores o intervenciones que el diseño no necesita.
-
-Una pregunta descriptiva como «¿Cuál es la prevalencia de anemia en esta población?» es perfectamente válida sin una intervención ni un grupo comparador.
-:::
+En una pregunta descriptiva puede bastar con identificar población, característica y periodo. No agregar una intervención o un comparador solo para completar PICO.
 
 ### Qué tan específica debe ser la pregunta {#planteamiento-que-tan-especifica-debe-ser-la-pregunta}
 
@@ -219,7 +160,7 @@ Conviene especificar:
 - el comparador, cuando exista;
 - el momento de evaluación si cambia el significado del desenlace.
 
-Los criterios completos de inclusión y exclusión, el instrumento exacto, el método de muestreo y la prueba estadística pertenecen habitualmente a metodología.
+Los [criterios completos de selección](criterios_seleccion.qmd#seleccion-formulacion), los procedimientos de medición, el método de muestreo y la prueba estadística pertenecen a metodología. Identificar un instrumento o prueba en la pregunta cuando sea el objeto de evaluación o resulte indispensable para definir qué se estudia.
 
 #### Demasiado amplia {#planteamiento-demasiado-amplia}
 
@@ -235,18 +176,18 @@ No delimita población, exposición concreta ni desenlace.
 
 > ¿Existe una diferencia estadísticamente significativa mediante una prueba de chi-cuadrada con α = 0.05 entre la proporción de hipertensión de adolescentes con obesidad y adolescentes con peso normal?
 
-La prueba estadística no forma parte del fenómeno que se desea estudiar. Se define posteriormente en el [análisis estadístico](pruebas_estadisticas.qmd).
+La pregunta debe centrarse en la magnitud o relación de interés. La elección de la prueba y del nivel de significación corresponde al [plan de análisis](pruebas_estadisticas.qmd#estadistica-antes-de-elegir-una-prueba); un resultado estadísticamente significativo no establece por sí solo la importancia clínica de la asociación.
 
-### FINER: evaluar si la pregunta funciona {#planteamiento-finer-evaluar-si-la-pregunta-funciona}
+### FINER: evaluar la viabilidad y el valor de la pregunta {#planteamiento-finer-evaluar-si-la-pregunta-funciona}
 
-PICO ayuda a **estructurar** la pregunta. FINER ayuda a evaluar si esa pregunta constituye un proyecto de investigación razonable. Son herramientas complementarias. [@farrugia2010_objectives; @browner2022_dcr]
+**FINER** reúne cinco criterios para valorar la viabilidad y el valor de investigar una pregunta. Complementa la revisión de sus componentes con PICO cuando este sea aplicable. [@farrugia2010_objectives; @browner2022_dcr]
 
 | Criterio | Significado | Qué debe comprobarse |
 |---|---|---|
 | **F** | **Feasible — factible** | Hay población accesible, tiempo, datos, recursos y capacidad técnica suficientes para responderla |
-| **I** | **Interesting — interesante** | La respuesta tiene interés para el investigador, el equipo o la comunidad científica o clínica |
+| **I** | **Interesting — interesante** | La pregunta despierta interés en el investigador y el equipo para sostener el trabajo |
 | **N** | **Novel — novedosa** | Confirma, refuta, extiende o aporta información que la evidencia disponible todavía no resuelve |
-| **E** | **Ethical — ética** | Puede investigarse con una relación riesgo-beneficio aceptable y mediante un protocolo éticamente aprobable |
+| **E** | **Ethical — ética** | Puede responderse con un diseño válido, riesgos justificados y protección de los derechos de los participantes |
 | **R** | **Relevant — relevante** | La respuesta aporta conocimiento útil para investigación, atención clínica, decisiones o políticas de salud |
 
 #### F: factible {#planteamiento-f-factible}
@@ -255,37 +196,28 @@ La pregunta puede ser científicamente buena y aun así no ser realizable en las
 
 Debe existir una relación razonable entre:
 
-- número de sujetos accesibles;
+- número de participantes elegibles y posibilidad de reclutarlos, o registros utilizables si se emplean datos existentes;
 - duración del estudio;
 - frecuencia esperada del desenlace;
 - recursos disponibles;
 - experiencia técnica;
 - posibilidad real de medir las variables.
 
-La factibilidad se relaciona directamente con el [cálculo del tamaño de muestra](calculo_tamano_muestra.qmd). Si la pregunta requiere una muestra que no puede reclutarse, debe modificarse el diseño o reconocerse que el estudio no es factible en esas condiciones.
+Contrastar estos recursos con el [tamaño de muestra requerido](calculo_tamano_muestra.qmd#muestra-del-objetivo-al-calculo), considerando pérdidas y datos incompletos. Si no es alcanzable, valorar ampliar el reclutamiento, ajustar el diseño o reformular la pregunta. Reducir la muestra sin revisar la precisión o la potencia no resuelve la limitación.
 
 #### I: interesante {#planteamiento-i-interesante}
 
-El criterio no significa que el tema deba ser llamativo. Significa que obtener la respuesta justifica el trabajo necesario para producirla.
-
-Una pregunta puede ser relevante para:
-
-- pacientes;
-- práctica clínica;
-- un servicio de salud;
-- una línea de investigación;
-- una comunidad científica.
+El interés del investigador y del equipo ayuda a sostener el trabajo de preparación, ejecución y análisis. Puede surgir de una duda clínica recurrente o de una línea de investigación. La utilidad de la respuesta para pacientes, servicios o conocimiento científico se evalúa en el criterio de relevancia.
 
 #### N: novedosa {#planteamiento-n-novedosa}
 
-La novedad no exige descubrir un fenómeno completamente nuevo.
+La contribución puede consistir en confirmar o revisar conocimiento existente, incluida una replicación justificada.
 
 Una investigación puede ser novedosa porque:
 
-- confirma un hallazgo importante en condiciones distintas;
-- refuta evidencia previa;
-- resuelve resultados contradictorios;
-- extiende evidencia a una población para la que no era aplicable;
+- pone a prueba la reproducibilidad de un hallazgo importante;
+- busca aclarar resultados contradictorios;
+- evalúa si la evidencia es aplicable a otra población;
 - evalúa una nueva intervención, medición o estrategia;
 - proporciona una estimación necesaria con mejor precisión.
 
@@ -293,146 +225,115 @@ La afirmación de novedad debe surgir de los antecedentes, no únicamente de que
 
 #### E: ética {#planteamiento-e-etica}
 
-La pregunta debe poder responderse mediante un estudio éticamente aceptable.
+Debe ser posible responder la pregunta con un diseño científicamente válido, riesgos justificados y medidas de protección adecuadas. Esto también se aplica a investigaciones con expedientes o bases de datos identificables. [@wma_helsinki2024]
 
-Una pregunta deja de ser viable si para responderla exige, por ejemplo, negar una intervención eficaz establecida, imponer riesgos injustificados o utilizar procedimientos que no pueden justificarse por su valor científico.
+En estudios de intervención, justificar la elección del comparador. El uso de placebo o la omisión de una intervención probada requiere cumplir condiciones éticas específicas; la conveniencia del diseño no basta. [@wma_helsinki2024]
 
-Una pregunta metodológicamente débil también plantea un problema ético si expone participantes o utiliza recursos sin una posibilidad razonable de producir conocimiento válido.
-
-Consultar [Consideraciones bioéticas y de bioseguridad](consideraciones.qmd) para desarrollar los fundamentos bioéticos, justificar el nivel de riesgo y describir la revisión por comités.
+Desarrollar estos aspectos en los apartados de [principios bioéticos](consideraciones.qmd#consideraciones-principios), [riesgo y protección](consideraciones.qmd#consideraciones-riesgo) y [revisión por comités](consideraciones.qmd#consideraciones-reforma-comites). FINER orienta la evaluación inicial y no sustituye esa revisión.
 
 #### R: relevante {#planteamiento-r-relevante}
 
-La pregunta debe producir una respuesta que importe.
+Identificar para quién será útil la respuesta y cómo podría contribuir a una decisión clínica, a la organización de servicios o a investigación posterior. Esta utilidad debe corresponder con la [relevancia expuesta en el planteamiento](#planteamiento-4-por-que-importa-resolverlo), incluso si el resultado no confirma lo esperado.
 
-La relevancia puede consistir en:
+### Revisión de una pregunta ya formulada {#planteamiento-usar-pico-y-finer-como-revision-de-un-protocolo-ya-avanzado}
 
-- mejorar una estimación clínica o epidemiológica;
-- aclarar una asociación;
-- comparar alternativas terapéuticas;
-- mejorar el diagnóstico;
-- identificar factores pronósticos;
-- orientar investigación posterior;
-- informar decisiones clínicas u organizacionales.
+1. Identificar los componentes necesarios según el tipo de pregunta; usar la [tabla de estructuras](#planteamiento-pico-no-es-una-plantilla-rigida).
+2. Revisar cada criterio FINER con la evidencia y los recursos disponibles.
+3. Ajustar las omisiones de formulación y resolver las limitaciones de diseño o factibilidad antes de iniciar el estudio.
 
-::: {.callout-important}
-## PICO y FINER responden preguntas distintas
+Si ya se conocen los resultados, distinguir las preguntas y análisis previstos de los que surgieron al examinarlos. Una pregunta nueva puede orientar un análisis exploratorio, pero no debe presentarse como si hubiera guiado el protocolo original.
 
-**PICO:** ¿está bien construida la pregunta?
-
-**FINER:** ¿vale la pena y es posible responderla?
-:::
-
-### Usar PICO y FINER como revisión de un protocolo ya avanzado {#planteamiento-usar-pico-y-finer-como-revision-de-un-protocolo-ya-avanzado}
-
-Cuando el protocolo ya existe, estas herramientas pueden utilizarse como una **auditoría de congruencia**.
-
-Primero, descomponer la pregunta:
-
-```text
-P = población
-I/E = intervención o exposición
-C = comparación
-O = desenlace principal
-```
-
-Después, revisar FINER:
-
-```text
-F = ¿puede hacerse con los sujetos, tiempo y recursos disponibles?
-I = ¿la respuesta tiene interés suficiente?
-N = ¿qué agrega respecto a la evidencia existente?
-E = ¿puede responderse éticamente?
-R = ¿para qué sirve conocer la respuesta?
-```
-
-Si alguno de estos elementos no puede identificarse, no necesariamente debe abandonarse el tema. Con frecuencia el problema está en la **formulación o delimitación** de la pregunta.
-
-## De la pregunta al resto del protocolo {#planteamiento-de-la-pregunta-al-resto-del-protocolo}
+## Correspondencia con el resto del protocolo {#planteamiento-de-la-pregunta-al-resto-del-protocolo}
 
 Una pregunta bien formulada debe conservar sus componentes principales a lo largo de todo el protocolo.
 
 | Elemento de la pregunta | Debe reaparecer en |
 |---|---|
-| **Población** | objetivo, criterios de selección y descripción de la muestra |
+| **Población** | objetivo, [población de estudio](poblacion.qmd#poblacion-conceptos) y [criterios de selección](criterios_seleccion.qmd#seleccion-criterios) |
 | **Intervención / exposición / predictor** | [objetivo general](objetivos_hipotesis.qmd#objetivos-objetivo-general) y [papel de cada variable](variables.qmd#variables-papel-de-cada-variable) |
 | **Comparador** | objetivo, grupos del estudio y análisis |
-| **Desenlace principal** | objetivo primario y [definición operacional](variables.qmd#variables-definicion-conceptual-y-operacional) |
-| **Relación o contraste de interés** | [pruebas estadísticas](pruebas_estadisticas.qmd) |
-| **Parámetro principal** | análisis y [cálculo del tamaño de muestra](calculo_tamano_muestra.qmd) |
-| **Respuesta anticipada**, cuando corresponda | [hipótesis de trabajo](objetivos_hipotesis.qmd#objetivos-hipotesis-de-trabajo) |
+| **Desenlace o característica principal** | [objetivo primario](objetivos_hipotesis.qmd#objetivos-objetivo-primario-y-objetivos-secundarios) y [definición operacional](variables.qmd#variables-definicion-operacional) |
+| **Momento de evaluación o periodo** | objetivo, definición de las mediciones y seguimiento, cuando corresponda |
+| **Parámetro, relación o contraste de interés** | [plan de análisis](pruebas_estadisticas.qmd#estadistica-antes-de-elegir-una-prueba) y [selección del cálculo de muestra](calculo_tamano_muestra.qmd#muestra-guia-rapida-de-seleccion) |
 
-La secuencia esperada es:
+La [hipótesis de trabajo](objetivos_hipotesis.qmd#objetivos-hipotesis-de-trabajo), cuando corresponda, expresa una respuesta anticipada sustentada en los antecedentes. Es distinta de la pregunta, que mantiene abierta la incertidumbre.
 
-**planteamiento del problema → pregunta → objetivos → hipótesis, cuando corresponda → variables y desenlace → plan de análisis y tamaño de muestra → interpretación**
+Estas relaciones orientan el diseño; no representan un orden rígido de ejecución ni un índice obligatorio del documento. Durante la preparación del protocolo, revisar la pregunta si el diseño, las mediciones o los recursos no permiten responderla.
+
+Los ejemplos siguientes son hipotéticos. En un protocolo real, las brechas deben sustentarse con referencias y las mediciones deben definirse operacionalmente.
 
 ### Ejemplo: estudio de intervención {#planteamiento-ejemplo-estudio-de-intervencion}
 
 **Brecha**
 
-> No está claro si el tratamiento A produce una reducción mayor del puntaje de síntomas que el tratamiento B en adolescentes con la condición X.
+> La evidencia disponible no permite establecer si el tratamiento A produce una mayor reducción del puntaje de síntomas que B a las 12 semanas en adolescentes de 12 a 17 años con la condición X.
 
 **Pregunta**
 
-> En adolescentes con la condición X, ¿el tratamiento A, comparado con el tratamiento B, produce una mayor reducción del puntaje de síntomas a las 12 semanas?
+> En adolescentes de 12 a 17 años con la condición X, ¿el tratamiento A, comparado con B, produce una mayor reducción media del puntaje de síntomas entre el inicio y las 12 semanas?
 
 **PICO**
 
 | Elemento | Definición |
 |---|---|
-| P | Adolescentes con la condición X |
+| P | Adolescentes de 12 a 17 años con la condición X |
 | I | Tratamiento A |
 | C | Tratamiento B |
-| O | Cambio del puntaje de síntomas a 12 semanas |
+| O | Reducción del puntaje de síntomas entre el inicio y las 12 semanas |
 
 **Objetivo general**
 
-> Comparar el cambio en el puntaje de síntomas entre los adolescentes tratados con A y B a las 12 semanas.
+> Comparar la reducción media del puntaje de síntomas entre el inicio y las 12 semanas en adolescentes de 12 a 17 años con la condición X que reciben el tratamiento A o B.
 
 **Hipótesis de trabajo**
 
-> El tratamiento A producirá una mayor reducción del puntaje de síntomas a las 12 semanas que el tratamiento B.
+> En adolescentes de 12 a 17 años con la condición X, la reducción media del puntaje de síntomas entre el inicio y las 12 semanas será mayor con A que con B.
 
-La formulación de objetivos e hipótesis se desarrolla en [Objetivos e hipótesis](objetivos_hipotesis.qmd).
+La variable individual es la reducción del puntaje; el parámetro de interés es la diferencia entre las reducciones medias de ambos grupos. El diseño y el análisis deberán sustentar la interpretación del efecto de la intervención. Consultar la [correspondencia entre pregunta, objetivo, hipótesis y análisis](objetivos_hipotesis.qmd#objetivos-correspondencia-entre-pregunta-objetivo-hipotesis-y-analisis).
 
 ### Ejemplo: estudio descriptivo {#planteamiento-ejemplo-estudio-descriptivo}
 
 **Brecha**
 
-> Se desconoce la prevalencia de anemia en la población atendida y se requiere una estimación para dimensionar el problema.
+> Las estimaciones disponibles no describen la frecuencia de anemia en niños de 1 a 5 años atendidos en la unidad X. Se necesita esa información para planear la capacidad de evaluación y seguimiento del servicio.
 
 **Pregunta**
 
-> ¿Cuál es la prevalencia de anemia en niños de 1 a 5 años atendidos en la unidad X durante 2026?
+> ¿Cuál es la prevalencia de anemia en la primera consulta de 2026 entre niños de 1 a 5 años atendidos en la unidad X?
 
 **Objetivo general**
 
-> Estimar la prevalencia de anemia en niños de 1 a 5 años atendidos en la unidad X durante 2026.
+> Estimar la prevalencia de anemia en la primera consulta de 2026 entre niños de 1 a 5 años atendidos en la unidad X.
 
-Este estudio busca **estimar un parámetro**. No es necesario inventar una intervención, un comparador ni una hipótesis nula. La lógica de los estudios de estimación se relaciona con el [cálculo del tamaño de muestra para estimar una proporción](calculo_tamano_muestra.qmd#muestra-estimar-una-proporcion).
+La unidad de análisis es cada niño, contado una sola vez y evaluado en su primera consulta de ese año. La estimación corresponde a la población atendida, cuya selección puede diferir de la población infantil de la comunidad. Este objetivo de estimación no requiere por sí mismo una hipótesis de contraste. Consultar el [cálculo de muestra para estimar una proporción](calculo_tamano_muestra.qmd#muestra-estimar-una-proporcion).
 
 ### Ejemplo: estudio diagnóstico {#planteamiento-ejemplo-estudio-diagnostico}
 
 **Brecha**
 
-> Existe una prueba de tamizaje sencilla, pero su capacidad para identificar la condición X no ha sido suficientemente evaluada frente al estándar de referencia en la población de interés.
+> La sensibilidad y la especificidad de la prueba rápida A para identificar la condición X no están suficientemente estimadas en niños de 6 a 12 años con sospecha clínica de X atendidos en la unidad Y. Se requiere esa información para valorar su posible uso en la evaluación inicial.
 
 **Pregunta**
 
-> En niños con sospecha de X, ¿cuál es el desempeño diagnóstico de la prueba A respecto al estándar de referencia B?
+> En niños de 6 a 12 años con sospecha clínica de X atendidos en la unidad Y, ¿cuáles son la sensibilidad y la especificidad de la prueba rápida A para identificar X, usando B como estándar de referencia?
 
 **Elementos**
 
 | Elemento | Definición |
 |---|---|
-| Población | Niños con sospecha de X |
-| Prueba índice | Prueba A |
-| Referencia | Estándar B |
-| Resultado | Desempeño diagnóstico |
+| Población | Niños de 6 a 12 años con sospecha clínica de X atendidos en la unidad Y |
+| Prueba índice | Prueba rápida A, con resultado positivo o negativo según un criterio predefinido |
+| Referencia | Método B para establecer presencia o ausencia de X |
+| Medida principal | Sensibilidad |
+| Medida secundaria | Especificidad |
 
-Antes de cerrar este ejemplo como protocolo, debe precisarse la medida principal y, si corresponde, el punto de corte. «Desempeño diagnóstico» por sí solo no basta para calcular la muestra.
+**Objetivo primario**
 
-La sensibilidad, especificidad, valores predictivos, razones de verosimilitud y AUC son **resultados del análisis**, no variables individuales. Esta distinción se desarrolla en [Variables](variables.qmd#variables-variable-medicion-y-resultado-del-analisis) y [Pruebas diagnósticas](pruebas_diagnostico.qmd).
+> Estimar la sensibilidad de la prueba rápida A para identificar X en niños de 6 a 12 años con sospecha clínica de X atendidos en la unidad Y, usando B como estándar de referencia.
+
+La estimación de especificidad se declara como objetivo secundario. En este ejemplo, la sensibilidad guía el [cálculo de muestra](calculo_tamano_muestra.qmd#muestra-estimar-sensibilidad-especificidad); también debe revisarse la precisión que se obtendrá para la especificidad. Si ambas medidas son principales, el tamaño de muestra debe satisfacer los requisitos de ambas.
+
+Los datos individuales son los resultados de A y B en cada participante; la sensibilidad y la especificidad se estiman al analizarlos. Consultar la distinción entre [variable, medición y resultado del análisis](variables.qmd#variables-variable-medicion-y-resultado-del-analisis). El uso previsto y la selección de participantes deben ser congruentes: evaluar personas con sospecha clínica no responde automáticamente una pregunta de tamizaje en población asintomática.
 
 ## Plantilla breve {#planteamiento-plantilla-breve}
 
@@ -448,31 +349,20 @@ Esta incertidumbre es relevante porque [consecuencia o utilidad de resolverla].
 
 Por lo anterior, se plantea la siguiente pregunta de investigación:
 
-[Pregunta con población, intervención/exposición cuando corresponda,
-comparación cuando corresponda y desenlace principal].
+[Pregunta con población, fenómeno o característica de interés,
+intervención/exposición/prueba y comparación cuando correspondan,
+desenlace o parámetro y periodo pertinente].
 ```
 
-La plantilla debe adaptarse al problema. Su función es impedir que el planteamiento termine sin identificar con claridad **qué falta por conocer**.
+Adaptar la plantilla al problema y agregar las referencias que sustenten el contexto, la evidencia y la brecha. Verificar que la pregunta se desprenda de los párrafos previos.
 
 ## Revisión final {#planteamiento-revision-final}
 
 Antes de cerrar el planteamiento y la pregunta, comprobar que:
 
-- el texto identifica un problema concreto y no solo un tema general;
-- los antecedentes conducen a una brecha de conocimiento explícita;
-- la brecha está sustentada y no depende de afirmaciones como «no existen estudios» sin evidencia;
-- la relevancia explica por qué importa resolver esa incertidumbre;
-- la pregunta surge de forma natural del planteamiento;
-- la población está delimitada;
-- la exposición, intervención, prueba o predictor principal está identificado cuando corresponde;
-- el comparador está definido cuando es necesario;
-- el desenlace principal es reconocible;
-- no se han incluido pruebas estadísticas o procedimientos como si fueran parte del fenómeno de investigación;
-- PICO puede identificarse cuando es aplicable;
-- la pregunta cumple razonablemente con FINER;
-- la pregunta coincide con el [objetivo general](objetivos_hipotesis.qmd#objetivos-objetivo-general);
-- las variables necesarias pueden [definirse operacionalmente](variables.qmd#variables-definicion-conceptual-y-operacional);
-- el análisis puede responder exactamente esa pregunta;
-- el [tamaño de muestra](calculo_tamano_muestra.qmd) corresponde a la pregunta principal.
-
-Una vez establecida esta correspondencia, la siguiente sección es [Objetivos e hipótesis](objetivos_hipotesis.qmd).
+- la brecha es concreta y está sustentada en la evidencia revisada;
+- la relevancia identifica una contribución proporcionada al alcance del estudio;
+- la pregunta utiliza la población y los componentes delimitados en el planteamiento;
+- la revisión FINER permite justificar que el estudio es viable y tiene valor;
+- los objetivos conservan el propósito de la pregunta y las variables pueden [definirse operacionalmente](variables.qmd#variables-definicion-operacional);
+- el diseño, el análisis y el tamaño de muestra corresponden a la pregunta principal.

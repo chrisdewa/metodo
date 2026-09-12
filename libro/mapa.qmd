@@ -2,169 +2,138 @@
 title: Mapa de una investigación
 ---
 
-Este capítulo presenta los componentes de una investigación y los apartados que los describen en un protocolo, una tesis o un artículo científico. Sirve como guía para organizar el estudio y como índice de consulta de los temas desarrollados en el libro.
-
-El contenido está dirigido a profesionales de la salud que preparan, realizan o comunican una investigación. Por el alcance del manual, se centra en estudios cuantitativos; la selección y el desarrollo de cada componente dependen del objetivo y del diseño.
+Esquema de los componentes de una investigación. Las descripciones indican qué incluye cada apartado; para su desarrollo, consultar los enlaces al libro. Los enlaces marcados como *apoyo* cubren solo parte del componente; «sin sección propia» identifica los temas aún no desarrollados.
 
 ## Vista general {#mapa-general}
 
-| Área | Función | Componentes principales |
-|---|---|---|
-| [Planteamiento](#mapa-planificacion) | Delimitar y fundamentar el problema de investigación | Antecedentes, justificación, pregunta, objetivos e hipótesis cuando corresponda |
-| [Método](#mapa-metodologia) | Establecer los procedimientos para cumplir los objetivos | Diseño, población, selección, mediciones, análisis y tamaño de muestra |
-| [Ejecución](#mapa-ejecucion) | Realizar y documentar los procedimientos del estudio | Selección de unidades, obtención de datos, control de calidad y seguimiento |
-| [Resultados e interpretación](#mapa-analisis) | Presentar y discutir los hallazgos | Resultados, discusión y conclusiones |
-| [Comunicación y cierre](#mapa-comunicacion) | Informar el estudio y completar su documentación | Tesis, artículo u otro informe; difusión y resguardo de registros |
+| Área | Componentes |
+|---|---|
+| [Planteamiento](#mapa-planificacion) | Antecedentes, problema, justificación, pregunta, objetivos e hipótesis cuando corresponda |
+| [Metodología](#mapa-metodologia) | Diseño, población, selección, variables, procedimientos, análisis y tamaño de muestra |
+| [Ética y factibilidad](#mapa-etica-factibilidad) | Protección de participantes y datos, autorizaciones, recursos y cronograma |
+| [Ejecución y seguimiento](#mapa-ejecucion) | Incorporación, obtención de datos, control de calidad y registro de cambios |
+| [Resultados, discusión y conclusiones](#mapa-analisis) | Hallazgos, interpretación, limitaciones y respuesta a la pregunta |
+| [Comunicación y cierre](#mapa-comunicacion) | Documento final, difusión y resguardo de registros |
 
-Esta organización permite consultar cada componente por separado, aunque su elaboración requiere revisiones conjuntas. Durante la preparación del protocolo, la evidencia disponible, los recursos y las posibilidades de medición pueden llevar a reformular la pregunta o el método. Las consideraciones éticas, la factibilidad y el control de calidad deben atenderse desde esa preparación y durante el desarrollo del estudio.
+Esquemas por documento: [protocolo](#mapa-protocolo) · [artículo original](#mapa-articulo) · [tesis](#mapa-tesis).
 
-## Planteamiento de la investigación {#mapa-planificacion}
+## Planteamiento {#mapa-planificacion}
 
-El planteamiento expone el problema que se estudiará, sus antecedentes y las razones para investigarlo. A partir de esa delimitación se formulan la pregunta y los objetivos.
-
-| Componente | Función | Consulta en el libro |
-|---|---|---|
-| Antecedentes y marco teórico | Sintetizar la evidencia y definir los conceptos que sustentan el estudio | [Qué se conoce](planteamiento_problema.qmd#planteamiento-2-que-se-conoce) |
-| Planteamiento del problema | Precisar qué falta por conocer, en qué contexto y en qué población | [Planteamiento del problema](planteamiento_problema.qmd) |
-| Justificación | Fundamentar la relevancia científica, clínica o social del estudio y su contribución esperada | [Justificación](planteamiento_problema.qmd#planteamiento-4-por-que-importa-resolverlo) |
-| Pregunta de investigación | Formular la interrogante que el estudio pretende responder, con la población y el alcance correspondientes | [Formulación de la pregunta](planteamiento_problema.qmd#planteamiento-la-pregunta-de-investigacion) |
-| Objetivos | Especificar qué se estimará, describirá, comparará o evaluará para responder la pregunta | [Objetivos](objetivos_hipotesis.qmd#objetivos-objetivo-general) |
-| Hipótesis, cuando corresponda | Proponer una respuesta que pueda contrastarse con los datos | [Hipótesis](objetivos_hipotesis.qmd#objetivos-formulacion-hipotesis) |
-| Título | Identificar el estudio con un alcance congruente con la pregunta y el método | [Concordancia entre título, pregunta, objetivos e hipótesis](concordancia_general.qmd) |
-
-La pregunta, los objetivos y la hipótesis deben conservar la misma población, variables y comparación, según corresponda. No todos los estudios requieren una hipótesis: en uno descriptivo, por ejemplo, el objetivo puede ser estimar una frecuencia con determinada precisión.
+| Componente | Consulta en el libro |
+|---|---|
+| Antecedentes y marco teórico: evidencia previa y conceptos de referencia | Apoyo: [evidencia previa](planteamiento_problema.qmd#planteamiento-2-que-se-conoce) |
+| Planteamiento del problema: necesidad de conocimiento delimitada | [Contexto, vacío de conocimiento y delimitación](planteamiento_problema.qmd) |
+| Justificación: relevancia y contribución esperada | [Relevancia del estudio](planteamiento_problema.qmd#planteamiento-4-por-que-importa-resolverlo) |
+| Pregunta de investigación: interrogante que se busca responder | [Formulación, PICO y FINER](planteamiento_problema.qmd#planteamiento-la-pregunta-de-investigacion) |
+| Objetivos: lo que se estimará, describirá o evaluará | [General](objetivos_hipotesis.qmd#objetivos-objetivo-general) · [Específicos](objetivos_hipotesis.qmd#objetivos-objetivos-especificos) · [Primario y secundarios](objetivos_hipotesis.qmd#objetivos-objetivo-primario-y-objetivos-secundarios) |
+| Hipótesis, cuando corresponda: respuesta propuesta para contrastar | [Formulación y tipos](objetivos_hipotesis.qmd#objetivos-formulacion-hipotesis) |
+| Título: identificación del estudio, congruente con su planteamiento | [Concordancia entre título, pregunta, objetivos e hipótesis](concordancia_general.qmd) |
 
 ## Metodología {#mapa-metodologia}
 
-La metodología especifica el diseño y los procedimientos de selección, medición y análisis. En el protocolo se describe lo previsto; en el informe final se consigna lo realizado, incluidos los cambios respecto al protocolo y sus motivos.
-
 ### Diseño, población y selección {#mapa-diseno-poblacion}
 
-| Componente | Contenido | Consulta en el libro |
-|---|---|---|
-| Diseño de estudio | Tipo de estudio y su justificación en función del objetivo; temporalidad, comparaciones e intervención, si corresponde | [Diseños de estudio](diseños_estudio.qmd) |
-| Población y ámbito del estudio | Población de interés, población accesible, lugar, periodo y unidades de estudio | [Población](poblacion.qmd) |
-| Criterios de selección | Criterios de inclusión y exclusión; manejo de situaciones posteriores al ingreso | [Criterios de selección](criterios_seleccion.qmd) |
-| Muestreo | Procedimiento de selección de las unidades elegibles y forma de incorporación al estudio | [Metodología de muestreo](metodologia_muestreo.qmd) |
-
-La elegibilidad, la selección de la muestra y la asignación a grupos son procedimientos diferentes. Esta última se describe, para los estudios de intervención, en el capítulo de [diseños de estudio](diseños_estudio.qmd#disenos-intervencionales).
+| Componente | Consulta en el libro |
+|---|---|
+| Diseño de estudio: estructura, temporalidad y comparaciones | [Clasificación y elección del diseño](diseños_estudio.qmd) |
+| Población, lugar y periodo: unidades de estudio y delimitación | [Población, delimitación y unidades de estudio](poblacion.qmd) |
+| Criterios de selección: condiciones de elegibilidad | [Inclusión, exclusión y situaciones posteriores al ingreso](criterios_seleccion.qmd) |
+| Muestreo: selección de unidades entre las elegibles | [Métodos de selección e incorporación](metodologia_muestreo.qmd) |
+| Asignación a grupos: distribución de las intervenciones | [Ensayos e intervenciones no aleatorizadas](diseños_estudio.qmd#disenos-intervencionales) |
 
 ### Mediciones, análisis y tamaño de muestra {#mapa-mediciones-analisis}
 
-| Componente | Contenido | Consulta en el libro |
-|---|---|---|
-| Variables | Función de cada variable en el estudio y definiciones conceptuales y operacionales | [Variables](variables.qmd) |
-| Procedimientos e instrumentos | Actividades, instrumentos, fuentes, responsables, momentos de medición y medidas para reducir errores y sesgos | [Definición operacional](variables.qmd#variables-definicion-operacional) |
-| Manejo de datos | Estructura de la base, codificación, validación y registro de datos faltantes | [De las variables a la base de datos](variables.qmd#variables-de-la-tabla-de-variables-a-la-base-de-datos) |
-| Plan de análisis | Análisis descriptivo, estimaciones e intervalos de confianza; pruebas, modelos, control de confusión y tratamiento de datos faltantes, según los objetivos y el diseño | [Análisis estadístico](pruebas_estadisticas.qmd#estadistica-antes-de-elegir-una-prueba) y [medidas del efecto](tamanos_efecto.qmd) |
-| Tamaño de muestra | Justificación del número de unidades según el objetivo principal, diseño, análisis previsto y precisión o potencia requerida | [Cálculo del tamaño de muestra](calculo_tamano_muestra.qmd) |
-
-El plan de análisis se especifica en el protocolo y debe indicar el análisis correspondiente a cada objetivo. Es necesario definirlo antes de calcular el tamaño de muestra. Si se trabajará con un número fijo de unidades o con una base existente, se justifica su uso y se valora la precisión que permite obtener.
-
-Para estudios de exactitud diagnóstica o de concordancia, el libro incluye las siguientes consultas:
-
-| Propósito | Consulta en el libro |
+| Componente | Consulta en el libro |
 |---|---|
-| Evaluar la exactitud de una prueba diagnóstica | [Pruebas diagnósticas](pruebas_diagnostico.qmd) y [tamaño de muestra para exactitud diagnóstica](calculo_tamano_muestra.qmd#muestra-estudios-de-exactitud-diagnostica) |
-| Evaluar la concordancia entre métodos de medición | [Gráfico de Bland–Altman](galeria_graficos.ipynb#galeria-blandaltman) y [tamaño de muestra para concordancia](calculo_tamano_muestra.qmd#muestra-estudios-de-concordancia) |
+| Variables: características que se medirán y su definición | [Tipo, escala, función y definiciones](variables.qmd) |
+| Procedimientos e instrumentos: actividades y medios de medición | Apoyo: [fuente, instrumento y momento de medición](variables.qmd#variables-definicion-operacional) |
+| Manejo de datos: organización, codificación y validación | [Base de datos](variables.qmd#variables-de-la-tabla-de-variables-a-la-base-de-datos) · [Codificación](variables.qmd#variables-codificacion) · [Datos faltantes](variables.qmd#variables-valores-perdidos) |
+| Plan de análisis: métodos estadísticos para cada objetivo | [Decisiones previas](pruebas_estadisticas.qmd#estadistica-antes-de-elegir-una-prueba) · [Pruebas estadísticas](pruebas_estadisticas.qmd#estadistica-resumen-rapido) · [Medidas del efecto](tamanos_efecto.qmd) |
+| Tamaño de muestra: número de unidades y su justificación | [Selección del cálculo, fórmulas y parámetros](calculo_tamano_muestra.qmd) |
+| Exactitud diagnóstica: desempeño frente a un estándar de referencia, si corresponde | [Pruebas diagnósticas](pruebas_diagnostico.qmd) · [Tamaño de muestra](calculo_tamano_muestra.qmd#muestra-estudios-de-exactitud-diagnostica) |
+| Concordancia: acuerdo entre métodos de medición, si corresponde | [Bland–Altman](galeria_graficos.ipynb#galeria-blandaltman) · [Tamaño de muestra](calculo_tamano_muestra.qmd#muestra-estudios-de-concordancia) |
 
 ### Ética y factibilidad {#mapa-etica-factibilidad}
 
-| Componente | Contenido | Consulta en el libro |
-|---|---|---|
-| Consideraciones éticas y de bioseguridad | Riesgos, medidas de protección, consentimiento cuando corresponda, confidencialidad, bioseguridad y autorizaciones aplicables | [Bioética y bioseguridad](consideraciones.qmd) |
-| Factibilidad y organización | Acceso a la población o a los datos, equipo, responsabilidades, recursos, presupuesto y cronograma | [Factibilidad](planteamiento_problema.qmd#planteamiento-f-factible) |
-
-El presupuesto, el cronograma y la descripción completa de los procedimientos no cuentan con un capítulo propio. Los enlaces remiten a las secciones relacionadas disponibles en el manual.
+| Componente | Consulta en el libro |
+|---|---|
+| Consideraciones éticas y bioseguridad: riesgos y medidas de protección | [Riesgos, protección, consentimiento y confidencialidad](consideraciones.qmd) |
+| Autorizaciones y seguimiento institucional: evaluación, permisos e informes | [Comités, autorizaciones y seguimiento](consideraciones.qmd#consideraciones-reforma-comites) |
+| Factibilidad: condiciones para realizar el estudio | [Acceso, recursos y viabilidad de la pregunta](planteamiento_problema.qmd#planteamiento-f-factible) |
+| Organización: equipo, responsabilidades, presupuesto y cronograma | Sin sección propia |
 
 ## Ejecución y seguimiento {#mapa-ejecucion}
 
-Durante la ejecución se aplican los procedimientos del protocolo y se documentan la obtención de datos, las incidencias y las modificaciones. Estos registros son necesarios para supervisar el estudio y describir después cómo se realizó.
-
-| Actividad | Registro o producto | Consulta relacionada |
-|---|---|---|
-| Preparar el estudio | Versión del protocolo, autorizaciones aplicables, instrumentos y organización del equipo | [Comités, autorizaciones y seguimiento](consideraciones.qmd#consideraciones-reforma-comites) |
-| Seleccionar e incorporar unidades | Registro de elegibilidad, selección e incorporación; motivos de no participación, cuando corresponda | [Registro del muestreo](metodologia_muestreo.qmd#muestreo-registro) |
-| Aplicar procedimientos y obtener datos | Registros de las mediciones con su fuente, fecha y código de la unidad de estudio, según corresponda | [Medición](variables.qmd#variables-definicion-operacional) y [codificación](variables.qmd#variables-codificacion) |
-| Revisar la calidad y dar seguimiento | Aclaración de inconsistencias, pérdidas, datos faltantes, incidencias y cambios al protocolo | [Situaciones posteriores al ingreso](criterios_seleccion.qmd#seleccion-seguimiento) y [datos faltantes](variables.qmd#variables-valores-perdidos) |
+| Actividad | Consulta en el libro |
+|---|---|
+| Selección e incorporación de unidades | [Registro del muestreo](metodologia_muestreo.qmd#muestreo-registro) |
+| Aplicación de procedimientos y obtención de datos | Apoyo: [reglas de medición](variables.qmd#variables-definicion-operacional) y [codificación](variables.qmd#variables-codificacion) |
+| Control de calidad y seguimiento | Apoyo: [situaciones posteriores al ingreso](criterios_seleccion.qmd#seleccion-seguimiento) y [datos faltantes](variables.qmd#variables-valores-perdidos) |
+| Registro de incidencias y modificaciones al protocolo | Apoyo: [seguimiento ante los comités](consideraciones.qmd#consideraciones-reforma-comites) |
 
 ## Resultados, discusión y conclusiones {#mapa-analisis}
 
-| Componente | Contenido | Consulta en el libro |
-|---|---|---|
-| Resultados | Descripción de las unidades analizadas, datos faltantes y hallazgos por objetivo, con las estimaciones y su incertidumbre | [Interpretación estadística](pruebas_estadisticas.qmd#estadistica-como-interpretar-cualquier-resultado), [tamaños del efecto](tamanos_efecto.qmd) y [galería de gráficos](galeria_graficos.ipynb) |
-| Discusión | Interpretación de los hallazgos, comparación con estudios previos, limitaciones e implicaciones científicas o clínicas | [Magnitud de los efectos](tamanos_efecto.qmd#efecto-atlas-rapido) y [antecedentes](planteamiento_problema.qmd#planteamiento-2-que-se-conoce) |
-| Conclusiones | Respuesta a la pregunta de investigación, sustentada en los resultados y limitada al alcance del diseño | [Correspondencia entre pregunta, objetivo y análisis](objetivos_hipotesis.qmd#objetivos-correspondencia-entre-pregunta-objetivo-hipotesis-y-analisis) |
-
-Al presentar los resultados se distinguen los análisis especificados en el protocolo de los exploratorios. La interpretación considera la magnitud y precisión de las estimaciones, su relevancia clínica y las posibles fuentes de sesgo; la significación estadística por sí sola no basta para establecer la importancia de un hallazgo.
+| Componente | Consulta en el libro |
+|---|---|
+| Resultados: estimaciones e incertidumbre | [Interpretación estadística](pruebas_estadisticas.qmd#estadistica-como-interpretar-cualquier-resultado) · [Tamaños del efecto](tamanos_efecto.qmd) |
+| Tablas y figuras | Apoyo: [galería de gráficos](galeria_graficos.ipynb) |
+| Discusión: interpretación, comparación con la literatura y limitaciones | Apoyo: [magnitud de los efectos](tamanos_efecto.qmd#efecto-atlas-rapido) |
+| Conclusiones: respuesta a la pregunta de investigación | Sin sección propia |
 
 ## Comunicación y cierre {#mapa-comunicacion}
 
-| Componente | Contenido | Consulta en el libro |
-|---|---|---|
-| Documento final | Descripción de lo realizado, resultados, interpretación, referencias y material complementario | [Esquemas por tipo de documento](#mapa-productos) |
-| Resumen y palabras clave | Síntesis congruente con el contenido del documento; versión en inglés si se solicita | [Resumen](resumen.qmd) |
-| Difusión | Presentación de los hallazgos adecuada a la audiencia | [Resumen en lenguaje sencillo](resumen.qmd#resumen-lenguaje-sencillo) y [resumen gráfico](resumen.qmd#resumen-grafico) |
-| Cierre del proyecto | Informes correspondientes y resguardo de bases de datos, documentación y registros de análisis | [Seguimiento y cierre institucional](consideraciones.qmd#consideraciones-reforma-comites) |
+| Componente | Consulta en el libro |
+|---|---|
+| Organización del documento | [Protocolo, artículo y tesis](#mapa-productos) |
+| Resumen y palabras clave | [Estructura, redacción y versión en inglés](resumen.qmd) |
+| Comunicación a otras audiencias | [Resumen en lenguaje sencillo](resumen.qmd#resumen-lenguaje-sencillo) · [Resumen gráfico](resumen.qmd#resumen-grafico) |
+| Referencias y anexos | Sin sección propia |
+| Informes de cierre y resguardo de registros | Apoyo: [cierre institucional](consideraciones.qmd#consideraciones-reforma-comites) |
 
 ## Estructura según el tipo de documento {#mapa-productos}
 
-El protocolo describe el estudio que se propone realizar; la tesis y el artículo de investigación original presentan el estudio realizado. Los esquemas siguientes indican apartados habituales, cuyo orden y extensión se ajustan a los requisitos de la institución o revista. Otros informes y comunicaciones pueden utilizar estos componentes según su propósito y destinatarios.
-
-| Documento | Función | Contenido central |
-|---|---|---|
-| [Protocolo](#mapa-protocolo) | Presentar y sustentar el plan de investigación | Problema, objetivos y método previsto |
-| [Artículo original](#mapa-articulo) | Comunicar un estudio realizado | Introducción, métodos, resultados y discusión |
-| [Tesis](#mapa-tesis) | Presentar el trabajo de investigación para su evaluación académica | Desarrollo del estudio y elementos solicitados por el programa |
+Apartados habituales; el orden y los requisitos dependen de la institución o revista.
 
 ### Protocolo de investigación {#mapa-protocolo}
 
-1. **Identificación:** título, equipo, sede, fecha y versión.
-2. **Planteamiento:** antecedentes, problema, justificación, pregunta, objetivos e hipótesis cuando corresponda.
-3. **Método previsto:** diseño, población, criterios, muestreo, variables, procedimientos, manejo de datos, plan de análisis y tamaño de muestra.
-4. **Ética y organización:** protección de participantes y datos, autorizaciones, responsables, recursos, presupuesto y cronograma.
-5. **Documentación de apoyo:** referencias, instrumentos, formatos y anexos; resumen si se solicita.
-
-Los resultados esperados, si se solicitan, expresan expectativas. Los resultados obtenidos, su discusión y las conclusiones se incorporan al informar el estudio realizado.
+| Apartado | Componentes |
+|---|---|
+| Identificación | [Título](concordancia_general.qmd), equipo, sede, fecha y versión |
+| Resumen, si se solicita | [Síntesis del protocolo](resumen.qmd#resumen-etapa) |
+| Planteamiento | [Antecedentes, problema, justificación y pregunta](#mapa-planificacion); [objetivos e hipótesis](objetivos_hipotesis.qmd) |
+| Metodología | [Diseño, población y selección](#mapa-diseno-poblacion); [variables, procedimientos, análisis y tamaño de muestra](#mapa-mediciones-analisis) previstos |
+| Ética y organización | [Protección, autorizaciones, recursos y cronograma](#mapa-etica-factibilidad) |
+| Referencias y anexos | Fuentes citadas, instrumentos y formatos |
 
 ### Artículo de investigación original {#mapa-articulo}
 
-| Sección | Contenido |
+| Apartado | Componentes |
 |---|---|
-| Introducción | Antecedentes pertinentes, problema, justificación y objetivo |
-| Métodos | Diseño, población, selección, procedimientos, análisis y consideraciones éticas |
-| Resultados | Descripción de la muestra y hallazgos correspondientes a los objetivos |
-| Discusión | Interpretación, comparación con la literatura, limitaciones y conclusiones |
+| Título, autoría y resumen | [Título](concordancia_general.qmd), autores, afiliaciones, [resumen y palabras clave](resumen.qmd) |
+| Introducción | [Antecedentes, problema y justificación](#mapa-planificacion); [objetivo](objetivos_hipotesis.qmd#objetivos-objetivo-general) |
+| Métodos | [Metodología](#mapa-metodologia) del estudio realizado y [consideraciones éticas](consideraciones.qmd) |
+| Resultados | [Hallazgos, estimaciones, tablas y figuras](#mapa-analisis) |
+| Discusión y conclusiones | [Interpretación, limitaciones y respuesta a la pregunta](#mapa-analisis) |
+| Declaraciones | Financiamiento, conflictos de interés, contribuciones y otras declaraciones solicitadas |
+| Referencias y material suplementario | Fuentes citadas y documentación complementaria |
 
-Completan el artículo el título, la autoría, el [resumen](resumen.qmd), las palabras clave, las referencias y las declaraciones que solicite la revista. La conclusión puede integrarse a la discusión o tener un apartado propio. La [guía de reporte correspondiente al diseño](diseños_estudio.qmd#disenos-redaccion) permite revisar la información que debe incluirse al describir el estudio.
+Consulta adicional: [guías de reporte según el diseño](diseños_estudio.qmd#disenos-redaccion).
 
 ### Tesis de investigación {#mapa-tesis}
 
-#### Elementos de presentación {#mapa-tesis-presentacion}
+#### Presentación {#mapa-tesis-presentacion}
 
-Portada, firmas y avales académicos, agradecimientos e índices, según el formato institucional. Los avales de la tesis y las autorizaciones para realizar el estudio cumplen funciones distintas.
+- Portada, firmas y avales académicos.
+- Agradecimientos e índices, según el formato institucional.
 
 #### Cuerpo y documentación de apoyo {#mapa-tesis-documento}
 
-| Bloque | Apartados habituales |
+| Apartado | Componentes |
 |---|---|
-| Síntesis | Resumen, versión en inglés y palabras clave, según los requisitos del programa |
-| Planteamiento | Introducción, antecedentes o marco teórico, problema, justificación, pregunta, objetivos e hipótesis cuando corresponda |
-| Método | Metodología y consideraciones éticas del estudio realizado |
-| Hallazgos e interpretación | Resultados, discusión y conclusiones |
-| Documentación de apoyo | Referencias y anexos |
+| Resumen | [Resumen, versión en inglés y palabras clave](resumen.qmd) |
+| Planteamiento | [Introducción, antecedentes, problema, justificación y pregunta](#mapa-planificacion); [objetivos e hipótesis cuando corresponda](objetivos_hipotesis.qmd) |
+| Metodología | [Método del estudio realizado](#mapa-metodologia) y [consideraciones éticas](consideraciones.qmd) |
+| Resultados, discusión y conclusiones | [Hallazgos, interpretación y conclusiones](#mapa-analisis) |
+| Referencias y anexos | Fuentes citadas y documentación complementaria |
 
-El programa puede integrar varios componentes en un mismo capítulo o pedir apartados separados. El protocolo de tesis sigue la estructura del protocolo de investigación, con los requisitos adicionales del programa. La entrega de la tesis terminada y el examen de grado se ajustan a los requisitos de la institución.
-
-## Revisión de la congruencia del estudio {#mapa-revision}
-
-Esta revisión puede realizarse al preparar el protocolo y al redactar el informe final.
-
-| Aspecto | Criterio de revisión |
-|---|---|
-| Problema y pregunta | La pregunta se deriva del problema delimitado y de los antecedentes revisados |
-| Pregunta y objetivos | Los objetivos permiten responder la pregunta y conservan su población y alcance |
-| Objetivos y metodología | El diseño, la selección y las mediciones son adecuados para cumplir los objetivos |
-| Variables y análisis | Se dispone de las variables necesarias y se especifica un análisis apropiado para cada objetivo |
-| Resultados y conclusiones | Las conclusiones se sustentan en los resultados, sin atribuir relaciones causales o generalizar a poblaciones que el diseño no permite |
-| Protocolo e informe final | El informe describe los procedimientos realizados y explica las modificaciones respecto al protocolo |
+Para el protocolo de tesis, consultar el [esquema de protocolo](#mapa-protocolo).
