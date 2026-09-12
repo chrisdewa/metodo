@@ -21,7 +21,7 @@ book:
 
   chapters:
     - index.qmd
-    - libro/mapa_tesis.qmd
+    - libro/mapa.qmd
     - libro/planteamiento_problema.qmd
     - libro/objetivos_hipotesis.qmd
     - libro/concordancia_general.qmd
