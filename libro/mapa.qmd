@@ -27,7 +27,7 @@ Esquemas por documento: [protocolo](#mapa-protocolo) · [artículo original](#ma
 | Pregunta de investigación: interrogante que se busca responder | [Formulación, PICO y FINER](planteamiento_problema.qmd#planteamiento-la-pregunta-de-investigacion) |
 | Objetivos: lo que se estimará, describirá o evaluará | [General](objetivos_hipotesis.qmd#objetivos-objetivo-general) · [Específicos](objetivos_hipotesis.qmd#objetivos-objetivos-especificos) · [Primario y secundarios](objetivos_hipotesis.qmd#objetivos-objetivo-primario-y-objetivos-secundarios) |
 | Hipótesis, cuando corresponda: respuesta propuesta para contrastar | [Formulación y tipos](objetivos_hipotesis.qmd#objetivos-formulacion-hipotesis) |
-| Título: identificación del estudio, congruente con su planteamiento | [Concordancia entre título, pregunta, objetivos e hipótesis](concordancia_general.qmd) |
+| Título: identificación del estudio, congruente con su planteamiento | [Concordancia del protocolo](concordancia_general.qmd) |
 
 ## Metodología {#mapa-metodologia}
 
@@ -39,7 +39,7 @@ Esquemas por documento: [protocolo](#mapa-protocolo) · [artículo original](#ma
 | Población, lugar y periodo: unidades de estudio y delimitación | [Población, delimitación y unidades de estudio](poblacion.qmd) |
 | Criterios de selección: condiciones de elegibilidad | [Inclusión, exclusión y situaciones posteriores al ingreso](criterios_seleccion.qmd) |
 | Muestreo: selección de unidades entre las elegibles | [Métodos de selección e incorporación](metodologia_muestreo.qmd) |
-| Asignación a grupos: distribución de las intervenciones | [Ensayos e intervenciones no aleatorizadas](diseños_estudio.qmd#disenos-intervencionales) |
+| Asignación a grupos: distribución de las intervenciones | [Ensayos y diseños cuasiexperimentales](diseños_estudio.qmd#disenos-intervencionales) |
 
 ### Mediciones, análisis y tamaño de muestra {#mapa-mediciones-analisis}
 

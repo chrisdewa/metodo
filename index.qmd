@@ -10,7 +10,7 @@ Manual dirigido investigadores, clínicos, estudiantes, residentes y cualquier o
 ## ¡Advertencia!
 
 
-Este libro se encuentra en construcción y actualización continua. Su contenido puede estar incompleto, cambiar sin previo aviso o contener errores, por lo que no debe utilizarse como única fuente para orientar la elaboración de una tesis o protocolo de investigación.
+Este libro se encuentra en construcción y actualización continua. Su contenido puede estar incompleto, cambiar sin previo aviso o contener errores, por lo que no debe utilizarse como única fuente para orientar la elaboración de cualquier trabajo.
 :::
 
 ## Licencia

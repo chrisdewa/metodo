@@ -1,10 +1,12 @@
 ---
-title: Concordancia entre título, pregunta, objetivos e hipótesis
+title: Concordancia del protocolo
 ---
 
-La **concordancia** es la correspondencia entre el título, la pregunta, los objetivos y la hipótesis, cuando se requiere. Revisarla permite detectar cambios de población, variables o alcance antes de cerrar el protocolo. La pregunta y los objetivos orientan el diseño, la recolección de datos y el análisis. [@farrugia2010_objectives]
+La **concordancia del protocolo** es la correspondencia entre lo que se pregunta, lo que se busca conocer y el método previsto para obtener la respuesta. Se expresa en un título que delimita el estudio, objetivos que responden a la pregunta y una hipótesis que anticipa una respuesta cuando corresponde. Esta relación orienta la elección del diseño, las mediciones y el análisis. [@farrugia2010_objectives]
 
-Los enunciados deben conservar los componentes pertinentes para la pregunta. Un estudio descriptivo puede no requerir comparador ni hipótesis; consultar [cuándo no se necesita una hipótesis](objetivos_hipotesis.qmd#objetivos-cuando-no-se-necesita-una-hipotesis).
+Revisarla desde la formulación del estudio permite reconocer si el método producirá la información necesaria para cumplir el objetivo. Por ejemplo, una pregunta sobre casos nuevos requiere observar o reconstruir su aparición durante un periodo; medir únicamente los casos existentes en una consulta responde otra pregunta. Si cambia la población, el desenlace o el periodo de interés, deben revisarse los enunciados y las decisiones metodológicas relacionados.
+
+Este capítulo presenta cómo establecer y comprobar la correspondencia entre título, pregunta, objetivos e hipótesis, y su relación con el método. Deben conservarse los componentes pertinentes para cada estudio: uno descriptivo puede no requerir comparador ni hipótesis; consultar [cuándo no se necesita una hipótesis](objetivos_hipotesis.qmd#objetivos-cuando-no-se-necesita-una-hipotesis).
 
 ```{mermaid}
 flowchart TD
