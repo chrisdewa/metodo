@@ -24,6 +24,8 @@ Los ejemplos son ilustrativos y corresponden a estudios distintos. Las etiquetas
 
 Definir el parámetro principal y revisar el diseño antes de examinar los valores p. [@altman1991_practical; @agresti2018_categorical]
 
+Justificar la elección del análisis con estas comprobaciones y documentar cómo se evaluarán sus supuestos. Una propuesta que omita la estructura de los datos o responda otra pregunta requiere revisión.
+
 | Aspecto | Comprobación mínima |
 |---|---|
 | Independencia | Identificar pares, medidas repetidas y agrupación por familia, hospital u otra unidad |

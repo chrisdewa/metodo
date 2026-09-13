@@ -80,6 +80,6 @@ Leer juntos el título, la pregunta, los objetivos y la hipótesis, cuando exist
 - ¿El diseño, las mediciones y el análisis permiten obtener el resultado anunciado en el objetivo?
 - ¿El título conserva el alcance del estudio sin sugerir una población más amplia o una conclusión causal injustificada?
 
-Si se identifica una discordancia, debe corregirse el apartado correspondiente y revisarse su relación con los demás.
+Para que la revisión pueda auditarse, señalar en qué apartado se sustenta cada respuesta. Si se identifica una discordancia, registrar la decisión afectada y su justificación, corregir el apartado correspondiente y revisar su relación con los demás.
 
 El desarrollo de cada elemento se presenta en [pregunta de investigación](planteamiento_problema.qmd#planteamiento-la-pregunta-de-investigacion), [objetivo general](objetivos_hipotesis.qmd#objetivos-objetivo-general) y [formulación de hipótesis](objetivos_hipotesis.qmd#objetivos-formulacion-hipotesis). Para comprobar su aplicación al método, consultar la [correspondencia entre pregunta, objetivo, hipótesis y análisis](objetivos_hipotesis.qmd#objetivos-correspondencia-entre-pregunta-objetivo-hipotesis-y-analisis).

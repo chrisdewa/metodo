@@ -2,7 +2,7 @@
 title: Mapa de una investigación
 ---
 
-Esquema de los componentes de una investigación. Las descripciones indican qué incluye cada apartado; para su desarrollo, consultar los enlaces al libro. Los enlaces marcados como *apoyo* cubren solo parte del componente; «sin sección propia» identifica los temas aún no desarrollados.
+Esquema de los componentes de una investigación. Usarlo para localizar decisiones pendientes y comprobar qué sustenta cada apartado; los enlaces orientan su desarrollo y revisión. Los enlaces marcados como *apoyo* cubren solo parte del componente; «sin sección propia» identifica los temas aún no desarrollados.
 
 ## Vista general {#mapa-general}
 
