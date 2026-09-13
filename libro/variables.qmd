@@ -4,7 +4,7 @@ title: Variables
 
 Una variable es una característica que se registra para cada unidad de observación y que puede tomar distintos valores. En un estudio clínico puede ser una edad, un diagnóstico, una exposición, una concentración, un puntaje o un desenlace.
 
-Definir bien las variables conecta la **pregunta de investigación** con la **recolección de datos** y con el **análisis estadístico**. Una variable mal definida no se corrige después con una prueba estadística más sofisticada. @altman1991_practical
+La definición de las variables debe especificar qué datos se necesitan para responder la **pregunta de investigación**, cómo se recolectarán y cómo se utilizarán en el **análisis estadístico**. [@altman1991_practical]
 
 ::: {.callout-important}
 ## Regla básica
@@ -31,18 +31,18 @@ No todo lo que aparece en los resultados de una tesis es una variable.
 - especificidad;
 - concordancia;
 - correlación;
-- odds ratio;
-- AUC;
+- razón de momios (*odds ratio*, OR);
+- área bajo la curva ROC (AUC);
 - valor p.
 
 Estas últimas suelen ser **medidas calculadas durante el análisis** a partir de una o más variables.
 
-Por ejemplo, en un estudio de exactitud diagnóstica pueden registrarse como variables el resultado de la prueba índice y el diagnóstico establecido por el estándar de referencia. La sensibilidad, la especificidad y el AUC se calculan después a partir de esos datos.
+Por ejemplo, en un estudio de exactitud diagnóstica pueden registrarse como variables el resultado de la prueba índice y el diagnóstico establecido por el estándar de referencia. La sensibilidad y la especificidad se calculan para una regla de positividad; la curva ROC y su AUC resumen la discriminación de un resultado ordinal o cuantitativo al variar el umbral. Véanse [pruebas de diagnóstico](pruebas_diagnostico.qmd). [@bossuyt2015_stard; @zweig1993_roc]
 
 ::: {.callout-warning}
 ## Error frecuente
 
-Es incorrecto llamar «variable dependiente» a una métrica únicamente porque es el resultado principal del análisis. La concordancia, un AUC o un coeficiente de correlación son medidas calculadas a partir de la muestra, no características medidas directamente en cada participante.
+No debe llamarse «variable dependiente» a una métrica únicamente porque sea el resultado principal del análisis. La distinción depende de la **unidad de observación**: en un estudio con una fila por participante, el AUC que resume la muestra es una medida del análisis. En un estudio que compara centros, un AUC calculado para cada centro podría registrarse como variable. Las [variables derivadas](#variables-variables-derivadas) también se calculan, pero producen un valor para cada unidad.
 :::
 
 ## Papel de cada variable {#variables-papel-de-cada-variable}
@@ -53,23 +53,23 @@ El papel de una variable depende de la **pregunta de investigación**. La misma 
 |---|---|---|
 | **Desenlace** o dependiente | Lo que se desea explicar, comparar o predecir | Hospitalización |
 | **Exposición** | Factor cuya asociación con el desenlace interesa estudiar | Exposición prenatal a tabaco |
-| **Intervención** | Tratamiento o estrategia asignada | Fármaco A vs. placebo |
+| **Intervención** | Tratamiento o estrategia asignada | Fármaco A o placebo |
 | **Predictor** | Variable utilizada para estimar un desenlace | Puntaje de una prueba de tamizaje |
 | **Covariable** | Variable incluida para describir o ajustar el análisis | Edad |
-| **Confusora** | Variable que puede distorsionar la asociación entre exposición y desenlace | Edad al estudiar actividad física y mortalidad |
-| **Modificadora del efecto** | Variable para la cual el efecto puede ser diferente entre grupos o niveles | Efecto del tratamiento según gravedad basal |
+| **Confusora** | Variable cuyo control puede ser necesario para estimar el efecto causal de una exposición; por ejemplo, una causa común de la exposición y el desenlace | Edad al estudiar actividad física y mortalidad |
+| **Modificadora del efecto** | Variable entre cuyos niveles difiere el efecto, en una escala especificada, como diferencia o razón de riesgos | Efecto del tratamiento según gravedad basal |
 
-En muchos formatos institucionales se solicita clasificar las variables como **independientes** y **dependientes**. Puede utilizarse esa nomenclatura cuando sea requerida, pero debe conservarse el papel real de cada variable en la pregunta de investigación.
+También se utilizan los términos **independiente** y **dependiente**. Llamar independiente a una variable no demuestra que cause cambios en otra ni que sea estadísticamente independiente de las demás. Conviene precisar su papel en la pregunta de investigación. Estos papeles no son excluyentes: una variable puede ser confusora y modificadora del efecto. En un estudio descriptivo puede bastar con identificar las características que se describirán, sin clasificarlas como independientes y dependientes. [@vandenbroucke2007_strobe]
 
 ::: {.callout-note}
 ## No toda covariable es confusora
 
-Una variable no se convierte en confusora porque tenga `p < 0.05`, porque difiera entre grupos o porque esté disponible en la base. La decisión debe sustentarse en el conocimiento del problema y en la relación causal que se pretende estimar. Ajustar por mediadores o por consecuencias comunes de otras variables puede introducir sesgo; no se deben incluir covariables automáticamente.
+Una variable no se convierte en confusora porque tenga `p < 0.05`, porque difiera entre grupos o porque esté disponible en la base. La decisión debe sustentarse en el conocimiento del problema y en la relación causal que se pretende estimar. Para estimar el efecto total, ajustar por un **mediador** —una variable en la vía causal de la exposición al desenlace— puede bloquear parte del efecto. Ajustar por una **consecuencia común** de otras variables puede abrir una asociación ajena al efecto que se busca estimar e introducir sesgo. No deben incluirse covariables automáticamente. [@vanderweele2019_confounder]
 :::
 
 ## Tipo de variable {#variables-tipo-de-variable}
 
-Para organizar y analizar los datos es más útil comenzar distinguiendo variables **categóricas** y **cuantitativas**. @altman1991_practical @agresti2018_categorical
+Para organizar y analizar los datos es más útil comenzar distinguiendo variables **categóricas** y **cuantitativas**. [@altman1991_practical; @agresti2018_categorical]
 
 ### Variables categóricas {#variables-variables-categoricas}
 
@@ -99,14 +99,14 @@ Representan cantidades numéricas sobre las que tiene sentido calcular diferenci
 | Tipo | Característica | Ejemplo |
 |---|---|---|
 | **Discreta** | Valores contables | Número de crisis en un mes |
-| **Continua** | Puede tomar valores dentro de un intervalo | Peso, talla, concentración sérica |
+| **Continua** | Conceptualmente puede tomar cualquier valor en un intervalo, aunque se registre con precisión limitada | Peso, talla, concentración sérica |
 
-La forma en que una variable se registra puede modificar su tipo. La edad exacta puede considerarse cuantitativa continua; la edad registrada solo en años cumplidos es discreta; y «menor de 5 / 5 a 9 / 10 o más» es categórica ordinal.
+La forma en que una variable se registra puede modificar su tipo. La edad exacta puede considerarse cuantitativa continua; registrada solo en años cumplidos toma valores discretos; y «menor de 5 / de 5 a menos de 10 / 10 años o más» es categórica ordinal. Redondear una medición continua, como el peso a una décima de kilogramo, no obliga a analizarla como un conteo.
 
 ::: {.callout-caution}
 ## Evitar categorizar sin necesidad
 
-Convertir una variable cuantitativa en categorías elimina información y puede reducir la capacidad del análisis para detectar asociaciones. Si se utilizará un punto de corte, debe definirse y justificarse.
+Convertir una variable cuantitativa en categorías elimina información y puede reducir la capacidad del análisis para detectar asociaciones. Si se utilizará un punto de corte, debe definirse y justificarse; conviene conservar también el valor original. [@altman2006_dichotomising]
 :::
 
 ## Escala de medición {#variables-escala-de-medicion}
@@ -117,8 +117,8 @@ Algunas instituciones solicitan además la escala clásica de medición.
 |---|---|---|
 | **Nominal** | Categorías sin orden | Tipo de tratamiento |
 | **Ordinal** | Categorías ordenadas | Clase funcional I, II, III, IV |
-| **Intervalo** | Distancias comparables, sin cero absoluto | Temperatura en °C |
-| **Razón** | Distancias comparables y cero con significado | Peso en kg |
+| **Intervalo** | Diferencias iguales representan la misma cantidad; el cero es convencional y no permite interpretar cocientes | Temperatura en °C: 20 °C no es el doble de temperatura que 10 °C |
+| **Razón** | Diferencias comparables y cero que representa ausencia de la cantidad; permite interpretar cocientes | Peso en kg: 20 kg es el doble de 10 kg |
 
 En la práctica, para construir la base y seleccionar el análisis suele ser más importante especificar claramente si la variable será categórica o cuantitativa y cómo será registrada.
 
@@ -142,7 +142,7 @@ Ejemplo:
 
 > **Edad:** meses cumplidos entre la fecha de nacimiento registrada en el expediente y la fecha de inclusión al estudio.
 
-La definición operacional debe permitir que otra persona pueda obtener el mismo dato siguiendo el protocolo.
+La definición operacional debe permitir que otra persona aplique la misma regla de medición; la concordancia de los valores obtenidos depende también del instrumento y de los observadores.
 
 Siempre que corresponda debe especificar:
 
@@ -161,7 +161,7 @@ La fuente del dato forma parte de la definición operacional, pero no sustituye 
 
 ## Ejemplo de operacionalización {#variables-ejemplo-de-operacionalizacion}
 
-Supóngase un estudio que evalúa si un puntaje de tamizaje discrimina la presencia de una condición en la misma visita. Para que la tabla sea utilizable, deben sustituirse las referencias genéricas al instrumento y al estándar clínico por sus nombres, versiones y reglas diagnósticas.
+Supóngase un estudio que evalúa si un puntaje de tamizaje discrimina la presencia de una condición en la misma visita. En este ejemplo se supone que el puntaje toma valores enteros y que sus diferencias tienen una interpretación cuantitativa. Para que la tabla sea utilizable, deben sustituirse las referencias genéricas al instrumento y al estándar clínico por sus nombres, versiones y reglas diagnósticas.
 
 | Variable | Papel | Definición conceptual | Definición operacional | Tipo / escala | Unidad o codificación |
 |---|---|---|---|---|---|
@@ -172,7 +172,7 @@ Supóngase un estudio que evalúa si un puntaje de tamizaje discrimina la presen
 
 Un puntaje no es cuantitativo solo porque tenga números: debe comprobarse si las diferencias entre sus valores tienen una interpretación válida; algunas escalas se analizan como ordinales.
 
-El **AUC** no debe agregarse como una quinta variable. Se calculará posteriormente utilizando el puntaje y el diagnóstico.
+En esta tabla, el **AUC** no debe agregarse como una quinta variable. Se calculará posteriormente utilizando el puntaje y el diagnóstico.
 
 ## Variables derivadas {#variables-variables-derivadas}
 
@@ -183,7 +183,7 @@ Ejemplos:
 - índice de masa corporal a partir de peso y talla;
 - cambio de puntaje = puntaje final menos puntaje basal;
 - edad en meses a partir de fechas;
-- respuesta clínica definida como reducción de al menos 50 %.
+- respuesta clínica definida como reducción de al menos 50 % en un puntaje, respecto del valor basal y en un momento especificado.
 
 La regla debe quedar definida antes del análisis.
 
@@ -193,7 +193,7 @@ $$
 IMC = \frac{Peso\;(kg)}{Talla\;(m)^2}
 $$
 
-En la tabla conviene indicar que se trata de una variable derivada y especificar la fórmula o criterio utilizado.
+El resultado se expresa en $kg/m^2$. Por ejemplo, con 70 kg y 1.75 m, $IMC = 70/1.75^2 = 22.9\;kg/m^2$, redondeado a una decimal. Debe especificarse el momento de medición del peso y la talla. En la tabla conviene indicar que se trata de una variable derivada y especificar la fórmula o criterio utilizado.
 
 ## Mediciones repetidas {#variables-mediciones-repetidas}
 
@@ -215,14 +215,18 @@ En una base en formato largo, estas mediciones pueden almacenarse mediante una v
 | 001 | 4 | 114 |
 | 001 | 12 | 110 |
 
+En este ejemplo, `presion_sistolica` se expresa en mmHg. El identificador permite reconocer que las tres filas pertenecen a una misma persona; estas mediciones no deben tratarse como observaciones independientes. [@schober2018_repeated]
+
 ## Tiempo hasta un evento {#variables-tiempo-hasta-un-evento}
 
-Los desenlaces de supervivencia requieren al menos dos elementos:
+Para analizar el tiempo hasta el primer evento con censura por la derecha se registran al menos dos elementos:
 
-1. **tiempo de seguimiento**;
-2. **indicador de evento**.
+1. **tiempo observado** desde un origen definido hasta el evento o la última fecha en que se conoce el estado del participante, según el límite de seguimiento;
+2. **indicador de evento**, por ejemplo, `1 = evento observado` y `0 = censura`.
 
-Por ejemplo, «supervivencia a 12 meses» no debe operacionalizarse únicamente como una fecha. Debe definirse cuál es el evento, desde qué momento comienza el seguimiento y cómo se manejarán los participantes sin evento al terminar la observación.
+La **censura por la derecha** indica que se sabe que el participante permaneció sin el evento hasta cierto momento, pero se desconoce cuándo ocurrirá después. Deben conservarse las fechas de origen, evento y último contacto, la unidad de tiempo y el motivo de censura. [@clark2003_survival]
+
+Por ejemplo, para mortalidad por cualquier causa con seguimiento máximo de 365 días, una muerte al día 80 se registra como `tiempo_dias = 80, evento = 1`; una persona conocida viva al día 365, como `365, 0`; y una persona conocida viva hasta el día 90 y luego perdida, como `90, 0`. Esta última no debe clasificarse como viva al día 365. La censura conserva información parcial; la pérdida de seguimiento puede sesgar la estimación si se relaciona con el riesgo del evento.
 
 ## De la tabla de variables a la base de datos {#variables-de-la-tabla-de-variables-a-la-base-de-datos}
 
@@ -234,7 +238,7 @@ Para una base sencilla:
 - cada fila representa una unidad de observación;
 - cada celda contiene un solo valor.
 
-En estudios con mediciones repetidas, una persona puede ocupar varias filas, una por cada momento de observación. La estructura debe corresponder con la unidad analítica.
+En estudios con mediciones repetidas, una persona puede ocupar varias filas, una por cada momento de observación. Si se manejan distintas unidades, como personas y visitas, pueden utilizarse tablas separadas vinculadas por identificadores. Véanse [unidades y fuente de datos](poblacion.qmd#poblacion-unidades). [@wickham2014_tidy]
 
 Ejemplo adecuado:
 
@@ -279,7 +283,7 @@ Todos esos valores podrían representar lo mismo, pero el software los interpret
 
 Un dato faltante no debe registrarse como `0` salvo que cero sea realmente el valor observado.
 
-Es preferible utilizar un valor ausente reconocido por el programa, por ejemplo `NA`, y documentar su significado.
+Es preferible utilizar un valor ausente reconocido por el programa, por ejemplo `NA` en R, y documentar cómo se representará al capturar e importar los datos. La cadena de texto `NA` no se interpreta automáticamente como ausente en todos los programas.
 
 Si importa conocer la causa del dato faltante, puede registrarse en una variable adicional:
 
@@ -346,4 +350,9 @@ Antes de cerrar la tabla de variables, comprobar que:
 ## Para saber más {#variables-para-saber-mas}
 
 - [STROBE](https://www.strobe-statement.org/checklists/): para estudios observacionales, recomienda definir claramente desenlaces, exposiciones, predictores, posibles confusores y modificadores del efecto, además de describir cómo se midió cada variable.
-- [Tidy Data](https://www.jstatsoft.org/v59/i10/): describe una estructura de datos en la que cada variable corresponde a una columna y cada observación a una fila.
+- [Tidy Data](https://www.jstatsoft.org/article/view/v059i10): describe una estructura de datos en la que cada variable corresponde a una columna y cada observación a una fila.
+
+## Referencias {#variables-referencias}
+
+::: {#refs}
+:::

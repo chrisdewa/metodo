@@ -2,7 +2,7 @@
 title: Criterios de selección
 ---
 
-Establecen **quién puede participar** y **cómo se procederá ante situaciones posteriores al ingreso**. Deben concordar con la [población](poblacion.qmd), el [diseño](diseños_estudio.qmd) y los [objetivos](objetivos_hipotesis.qmd).
+Establecen **qué unidades pueden incorporarse al estudio**: personas, expedientes, muestras biológicas u otras, según la [población](poblacion.qmd), el [diseño](diseños_estudio.qmd) y los [objetivos](objetivos_hipotesis.qmd). Las reglas ante situaciones posteriores al ingreso deben especificarse por separado.
 
 
 ## Tipos de criterios {#seleccion-criterios}
@@ -11,20 +11,23 @@ Establecen **quién puede participar** y **cómo se procederá ante situaciones 
 |---|---|---|
 | **Inclusión** | Antes del ingreso: características necesarias para pertenecer al estudio | Edad ≥18 años y diagnóstico confirmado mediante una regla especificada |
 | **Exclusión** | Antes del ingreso: condición adicional que impide participar pese a cumplir la inclusión | Tratamiento concomitante que interfiera con la medición principal, con justificación |
-| **Eliminación** | Si el formato lo exige: regla preespecificada ante una situación detectada después del ingreso que afecta la permanencia o un análisis | Muestra biológica deteriorada: no utilizable para el análisis que depende de ella |
+| **Eliminación** | Cuando se utiliza este término: regla preespecificada ante una situación detectada después del ingreso que afecta la permanencia o un análisis | Muestra biológica deteriorada: no utilizable para el análisis que depende de ella |
 
-[@hulley2013_dcr; @gea2021_protocolo]
+[@hulley2013_dcr]
+
+La terminología varía entre fuentes y formatos. Algunos agrupan exclusión y eliminación bajo «no inclusión», como la guía del Hospital Gea González, que también señala que la eliminación no aplica a todos los diseños. Cualquiera que sea el nombre utilizado, es necesario distinguir la elegibilidad inicial, la permanencia en el estudio y la inclusión en cada análisis. [@gea2021_protocolo, pp. 14–15; @ich1998_e9, sección 5.2]
 
 ::: {.callout-note title="Inclusión, exclusión y eliminación"}
 
-Los **criterios de exclusión no son la negación de los criterios de inclusión**.  
+Para evitar duplicaciones, los **criterios de exclusión se reservan para condiciones adicionales a las de inclusión**.
+
 Por ejemplo, si se requiere edad ≥18 años, tener menos de 18 años significa **no cumplir un criterio de inclusión**, no cumplir un criterio de exclusión.
 
 ```{mermaid}
 flowchart LR
     A["Cumple criterios<br>de inclusión"] --> B["No presenta criterios<br>de exclusión"]
     B --> C["Ingresa al estudio"]
-    C --> D["Puede presentar criterios<br>de eliminación"]
+    C --> D["Seguimiento: registrar retiros,<br>pérdidas y datos no utilizables"]
 ```
 :::
 
@@ -45,6 +48,7 @@ flowchart LR
 | Situación | Registro y manejo |
 |---|---|
 | **Retiro del consentimiento** | Fecha y alcance del retiro; manejo de los datos conforme al consentimiento y las autorizaciones aplicables |
+| **Suspensión de la intervención** | Motivo y fecha; especificar si continúa el seguimiento. Suspender el tratamiento no equivale a retirarse del estudio |
 | **Pérdida de seguimiento** | Última información disponible e intentos de contacto; no implica borrar automáticamente los datos previos |
 | **Dato faltante** | Variable, momento y causa; manejo según el plan de análisis |
 | **Desviación del protocolo** | Tipo, momento y efecto sobre la participación o los análisis |
@@ -56,6 +60,8 @@ Véanse [registro de datos faltantes](variables.qmd#variables-valores-perdidos) 
 ## Eliminación de un análisis
 
 Un dato no utilizable puede afectar solo una medición o un desenlace. Debe indicarse **qué se excluye, de qué análisis y por qué**. Un resultado extremo, desfavorable o inesperado no justifica por sí solo retirar al participante. Los retiros y las pérdidas deben informarse por separado. [@vandenbroucke2007_strobe]
+
+En ensayos aleatorizados, el principio de **intención de tratar** busca incluir a todos los participantes aleatorizados en el grupo asignado originalmente, aunque suspendan el tratamiento o incumplan el protocolo. Preespecificar una «eliminación» no basta para justificarla: deben evaluarse sus posibles sesgos y definirse el manejo de los datos faltantes. [@ich1998_e9, sección 5.2]
 :::
 
 ## Registro y redacción {#seleccion-redaccion}

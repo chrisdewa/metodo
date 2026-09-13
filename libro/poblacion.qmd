@@ -13,7 +13,7 @@ Define **a quiénes se refieren los resultados** y **qué unidades se estudiará
 | **Población objetivo o diana** | Conjunto al que se pretende aplicar o referir los resultados. |
 | **Población fuente** | Conjunto del que proceden las unidades seleccionadas. |
 | **Población accesible** | Unidades que pueden identificarse y abordarse con los centros, registros y recursos disponibles durante el periodo definido. |
-| **Población elegible** | Unidades que cumplen los [criterios de inclusión y exclusión](criterios_seleccion.qmd#seleccion-criterios). |
+| **Población elegible** | Unidades que cumplen los criterios de inclusión y no presentan criterios de exclusión. Véanse [criterios de selección](criterios_seleccion.qmd#seleccion-criterios). |
 | **Muestra** | Subconjunto seleccionado para el estudio. Debe distinguirse entre unidades seleccionadas, incorporadas y analizadas. |
 | **Marco muestral** | Lista, mapa o sistema que identifica las unidades desde las que se seleccionará la muestra. |
 | **Censo** | Estudio de todas las unidades de una población delimitada; deben documentarse las unidades sin información. |

@@ -1,6 +1,6 @@
 # Licencia del contenido
 
-Copyright © 2026 Christian Alejandro Delaflor Wagner y Juán Antonio Suárez Cuenca.
+Copyright © 2026 Christian Alejandro Delaflor Wagner y Juan Antonio Suárez Cuenca.
 
 Salvo indicación expresa en contrario, el contenido original del **Manual Metodológico y Estadístico** (textos, tablas, ilustraciones y gráficos, incluido el contenido narrativo de los notebooks) se ofrece bajo la licencia **Creative Commons Atribución-NoComercial-SinDerivadas 4.0 Internacional (CC BY-NC-ND 4.0)**.
 

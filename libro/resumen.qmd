@@ -14,7 +14,7 @@ Antes de redactar, se deben revisar las instrucciones vigentes de la institució
 
 ## Ubicación y momento de redacción {#resumen-etapa}
 
-El resumen forma parte de la [comunicación de una investigación](mapa_tesis.qmd#mapa-comunicacion). En un informe, artículo o [tesis](mapa_tesis.qmd#mapa-tesis-documento), suele aparecer al inicio, pero conviene redactar su versión definitiva después de cerrar los resultados y las conclusiones.
+El resumen forma parte de la [comunicación de una investigación](mapa.qmd#mapa-comunicacion). En un informe, artículo o [tesis](mapa.qmd#mapa-tesis-documento), suele aparecer al inicio, pero conviene redactar su versión definitiva después de cerrar los resultados y las conclusiones.
 
 ## Tipos de resumen {#resumen-tipos}
 

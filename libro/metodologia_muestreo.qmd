@@ -13,7 +13,7 @@ Establece **cómo se seleccionarán e incorporarán las unidades** de la [poblac
 | Unidad de muestreo | Persona, institución u otra unidad; etapas si corresponde |
 | Reclutamiento | Lugar, periodo, horarios, contacto e incorporación |
 
-Si no existe un listado previo completo, debe describirse cómo se identificarán los elegibles durante el reclutamiento.
+Si no existe un listado previo completo, debe describirse cómo se identificarán los elegibles durante el reclutamiento. En un diseño multietápico, puede contarse primero con un marco de centros o áreas y construir después los listados de personas en las unidades seleccionadas.
 
 ## Métodos de muestreo {#muestreo-metodos}
 
@@ -23,11 +23,15 @@ La selección utiliza azar y probabilidades de inclusión **conocidas y mayores 
 
 | Método | Procedimiento | Aspecto que debe documentarse |
 |---|---|---|
-| **Aleatorio simple** | Selección al azar desde un marco; cada muestra posible del tamaño fijado tiene igual probabilidad | Listado y procedimiento aleatorio |
+| **Aleatorio simple sin reemplazo** | Selección al azar desde un marco; cada muestra posible del tamaño fijado tiene igual probabilidad | Listado y procedimiento aleatorio; cada unidad se selecciona una sola vez |
 | **Sistemático** | Inicio aleatorio y selección cada *k* unidades | Intervalo, inicio y revisión de periodicidad del listado |
 | **Estratificado** | División en estratos mutuamente excluyentes y selección aleatoria dentro de cada uno | Definición de estratos y tamaño asignado a cada uno |
-| **Por conglomerados** | Selección aleatoria de grupos naturales, como hospitales | Grupos seleccionados y selección de unidades dentro de ellos |
+| **Por conglomerados** | Selección aleatoria de grupos naturales, como hospitales; en una etapa se incluyen todas sus unidades elegibles | Marco de grupos y procedimiento de selección; si se selecciona una muestra dentro de ellos, describir las etapas adicionales |
 | **Multietápico** | Selección sucesiva, por ejemplo hospitales y después personas | Marco y procedimiento en cada etapa |
+
+Estos métodos pueden combinarse: por ejemplo, estratificar hospitales por región y seleccionar hospitales y personas en dos etapas. Para que el diseño sea probabilístico, cada etapa debe utilizar selección aleatoria o inclusión de todas las unidades, y permitir calcular una probabilidad de inclusión final mayor que cero para cada unidad de la población cubierta.
+
+**Ejemplo de muestreo sistemático:** con un listado de $N = 600$ unidades y una muestra de $n = 100$, el intervalo es $k = N/n = 6$. Se sortea un entero entre 1 y 6; si resulta 4, se seleccionan las posiciones 4, 10, 16, …, 598. Este procedimiento supone que $N/n$ es entero; si no lo es, debe especificarse un procedimiento de intervalo fraccionario o circular, sin redondear arbitrariamente. Antes de usarlo, debe revisarse que el orden del listado no tenga un patrón periódico que coincida con el intervalo. [@statcan_muestreo_probabilistico; @lohr2021_sampling]
 
 ### No probabilísticos
 
@@ -37,7 +41,7 @@ El procedimiento no proporciona probabilidades de inclusión conocidas. [@hulley
 |---|---|---|
 | **Consecutivo** | Invitación a todos los elegibles conforme se presentan | Periodo, horarios y regla de cierre del reclutamiento |
 | **Conveniencia** | Selección por disponibilidad o facilidad de acceso | Lugares y condiciones de acceso |
-| **Cuotas** | Incorporación hasta completar cantidades por categorías | Categorías, cantidades y selección dentro de ellas |
+| **Cuotas** | Incorporación sin selección aleatoria hasta completar cantidades por categorías | Categorías, cantidades y selección dentro de ellas |
 | **Intencional** | Selección deliberada de unidades con características de interés | Características y justificación |
 | **Bola de nieve** | Participantes iniciales refieren a otros | Selección inicial y procedimiento de referencia |
 
@@ -49,7 +53,7 @@ El **muestreo** decide qué unidades se seleccionan; la **asignación aleatoria*
 
 ## Registro del proceso {#muestreo-registro}
 
-Los números y motivos deben permitir reconstruir el paso de las unidades seleccionadas a las analizadas. [@vandenbroucke2007_strobe]
+Los números y motivos deben permitir reconstruir el paso de las unidades seleccionadas a las analizadas. En estudios observacionales, STROBE orienta este registro; en ensayos aleatorizados, CONSORT incluye además la asignación y el seguimiento por grupo. [@vandenbroucke2007_strobe; @hopewell2025_consort]
 
 ```{mermaid}
 flowchart TD
@@ -57,17 +61,19 @@ flowchart TD
     B --> C["Participantes incorporados"]
     B --> D["No incorporados: número y motivos"]
     C --> E["Unidades analizadas por desenlace"]
-    C --> F["Sin información para ese análisis: número y motivos"]
+    C --> F["No incluidas en ese análisis: número y motivos"]
 ```
 
 **Orden:** la elegibilidad puede verificarse antes de la selección si el marco ya está depurado. En muestreo consecutivo, se registran los elegibles conforme se presentan.
+
+Los datos faltantes deben informarse por variable y momento, incluso si el participante contribuye a algún análisis. Si una unidad seleccionada no participa, debe registrarse. En un diseño probabilístico, cualquier sustitución debe seguir un procedimiento preespecificado que permita calcular las probabilidades de inclusión resultantes.
 
 ::: {.callout-caution}
 ## Alcance y análisis
 
 - Una muestra grande no corrige por sí sola los sesgos de cobertura o participación.
 - La selección aleatoria en un hospital no garantiza representatividad regional.
-- Los estratos, conglomerados y ponderaciones deben incorporarse al análisis cuando corresponda.
+- En muestras probabilísticas, deben conservarse los identificadores de estratos y conglomerados y las probabilidades de inclusión. El peso básico es $w_i = 1/\pi_i$, donde $\pi_i$ es la probabilidad de inclusión de la unidad $i$; puede requerir ajustes por no respuesta. El análisis debe considerar estos elementos para estimar resultados y errores estándar.
 
 [@lohr2021_sampling; @rudolph2023_representatividad]
 :::
