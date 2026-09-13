@@ -1,20 +1,23 @@
 ---
-title: Resumen/Abstract
+title: Resumen y abstract
 ---
 
-El resumen debe permitir identificar **qué se estudió, cómo se hizo, qué se encontró y qué se concluye**. Condensa el propósito, los métodos y los hallazgos principales del trabajo. Con frecuencia es la primera parte que se consulta y muchas veces determina si el lector consultará el estudio completo. Su contenido debe corresponder con los [objetivos](objetivos_hipotesis.qmd), el [diseño](diseños_estudio.qmd) y los resultados del manuscrito. [@haynes1990_abstracts]
+El resumen permite identificar el objetivo, los métodos, los resultados principales y la conclusión de un estudio terminado. En un protocolo, sintetiza lo que se propone investigar y cómo se hará. Su contenido debe corresponder con el [objetivo primario](objetivos_hipotesis.qmd#objetivos-objetivo-primario-y-objetivos-secundarios), el [diseño](diseños_estudio.qmd) y la etapa del trabajo. [@haynes1990_abstracts]
 
 No existe una extensión universal ni una estructura válida para todos los documentos. Las tesis, los protocolos, los congresos y las revistas establecen requisitos distintos. También pueden cambiar según el tipo de contribución dentro de una misma revista.
 
-::: {.callout-important}
-## La norma del destino tiene prioridad
-
-Antes de redactar, se deben revisar las instrucciones vigentes de la institución, el congreso o la revista. Deben confirmarse, al menos, el límite de palabras, los encabezados obligatorios, el idioma, las palabras clave y la necesidad de un resumen en lenguaje sencillo o un resumen gráfico.
-:::
+Antes de redactar, registrar el límite de palabras, los encabezados obligatorios, el idioma, las palabras clave y los productos adicionales que solicite la institución, el congreso o la revista. La [secuencia de redacción](#resumen-redaccion) y la [plantilla](#resumen-plantilla) sirven como punto de partida; el formato final depende de esas instrucciones.
 
 ## Ubicación y momento de redacción {#resumen-etapa}
 
 El resumen forma parte de la [comunicación de una investigación](mapa.qmd#mapa-comunicacion). En un informe, artículo o [tesis](mapa.qmd#mapa-tesis-documento), suele aparecer al inicio, pero conviene redactar su versión definitiva después de cerrar los resultados y las conclusiones.
+
+| Etapa del trabajo | Qué debe resumirse | Qué evitar |
+|---|---|---|
+| **Protocolo** | Justificación, objetivo, diseño previsto, población, tamaño de muestra planeado, mediciones y análisis propuesto | Presentar el tamaño calculado como muestra analizada o describir resultados esperados como hallazgos |
+| **Estudio terminado** | Objetivo, métodos realizados, muestra analizada, resultados y conclusión sustentada en ellos | Copiar procedimientos planeados que no se realizaron u omitir desviaciones que cambien la interpretación |
+
+En el protocolo, describir como previstas las actividades pendientes. Si el formato solicita resultados esperados, identificarlos como expectativas y no inventar cifras. En el estudio terminado, usar pasado para lo realizado y encontrado; la conclusión puede redactarse en presente, delimitada por los datos.
 
 ## Tipos de resumen {#resumen-tipos}
 
@@ -22,10 +25,52 @@ El resumen forma parte de la [comunicación de una investigación](mapa.qmd#mapa
 
 | Tipo | Forma | Audiencia principal | Función |
 |---|---|---|---|
-| **Estructurado** | Se divide mediante encabezados explícitos. | Personal científico y clínico. | Facilita localizar rápidamente el objetivo, los métodos, los resultados y la conclusión. |
-| **No estructurado** | Se presenta como un solo párrafo, sin encabezados. | Personal científico y clínico. | Resume el estudio en una secuencia narrativa breve. |
-| **Resumen en lenguaje sencillo** (*lay abstract* o *plain-language summary*) | Texto independiente escrito sin jerga o con los términos indispensables explicados. | Pacientes, participantes, responsables de políticas y público no especializado. | Comunica por qué se hizo el estudio, qué se encontró y qué implican sus resultados. |
-| **Resumen gráfico** (*graphical abstract*) | Una imagen única que integra texto y elementos visuales. | Lectores que exploran contenidos en plataformas editoriales o medios digitales. | Permite reconocer con rapidez la pregunta, el enfoque y el hallazgo principal. |
+| [**Estructurado**](#resumen-estructurado) | Se divide mediante encabezados explícitos. | Personal científico y clínico. | Facilita localizar objetivo, métodos, resultados y conclusión. |
+| [**No estructurado**](#resumen-no-estructurado) | Un párrafo, sin encabezados. | Personal científico y clínico. | Conserva la secuencia del estudio en texto continuo. |
+| [**Lenguaje sencillo**](#resumen-lenguaje-sencillo) (*lay abstract* o *plain-language summary*) | Texto independiente con los términos indispensables explicados. | Pacientes, participantes, responsables de políticas y público no especializado. | Explica por qué se hizo el estudio, qué se encontró y cuáles son sus límites. |
+| [**Gráfico**](#resumen-grafico) (*graphical abstract*) | Una imagen que integra texto y elementos visuales. | Lectores de publicaciones y medios digitales. | Permite reconocer la pregunta, la comparación y el hallazgo principal. |
+
+## Cómo redactarlo {#resumen-redaccion}
+
+1. **Definir el destino.** Identificar la institución, revista, congreso y tipo de contribución.
+2. **Copiar los requisitos.** Registrar el límite, los encabezados y los elementos adicionales antes de escribir.
+3. **Partir del objetivo y los resultados.** En estudios terminados, seleccionar el desenlace principal y las cifras que responden a la pregunta. En protocolos, partir del objetivo y del método previsto.
+4. **Añadir los métodos indispensables.** Incluir solo los datos necesarios para interpretar los resultados.
+5. **Redactar la introducción al final.** Conservar únicamente el contexto que permite entender el objetivo.
+6. **Ajustar la conclusión.** En estudios terminados, responder al objetivo sin afirmar causalidad que el diseño no sustente ni introducir resultados nuevos. En protocolos, describir la utilidad prevista solo si el formato lo solicita.
+7. **Reducir sin perder información.** Eliminar antecedentes secundarios, detalles operativos y frases vacías antes de retirar datos esenciales.
+
+Para seleccionar las cifras, consultar [reporte de resultados estadísticos](pruebas_estadisticas.qmd#estadistica-como-interpretar-cualquier-resultado) y [magnitud y precisión del efecto](tamanos_efecto.qmd#efecto-reporte). Un valor *p* aislado no describe la magnitud del resultado ni su precisión.
+
+### Plantilla de redacción {#resumen-plantilla}
+
+Para una tesis terminada con análisis cuantitativo, puede partirse del siguiente esquema y adaptarlo al diseño y al límite de palabras:
+
+> **Introducción:** [Problema concreto y vacío de conocimiento].
+>
+> **Objetivo:** [Verbo acorde con el propósito, desenlace o parámetro y población].
+>
+> **Métodos:** Se realizó un estudio [diseño] en [lugar y periodo]. Se incluyeron [participantes y forma de selección]. Se evaluó [variable principal, comparación y momento] mediante [análisis indispensable].
+>
+> **Resultados:** Se analizaron [número total y por grupo, cuando corresponda]. [Resultado principal con unidades, denominador o medida del efecto e intervalo de confianza]. [Hallazgo adicional o limitación indispensable para interpretarlo].
+>
+> **Conclusiones:** [Respuesta al objetivo, delimitada a la población y al alcance del diseño].
+
+Los corchetes indican campos por completar con información del trabajo. Si se solicita un solo párrafo, se retiran los encabezados y se conserva la secuencia.
+
+### Ejemplo de resumen de un estudio terminado {#resumen-ejemplo}
+
+Ejemplo hipotético y breve para mostrar la correspondencia entre objetivo, método, resultado y conclusión:
+
+> **Objetivo:** Estimar la frecuencia de anemia en adultos atendidos en la consulta de la unidad X entre enero y junio de 2026.
+>
+> **Métodos:** Estudio transversal con inclusión consecutiva de adultos con medición de hemoglobina disponible. La anemia se clasificó con los criterios preespecificados en el protocolo. Se estimó la proporción de participantes con anemia y su intervalo de confianza del 95 % mediante el método de Wilson.
+>
+> **Resultados:** Se analizaron 200 participantes; 50 presentaron anemia, correspondientes al 25.0 % (IC del 95 %: 19.5 a 31.4 %).
+>
+> **Conclusión:** Una cuarta parte de los participantes presentó anemia. La inclusión consecutiva y la disponibilidad de hemoglobina limitan la extrapolación de esta frecuencia a toda la población atendida.
+
+En un resumen real, precisar los criterios diagnósticos cuando lo requieran el diseño y las instrucciones. El IC expresa incertidumbre muestral bajo el modelo; no corrige el sesgo de selección. Estos datos no identifican causas de anemia.
 
 ## Resumen estructurado {#resumen-estructurado}
 
@@ -34,7 +79,7 @@ Utiliza encabezados visibles. Los nombres y el número de secciones dependen de 
 | Sección | Contenido mínimo |
 |---|---|
 | **Introducción o importancia** | Problema que se aborda y razón para estudiarlo. Por lo general, basta con una o dos frases. |
-| **Objetivo** | Pregunta principal expresada de manera directa. |
+| **Objetivo** | Acción y parámetro o relación que se buscó estudiar, en la población definida. |
 | **Métodos** | Diseño, lugar, periodo, participantes, intervención o exposición, desenlace principal y análisis indispensable. |
 | **Resultados** | Tamaño de la muestra analizada y resultados principales cuantificados, con una medida de incertidumbre cuando corresponda. |
 | **Conclusiones** | Respuesta directa al objetivo, limitada por el diseño y los resultados observados. |
@@ -49,7 +94,7 @@ La institución o revista define los encabezados finales. La **guía de reporte 
 
 La guía orienta el contenido, mientras que las instrucciones de envío determinan su presentación. La estructura de un estudio con participantes debe adaptarse cuando las unidades analizadas sean estudios, muestras u otros registros.
 
-La revisión narrativa de Hartley encontró que los resúmenes estructurados suelen ser más informativos y fáciles de consultar, aunque también más largos. Sus resultados apoyan este formato, pero la diversidad de los estudios revisados limita las generalizaciones. [@hartley2004_abstracts]
+Los encabezados facilitan localizar la información; su presencia no garantiza que el resumen esté completo. Revisar el contenido de cada sección. [@hartley2004_abstracts]
 
 ## Resumen no estructurado {#resumen-no-estructurado}
 
@@ -65,7 +110,7 @@ En un informe de investigación terminada, la ausencia de encabezados no justifi
 
 ## Resumen en lenguaje sencillo {#resumen-lenguaje-sencillo}
 
-El resumen en lenguaje sencillo se dirige a personas que no comparten el vocabulario ni los conocimientos previos de la comunidad científica. No consiste únicamente en acortar el resumen técnico. Se requiere adaptar el orden, el vocabulario y el nivel de explicación a la audiencia. Algunas revistas lo publican como un texto separado; por ejemplo, *PLOS Genetics* solicita un *Author Summary* no técnico de 150 a 200 palabras, distinto del resumen científico. [@plosgenetics_submission]
+El resumen en lenguaje sencillo se dirige a personas que no comparten el vocabulario de la comunidad científica. Adaptar el orden, las palabras y las explicaciones a la audiencia, conservando el objetivo, los resultados y sus límites. Puede solicitarse como un texto separado; la [tabla de requisitos editoriales](#resumen-revistas) incluye un ejemplo de *Author Summary*. [@plosgenetics_submission]
 
 Debe responder, en términos comprensibles, a cinco preguntas:
 
@@ -75,11 +120,13 @@ Debe responder, en términos comprensibles, a cinco preguntas:
 - ¿Qué se encontró?
 - ¿Qué significan los resultados y cuáles son sus límites principales?
 
-Se deben conservar los datos que cambien la interpretación del estudio, como el tamaño de la muestra, la dirección del efecto y la incertidumbre relevante. Deben evitarse los acrónimos, la jerga, las fórmulas, las referencias bibliográficas y las afirmaciones más amplias que las del artículo. Cuando un término técnico sea indispensable, debe explicarse al utilizarlo por primera vez.
+Conservar los datos que cambien la interpretación: tamaño de muestra, dirección y magnitud del resultado e incertidumbre relevante. Explicar cualquier término técnico indispensable y evitar acrónimos, fórmulas y afirmaciones más amplias que las del artículo. Las referencias bibliográficas dependen del formato solicitado, aunque suelen omitirse en este producto.
+
+Por ejemplo, «50 de las 200 personas evaluadas tenían anemia, es decir, una de cada cuatro» comunica la frecuencia con su denominador. Debe acompañarse del alcance: esa proporción describe a las personas incluidas, y no necesariamente a todas las atendidas en otros lugares. Si la incertidumbre cambia la conclusión, explicarla también en palabras comprensibles.
 
 ## Resumen gráfico {#resumen-grafico}
 
-El resumen gráfico comunica una sola idea central mediante una imagen. Una organización habitual es **pregunta → método o comparación → hallazgo principal → interpretación**. Puede utilizar una figura del artículo o una imagen diseñada para este fin, si las instrucciones editoriales lo permiten. Debe comunicar el hallazgo central sin acumular todos los resultados. [@elsevier_graphical_abstract]
+El resumen gráfico comunica el hallazgo principal mediante una imagen. Organizar la pregunta, el método o comparación, el resultado y su interpretación en una secuencia de lectura clara. Puede utilizar una figura del artículo o una imagen diseñada para este fin, si las instrucciones editoriales lo permiten. [@elsevier_graphical_abstract]
 
 Debe cumplir con lo siguiente:
 
@@ -87,72 +134,13 @@ Debe cumplir con lo siguiente:
 - destacar un hallazgo principal, con cifras y unidades cuando sean necesarias;
 - utilizar poco texto y una secuencia visual inequívoca;
 - conservar la dirección y magnitud de los resultados;
+- mostrar denominadores e incertidumbre cuando cambien la interpretación;
 - ser legible en el tamaño de visualización solicitado;
 - utilizar recursos gráficos propios o con licencia compatible;
 - incluir texto alternativo cuando la plataforma lo permita;
 - respetar dimensiones, resolución, formato de archivo y tipografía indicados por la revista.
 
-La evidencia sobre su efecto es heterogénea. Algunos estudios han encontrado mayor difusión en redes sociales o mayor atención en métricas alternativas (como Altmetric), pero no un aumento consistente de las citas [@ibrahim2017_visual; @pferschy2016_graphical; @bennett2023_graphical]. Por tanto, debe elaborarse porque la revista lo solicita o porque mejora la comunicación del estudio, no como garantía de mayor impacto bibliométrico.
-
-## ¿Cuántas palabras debe tener? {#resumen-extension}
-
-Cuando no exista una norma explícita, puede utilizarse **250 a 300 palabras como extensión provisional de trabajo**. Este intervalo es una propuesta de trabajo para este manual, no un estándar metodológico. El texto final debe ajustarse al destino seleccionado.
-
-### Límites en revistas seleccionadas {#resumen-revistas}
-
-Estos ejemplos muestran por qué debe revisarse cada destino. Se presentan requisitos para investigación original; otros tipos de contribución pueden tener límites distintos o no requerir resumen. Cada nombre enlaza con las instrucciones editoriales de consulta.
-
-| Revista | Tipo de contribución consultado | Límite o referencia editorial | Formato principal | Elemento adicional |
-|---|---|---:|---|---|
-| [*The New England Journal of Medicine*](https://www.nejm.org/author-center/new-manuscripts) | Original Article | 250 palabras | Estructurado | Registro del ensayo, cuando corresponda. |
-| [*The Lancet*](https://www.lancet.com/pb/assets/raw/Lancet/authors/Rctguidelines.pdf) | Ensayo aleatorizado (Article) | 300 palabras | Estructurado | Incluye *Funding*. |
-| [*JAMA*](https://jamanetwork.com/journals/jama/pages/instructions-for-authors) | Original Investigation | 350 palabras | Estructurado | *Key Points* aparte. |
-| [*Nature Medicine*](https://www.nature.com/nm/content) | Article | 150 palabras | No estructurado | Sin referencias. |
-| [*PLOS Medicine*](https://journals.plos.org/plosmedicine/s/submission-guidelines) | Research Article | Preferencia: ≤300; máximo: 500 palabras | Estructurado | *Background*, *Methods and Findings*, *Conclusions*. |
-| [*Nature*](https://www.nature.com/nature/for-authors/formatting-guide) | Article | Idealmente ≤200 palabras | No estructurado | Párrafo-resumen con referencias, dirigido a otras disciplinas. |
-| [*Nature Communications*](https://www.nature.com/ncomms/submit/article) | Article | 200 palabras | No estructurado | Sin referencias; lenguaje no técnico. |
-| [*PLOS Genetics*](https://journals.plos.org/plosgenetics/s/submission-guidelines) | Research Article | 300 palabras | No estructurado | *Author Summary* de 150–200 palabras. |
-
-**Revisión editorial:** 11 de septiembre de 2026. Los límites cambian y deben verificarse nuevamente antes de cada envío. También debe confirmarse qué elementos entran en el conteo: los encabezados, el registro del estudio, el financiamiento o las palabras clave pueden tratarse de manera diferente.
-
-## Cómo redactarlo {#resumen-redaccion}
-
-1. **Definir el destino.** Identificar la institución, revista, congreso y tipo de contribución.
-2. **Copiar los requisitos.** Registrar el límite, los encabezados y los elementos adicionales antes de escribir.
-3. **Partir del objetivo y los resultados.** Seleccionar primero el desenlace principal y las cifras que responden a la pregunta.
-4. **Añadir los métodos indispensables.** Incluir solo los datos necesarios para interpretar los resultados.
-5. **Redactar la introducción al final.** Conservar únicamente el contexto que permite entender el objetivo.
-6. **Ajustar la conclusión.** No afirmar causalidad en estudios que no la sustentan ni introducir resultados nuevos.
-7. **Reducir sin perder información.** Eliminar antecedentes secundarios, detalles operativos y frases vacías antes de retirar datos esenciales.
-
-Para seleccionar las cifras, consultar [Interpretación de pruebas estadísticas](pruebas_estadisticas.qmd) y [Tamaños del efecto](tamanos_efecto.qmd). Un valor *p* aislado no describe la magnitud del resultado ni su precisión.
-
-### Plantilla de redacción {#resumen-plantilla}
-
-Para una tesis terminada con análisis cuantitativo, puede partirse del siguiente esquema y adaptarlo al diseño y al límite de palabras:
-
-> **Introducción:** [Problema concreto y vacío de conocimiento].
->
-> **Objetivo:** [Verbo analítico, desenlace o parámetro y población].
->
-> **Métodos:** Se realizó un estudio [diseño] en [lugar y periodo]. Se incluyeron [participantes y forma de selección]. Se evaluó [variable principal, comparación y momento] mediante [análisis indispensable].
->
-> **Resultados:** Se analizaron [número total y por grupo, cuando corresponda]. [Resultado principal con unidades, denominador o medida del efecto e intervalo de confianza]. [Hallazgo adicional o limitación indispensable para interpretarlo].
->
-> **Conclusiones:** [Respuesta al objetivo, delimitada a la población y al alcance del diseño].
-
-Los corchetes indican campos por completar con información del trabajo. Si se solicita un solo párrafo, se retiran los encabezados y se conserva la secuencia.
-
-::: {.callout-tip}
-## Informar el resultado, no solo su significación
-
-**Ejemplo ficticio de un estudio transversal:**
-
-- **Impreciso:** «Se encontró una elevada frecuencia de anemia».
-- **Informativo:** «De 200 participantes, 50 presentaron anemia: prevalencia de 25 % (intervalo de confianza del 95 %: 19.5–31.4 %, método de Wilson)».
-
-La conclusión debe referirse a la población estudiada y considerar el muestreo. Estos datos, por sí solos, no identifican causas de anemia ni justifican extrapolar la prevalencia a toda la población.
-:::
+Elegir el recurso visual según la información: una [comparación de estimaciones con IC](galeria_graficos.ipynb#galeria-estimacion-puntual-e-ic-95), una [proporción](galeria_graficos.ipynb#galeria-barras-proporcionales-apiladas) o un esquema del procedimiento, según corresponda. Evitar iconos decorativos que ocupen el espacio necesario para interpretar las cifras.
 
 ## Versión en inglés y palabras clave {#resumen-abstract}
 
@@ -174,17 +162,35 @@ Las **palabras clave** se presentan aparte del cuerpo del resumen, en la cantida
 | Afirmar causalidad a partir de una asociación sin sustento suficiente | Ajustar la conclusión al diseño, el análisis y sus limitaciones. |
 | Mantener cifras diferentes en español e inglés | Cotejar ambas versiones contra las tablas y el texto final. |
 
-## Revisión final {#resumen-revision-final}
+## Cotejo con el manuscrito {#resumen-revision-final}
 
-- Se revisaron las normas vigentes del destino y del tipo de contribución.
-- El objetivo coincide con el objetivo principal del trabajo.
-- El diseño, los participantes y el desenlace principal pueden identificarse.
-- En trabajos terminados, se informa el número de participantes o unidades analizadas.
-- En estudios cuantitativos terminados, el resultado principal está cuantificado y, cuando corresponde, incluye incertidumbre.
-- En trabajos terminados, la conclusión responde al objetivo y no excede lo que permite el diseño; en protocolos, las expectativas no se presentan como hallazgos.
-- No se presentan datos, interpretaciones ni abreviaturas que no aparezcan en el texto.
-- No se incluyen citas, salvo que la norma las permita o las exija.
-- Se cumple el límite de palabras y se verificó qué elementos incluye el conteo.
-- Las versiones del resumen en español e inglés, cuando se solicitan, coinciden en contenido y cifras.
-- Las palabras clave se eligieron de acuerdo con el vocabulario solicitado, como DeCS o MeSH, cuando corresponda.
-- El resumen en lenguaje sencillo y el resumen gráfico, si se solicitan, comunican el mismo hallazgo principal que el resumen científico.
+Antes de entregar, comparar el resumen con la versión definitiva del trabajo:
+
+| Elemento | Comprobar contra… |
+|---|---|
+| Objetivo, diseño y población | Objetivo primario y métodos; distinguir lo planeado de lo realizado |
+| Participantes y resultados | Diagrama de selección, tablas y análisis; revisar denominadores, unidades, dirección e IC |
+| Conclusión | Resultado principal y limitaciones del diseño |
+| Idiomas y productos adicionales | Mismas cifras, hallazgo principal e incertidumbre, con lenguaje adaptado a cada audiencia |
+| Extensión y presentación | Instrucciones del destino: conteo, encabezados, abreviaturas, citas permitidas y palabras clave |
+
+## Extensión y requisitos editoriales {#resumen-extension}
+
+Cuando no exista una norma explícita, puede utilizarse **250 a 300 palabras como extensión provisional de trabajo**. Este intervalo es una propuesta de trabajo para este manual, no un estándar metodológico. El texto final debe ajustarse al destino seleccionado.
+
+### Límites en revistas seleccionadas {#resumen-revistas}
+
+La tabla conserva los requisitos registrados en la revisión editorial del **11 de septiembre de 2026**, para los tipos de contribución indicados. Sirve para comparar formatos, no para sustituir la consulta de las instrucciones antes del envío. Otros tipos de contribución pueden tener límites distintos o no requerir resumen.
+
+| Revista | Tipo de contribución consultado | Límite o referencia editorial | Formato principal | Elemento adicional |
+|---|---|---:|---|---|
+| [*The New England Journal of Medicine*](https://www.nejm.org/author-center/new-manuscripts) | Original Article | 250 palabras | Estructurado | Registro del ensayo, cuando corresponda. |
+| [*The Lancet*](https://www.lancet.com/pb/assets/raw/Lancet/authors/Rctguidelines.pdf) | Ensayo aleatorizado (Article) | 300 palabras | Estructurado | Incluye *Funding*. |
+| [*JAMA*](https://jamanetwork.com/journals/jama/pages/instructions-for-authors) | Original Investigation | 350 palabras | Estructurado | *Key Points* aparte. |
+| [*Nature Medicine*](https://www.nature.com/nm/content) | Article | 150 palabras | No estructurado | Sin referencias. |
+| [*PLOS Medicine*](https://journals.plos.org/plosmedicine/s/submission-guidelines) | Research Article | Preferencia: ≤300; máximo: 500 palabras | Estructurado | *Background*, *Methods and Findings*, *Conclusions*. |
+| [*Nature*](https://www.nature.com/nature/for-authors/formatting-guide) | Article | Idealmente ≤200 palabras | No estructurado | Párrafo-resumen con referencias, dirigido a otras disciplinas. |
+| [*Nature Communications*](https://www.nature.com/ncomms/submit/article) | Article | 200 palabras | No estructurado | Sin referencias; lenguaje no técnico. |
+| [*PLOS Genetics*](https://journals.plos.org/plosgenetics/s/submission-guidelines) | Research Article | 300 palabras | No estructurado | *Author Summary* de 150–200 palabras. |
+
+Confirmar qué elementos entran en el conteo: encabezados, registro, financiamiento o palabras clave pueden tratarse de manera diferente. Los requisitos de esta tabla deben verificarse nuevamente antes de cada envío.

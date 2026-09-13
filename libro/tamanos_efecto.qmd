@@ -2,312 +2,268 @@
 title: Tamaños del efecto
 ---
 
-Un contraste **estadísticamente significativo** aporta evidencia contra su hipótesis nula, bajo los supuestos del análisis, pero no dice **qué tan grande** es la diferencia o asociación. Para describir su magnitud se utiliza un **tamaño del efecto** [@sullivan2012; @fritz2012].
+Un **tamaño del efecto** cuantifica una diferencia o asociación. Puede ser una diferencia de medias en unidades originales, una razón de riesgos o una medida estandarizada. Se reporta junto con su intervalo de confianza (IC), con independencia de que el contraste resulte estadísticamente significativo. [@sullivan2012; @fritz2012]
 
-Lo mismo ocurre al estudiar asociaciones: además de indicar si existe evidencia de asociación, interesa describir **su dirección y magnitud**.
-
-::: {.callout-important}
-## Idea clave
-
-Cuando se describe una diferencia o asociación, conviene reportar una medida de tamaño del efecto y, cuando esté disponible, su intervalo de confianza.
-:::
-
-Las diferencias en unidades originales y las medidas absolutas de riesgo suelen ser las más útiles para valorar relevancia clínica. La estandarización no es obligatoria.
+Elegir la medida según el objetivo, el diseño y la escala del desenlace. Las unidades originales y las diferencias absolutas de riesgo suelen facilitar la valoración clínica; la estandarización es útil cuando se necesita expresar una diferencia respecto a la variabilidad de las mediciones. Una medida denominada «efecto» no demuestra por sí sola causalidad.
 
 ## Medidas según el análisis {#efecto-medidas-segun-el-analisis}
 
-JASP, jamovi, SPSS y otros programas pueden producir muchas de estas medidas directamente, aunque con frecuencia hay que solicitarlas de forma explícita.
+Definir el orden de la comparación, la categoría de referencia y las unidades antes de interpretar el signo. Para elegir el contraste y revisar sus supuestos, consultar [pruebas estadísticas](pruebas_estadisticas.qmd#estadistica-resumen-rapido).
 
-Antes de exportar un análisis, conviene revisar opciones como **Effect size**, **Estimates** o **Confidence intervals**.
+### Consulta de medidas y valores nulos {#efecto-atlas-rapido}
 
-| Análisis | Tamaño del efecto |
-|---|---|
-| Prueba $t$ | Diferencia de medias; $d$ de Cohen o $g$ de Hedges si se requiere estandarizar |
-| Mann-Whitney / Wilcoxon | Correlación biserial por rangos |
-| Prueba no paramétrica con $Z$ | $r$ de Rosenthal |
-| Correlación de Pearson | $r$ |
-| Correlación de Spearman | $\rho$ |
-| $\chi^2$ | $V$ de Cramér |
-| Tabla $2\times2$ | Diferencia de riesgos, riesgo relativo (RR) u odds ratio (OR), según el diseño |
-| ANOVA | $\eta^2$, $\eta^2$ parcial u $\omega^2$, según el diseño |
-| Regresión lineal | $B$ o $\beta$ |
-| Regresión logística | OR |
+| Análisis o resultado | Medida | Valor nulo | Lectura básica |
+|---|---|---:|---|
+| Dos medias independientes | Diferencia de medias; [d de Cohen](#efecto-d-de-cohen) o [g de Hedges](#efecto-g-de-hedges) | 0 | Diferencia en unidades originales o estandarizada |
+| Dos mediciones pareadas | Cambio medio; [d pareada](#efecto-d-pareada) | 0 | Cambio dentro de cada participante, con denominador acorde con el diseño |
+| Mann-Whitney o Wilcoxon | [Correlación biserial por rangos](#efecto-correlacion-biserial-por-rangos) | 0 | Balance de comparaciones o de rangos, según la versión |
+| Prueba por rangos con estadístico Z | [r de Rosenthal](#efecto-r-de-rosenthal) | 0 | Efecto derivado de Z y del número de unidades analizadas |
+| Correlación de Pearson o Spearman | [r o ρ](#efecto-correlaciones-r-y-rho) | 0 | Asociación lineal o monotónica |
+| Chi-cuadrada de independencia u homogeneidad | [V de Cramér](#efecto-v-de-cramer) | 0 | Intensidad de asociación categórica, sin dirección |
+| Riesgos en dos grupos | [RR y diferencia de riesgos](#efecto-riesgo-relativo-y-diferencia-de-riesgos) | 1 para RR; 0 para la diferencia | Comparación relativa y absoluta en un periodo definido |
+| Tabla 2 × 2 o regresión logística | [Odds ratio (OR)](#efecto-odds-ratio) | 1 | Razón de odds, según el diseño y el ajuste |
+| ANOVA | [η², η² parcial u ω²](#efecto-anova) | 0 | Variabilidad asociada con un factor, según el denominador |
+| Regresión lineal | [Coeficiente no estandarizado](#efecto-b-coeficiente-no-estandarizado) o [estandarizado](#efecto-beta-coeficiente-estandarizado) | 0 | Cambio medio por unidad del predictor o en desviaciones estándar |
+| Regresión de Cox | [Hazard ratio (HR)](pruebas_estadisticas.qmd#estadistica-supervivencia) | 1 | Razón de tasas instantáneas de evento |
 
-::: {.callout-note}
-## No siempre hace falta otra medida
-
-En una correlación, $r$ o $\rho$ ya son tamaños del efecto. En una regresión, los coeficientes del modelo también describen la magnitud de la asociación.
-:::
-
----
+En una correlación, el coeficiente ya es una medida del efecto; no hace falta añadir otra solo para acompañarlo. Solicitar al programa la estimación y su IC, e identificar qué versión calcula. Las medidas de esta tabla no comparten una misma escala: un valor de 0.40 puede significar cosas distintas según la medida.
 
 ## d de Cohen {#efecto-d-de-cohen}
 
-La $d$ de Cohen expresa una diferencia entre dos medias en **unidades de desviación estándar** [@cohen1988].
+La $d$ de Cohen expresa una diferencia entre dos medias en **unidades de desviación estándar (DE)**. La siguiente versión corresponde a dos grupos independientes y utiliza una DE combinada. [@cohen1988]
 
 $$
-d=\frac{\bar{x}_1-\bar{x}_2}{s_p}
+d=\frac{\bar{x}_1-\bar{x}_2}{s_p},\qquad
+s_p=\sqrt{\frac{(n_1-1)s_1^2+(n_2-1)s_2^2}{n_1+n_2-2}}
 $$
 
-Esta fórmula corresponde a **dos grupos independientes**; $s_p$ es la desviación estándar combinada. Deben indicarse el orden de los grupos y el denominador utilizado, especialmente si las varianzas difieren.
+| Símbolo | Dato requerido |
+|---|---|
+| $\bar{x}_1,\bar{x}_2$ | Medias de los grupos, en la misma escala |
+| $s_1,s_2$ | DE muestrales de cada grupo; no errores estándar |
+| $n_1,n_2$ | Participantes de cada grupo, al menos dos por grupo |
+| $s_p$ | DE combinada, mayor que cero |
 
-Para datos pareados puede usarse $d_z=\bar D/s_D$, donde $D$ es la diferencia individual y $s_D$ su desviación estándar. No es intercambiable con la $d$ de grupos independientes. [@fritz2012]
+**Ejemplo:** 25 participantes por grupo, medias de 16 y 10 puntos y DE de 10 puntos en ambos grupos:
 
-| $\lvert d\rvert$ | Referencia aproximada |
+$$
+s_p=\sqrt{\frac{24(10^2)+24(10^2)}{48}}=10,\qquad
+ d=\frac{16-10}{10}=0.60
+$$
+
+La media del grupo 1 es 6 puntos mayor, equivalentes a 0.60 DE combinadas. El signo corresponde al orden grupo 1 menos grupo 2.
+
+La DE combinada representa una variabilidad común cuando ese supuesto es razonable. Si las dispersiones difieren, justificar el denominador elegido y reportar también la diferencia en unidades originales. Un valor de $d$ no es un porcentaje ni está limitado a −1 y 1.
+
+| Valor de referencia de $\lvert d\rvert$ | Etiqueta convencional |
 |---:|---|
-| 0.20 | pequeña |
-| 0.50 | moderada |
-| 0.80 | grande |
+| 0.20 | Pequeño |
+| 0.50 | Moderado |
+| 0.80 | Grande |
 
-**Ejemplo:** `d = 0.62`
+Estas referencias de Cohen sirven como orientación cuando falta contexto; no son umbrales clínicos ni obligan a clasificar todos los resultados. Una diferencia de 6 puntos puede ser importante o irrelevante según la escala y el desenlace. [@cohen1988; @fritz2012]
 
-La media de un grupo difiere de la del otro en 0.62 desviaciones estándar: una diferencia de magnitud moderada a grande.
+### d para mediciones pareadas {#efecto-d-pareada}
 
-::: {.callout-caution}
-## Los puntos de corte son orientativos
+Para dos mediciones de los mismos participantes puede usarse:
 
-Los valores 0.20, 0.50 y 0.80 son convenciones. La importancia de una diferencia depende del desenlace y del contexto [@cohen1988; @fritz2012].
-:::
+$$
+d_z=\frac{\bar D}{s_D}
+$$
 
-::: {.callout-note}
-## Herramienta para entender mejor
+$D$ es la diferencia individual, por ejemplo final menos basal; $\bar D$ es su media y $s_D$ su DE, mayor que cero. Con cambio medio de −3 puntos y DE de las diferencias de 5 puntos, $d_z=-3/5=-0.60$.
 
-La visualización interactiva [Understanding Cohen's d](https://rpsychologist.com/cohend/) permite observar cómo cambia la separación entre dos distribuciones conforme aumenta el tamaño del efecto.
-:::
----
+Este denominador utiliza la variabilidad del cambio, no la DE de una medición aislada. Indicar la versión pareada utilizada: $d_z$ no es intercambiable con la $d$ de grupos independientes. Para la inferencia, los pares deben ser independientes entre sí. [@fritz2012]
 
 ## g de Hedges {#efecto-g-de-hedges}
 
-La $g$ de Hedges es una diferencia estandarizada de medias similar a $d$, pero corrige parte de su sesgo en muestras pequeñas [@hedges1981].
+La $g$ de Hedges corrige el sesgo de la diferencia estandarizada de medias, especialmente relevante con pocos participantes. Para la versión de dos grupos independientes con DE común: [@hedges1981]
 
-Se interpreta prácticamente igual que la $d$ de Cohen.
+$$
+g=J(\nu)d,\qquad \nu=n_1+n_2-2,\qquad
+J(\nu)\approx1-\frac{3}{4\nu-1}
+$$
 
-**Ejemplo:** `g = -0.74`
+$\nu$ son los grados de libertad y $J$ el factor de corrección. La expresión de $J$ es una aproximación; el programa puede utilizar el factor exacto. Se mantienen los supuestos y el denominador de la $d$ anterior.
 
-La diferencia tiene una magnitud moderada a grande. El signo indica la dirección de la comparación.
+Con 25 participantes por grupo y $d=0.60$:
 
-::: {.callout-note}
-## Cohen o Hedges
+$$
+\nu=48,\qquad g\approx\left(1-\frac{3}{191}\right)(0.60)=0.59
+$$
 
-$d$ y $g$ responden a la misma pregunta. No representan dos efectos distintos. En muestras grandes suelen ser muy similares.
-:::
-
----
+Se interpreta como una diferencia estandarizada de aproximadamente 0.59. $d$ y $g$ describen el mismo contraste; la corrección no modifica la diferencia observada de 6 puntos ni su relevancia clínica.
 
 ## Tamaño del efecto en ANOVA {#efecto-anova}
 
-En un ANOVA de una vía, $\eta^2$ es la proporción de la variabilidad total atribuible estadísticamente a diferencias entre los grupos. Por ejemplo, $\eta^2=0.16$ corresponde al 16 % de la variabilidad observada; no implica que el tratamiento cause ese porcentaje de cambio. [@cohen1988]
+Estas medidas resumen la proporción de variabilidad asociada con un factor. Debe identificarse el denominador: $\eta^2$ y $\eta_p^2$ pueden diferir en diseños con varios factores. [@cohen1988; @fritz2012]
 
-$\eta^2$ parcial utiliza como denominador la variabilidad del efecto más su error, y puede diferir de $\eta^2$ en diseños con varios factores. $\omega^2$ corrige parte del sesgo de estimación. Debe especificarse cuál se reporta; no son medidas intercambiables ni identifican qué grupos difieren. [@fritz2012]
+| Medida | Fórmula | Aplicación |
+|---|---|---|
+| Eta cuadrada | $\eta^2=SC_{efecto}/SC_{total}$ | Variabilidad del efecto respecto a la total |
+| Eta cuadrada parcial | $\eta_p^2=SC_{efecto}/(SC_{efecto}+SC_{error})$ | Variabilidad del efecto respecto al efecto y su error correspondiente |
+| Omega cuadrada | $\omega^2=(SC_{efecto}-gl_{efecto}CM_{error})/(SC_{total}+CM_{error})$ | Corrección de sesgo para el ANOVA clásico de una vía entre grupos independientes |
+
+**SC** significa suma de cuadrados; **gl**, grados de libertad; y **CM**, cuadrado medio ($CM_{error}=SC_{error}/gl_{error}$). Estos valores se obtienen de la tabla del ANOVA. Para medidas repetidas u otros modelos se necesita la versión compatible con el diseño; no trasladar automáticamente la fórmula de $\omega^2$ anterior.
+
+Por ejemplo, si $SC_{efecto}=120$ y $SC_{total}=600$, $\eta^2=0.20$: el 20 % de la variabilidad observada se asocia estadísticamente con diferencias entre grupos. No significa que el tratamiento haya producido un cambio del 20 % en cada participante.
+
+En el ANOVA de una vía, $\eta^2$ y $\eta_p^2$ coinciden. La estimación de $\omega^2$ puede ser negativa por variación muestral; si el programa la limita a cero, indicar esa convención. Ninguna de estas medidas identifica qué grupos difieren; consultar [interpretación del ANOVA](pruebas_estadisticas.qmd#estadistica-anova-de-una-via).
 
 ## Correlación biserial por rangos {#efecto-correlacion-biserial-por-rangos}
 
-La correlación biserial por rangos ($r_{rb}$) es una medida de efecto útil para comparaciones basadas en rangos, como Mann-Whitney o Wilcoxon [@kerby2014].
+La correlación biserial por rangos ($r_{rb}$) describe un balance a favor de una dirección de la comparación, en una escala de −1 a 1. Su definición cambia entre grupos independientes y datos pareados. [@kerby2014]
 
-Va de $-1$ a $1$:
+### Grupos independientes
 
-- el **signo** indica la dirección;
-- el **valor absoluto** indica la magnitud;
-- valores cercanos a 0 indican poca separación.
+Comparar cada valor del grupo A con cada valor del grupo B. Si $N_>$ es el número de comparaciones en las que A supera a B y $N_<$ las de sentido contrario:
 
-Para dos grupos independientes, puede expresarse como $r_{rb}=P(X_A>X_B)-P(X_A<X_B)$, con el signo definido por ese orden. Los empates aportan cero. Para datos pareados se utiliza el balance de las sumas de rangos positivos y negativos. No deben trasladarse automáticamente los cortes de Pearson a esta medida. [@kerby2014]
+$$
+r_{rb}=\frac{N_>-N_<}{n_A n_B}
+$$
 
-**Ejemplo:** `r_rb = 0.43`
+Hay $n_A n_B$ comparaciones posibles. Los empates aportan cero al numerador y permanecen en el denominador. La medida estima $P(X_A>X_B)-P(X_A<X_B)$.
 
-En dos grupos independientes, indica un balance de 0.43 a favor de que un valor del grupo definido como positivo supere al del otro. En la versión pareada describe el balance de rangos de las diferencias; debe especificarse cuál se calculó.
+**Ejemplo de cálculo:** A contiene los valores 3 y 4; B, los valores 1 y 4. De las cuatro comparaciones, dos favorecen a A, una favorece a B y una es empate:
 
-::: {.callout-warning}
-## Revisar la dirección
+$$r_{rb}=\frac{2-1}{4}=0.25$$
 
-El signo depende del orden de los grupos o de cómo el programa define las diferencias. La categoría de referencia debe verificarse antes de interpretarlo.
-:::
+El valor positivo indica un balance a favor de A; no significa una diferencia del 25 % entre medias o medianas. Un balance de cero tampoco demuestra igualdad de distribuciones.
 
----
+### Datos pareados
+
+En Wilcoxon, una versión utiliza las sumas de rangos positivos ($W_+$) y negativos ($W_-$) de las diferencias individuales:
+
+$$r_{rb}=\frac{W_+-W_-}{W_++W_-}$$
+
+Para esta versión, excluir las diferencias cero, ordenar las restantes por su valor absoluto y asignar rangos medios en los empates. El denominador debe ser mayor que cero. Indicar cómo se definió la diferencia y qué tratamiento de ceros utiliza el programa; existen otras convenciones.
+
+No trasladar automáticamente los cortes de Pearson a estas medidas. Para los supuestos de los contrastes, consultar [Mann-Whitney](pruebas_estadisticas.qmd#estadistica-mann-whitney-u) y [Wilcoxon](pruebas_estadisticas.qmd#estadistica-wilcoxon-de-rangos-con-signo).
 
 ## r de Rosenthal {#efecto-r-de-rosenthal}
 
-Cuando una prueba no paramétrica produce un estadístico $Z$, puede obtenerse un tamaño del efecto tipo $r$ [@fritz2012]:
+Cuando una prueba por rangos produce un estadístico normalizado $Z$, puede calcularse: [@fritz2012]
 
-$$
-r=\frac{Z}{\sqrt{N}}
-$$
+$$r=\frac{Z}{\sqrt{N}}$$
 
-Para Mann-Whitney, $N=n_1+n_2$. En Wilcoxon pareado, las convenciones de $N$ pueden variar entre programas: indicar si se usan pares efectivos o mediciones totales y cómo se tratan las diferencias cero. No comparar valores calculados con denominadores distintos. Esta fórmula requiere la aproximación normal $Z$; un valor p exacto por sí solo no la determina.
+| Contraste | Denominador |
+|---|---|
+| Mann-Whitney | $N=n_1+n_2$, total de participantes de ambos grupos |
+| Wilcoxon pareado | Indicar si $N$ cuenta pares efectivos u otra unidad, y cómo se trataron las diferencias cero |
 
-| $\lvert r\rvert$ | Referencia aproximada |
-|---:|---|
-| 0.10 | pequeña |
-| 0.30 | moderada |
-| 0.50 | grande |
+**Ejemplo:** con $Z=-2.4$ y $N=100$, $r=-2.4/\sqrt{100}=-0.24$. El signo sigue la convención del estadístico; comprobar el orden de la comparación antes de interpretarlo.
 
-**Ejemplo:** `r = 0.36`
-
-El efecto tiene una magnitud moderada.
-
-::: {.callout-note}
-## No es Pearson
-
-Esta $r$ se deriva del estadístico $Z$. Comparte una escala similar, pero no es una correlación de Pearson.
-:::
-
----
+Esta $r$ no es una correlación de Pearson. Requiere el estadístico $Z$ de la aproximación normal: un valor p exacto no basta para reconstruirla. No comparar valores calculados con unidades distintas de $N$ ni usar etiquetas de magnitud como sustituto de la interpretación del desenlace.
 
 ## Correlaciones: r y rho {#efecto-correlaciones-r-y-rho}
 
-Los coeficientes de Pearson ($r$) y Spearman ($\rho$) ya describen la **dirección y magnitud** de una asociación [@schober2018].
+Los coeficientes de Pearson ($r$) y Spearman ($\rho$) ya describen dirección y magnitud de asociación. Ambos varían entre −1 y 1 cuando están definidos, pero resumen relaciones distintas. [@schober2018]
 
-| Valor absoluto | Referencia aproximada |
-|---:|---|
-| 0.10 | pequeña |
-| 0.30 | moderada |
-| 0.50 | grande |
+| Coeficiente | Ejemplo | Interpretación |
+|---|---|---|
+| Pearson | $r=-0.58$ | Asociación lineal negativa; al aumentar una variable, la otra tiende a disminuir |
+| Spearman | $\rho=0.41$ | Asociación monotónica positiva basada en rangos; no exige una relación lineal |
 
-Estos cortes son convenciones de Cohen para correlaciones, no umbrales clínicos ni una escala universal para todos los coeficientes. [@cohen1988]
+Un valor cero indica ausencia de la asociación resumida por el coeficiente, no ausencia de cualquier relación. Revisar el [diagrama de dispersión](galeria_graficos.ipynb#galeria-diagrama-de-dispersion), los valores atípicos y la independencia entre participantes. Los métodos de inferencia se describen en [correlación](pruebas_estadisticas.qmd#estadistica-correlacion).
 
-**Ejemplo:** `r = -0.58`
-
-Existe una asociación negativa de magnitud grande: conforme aumenta una variable, la otra tiende a disminuir.
-
-**Ejemplo:** `rho = 0.41`
-
-Existe una asociación monotónica positiva de magnitud moderada.
-
-::: {.callout-important}
-## Correlación no implica causalidad
-
-Una correlación grande describe una asociación fuerte. No demuestra que una variable cause cambios en la otra.
-:::
-
----
+Las referencias de 0.10, 0.30 y 0.50 para magnitudes pequeña, moderada y grande son convenciones de Cohen, no umbrales clínicos ni una escala universal para todos los coeficientes. Una correlación alta no demuestra causalidad ni [concordancia entre métodos](galeria_graficos.ipynb#galeria-blandaltman). [@cohen1988]
 
 ## V de Cramér {#efecto-v-de-cramer}
 
-La $V$ de Cramér describe la **magnitud de la asociación entre variables categóricas** y suele acompañar a una prueba de $\chi^2$ [@agresti2013].
+La $V$ de Cramér cuantifica asociación entre dos variables categóricas y puede acompañar a la chi-cuadrada de independencia u homogeneidad. No corresponde a la bondad de ajuste de una sola variable. [@agresti2013]
 
-Va de 0 a 1:
+$$V=\sqrt{\frac{\chi^2}{n\min(R-1,C-1)}}$$
 
-- 0 indica ausencia de asociación;
-- valores mayores indican asociaciones más intensas;
-- no tiene signo y, por tanto, no indica dirección.
+$\chi^2$ es el estadístico de Pearson sin corrección de continuidad, $n$ el número total de observaciones y $R,C$ el número de filas y columnas de la tabla. Se requieren al menos dos filas y dos columnas con categorías observadas. La inferencia habitual requiere observaciones independientes.
 
-**Ejemplo:** `V = 0.27`
+**Ejemplo:** en una tabla 2 × 2 con $n=200$ y $\chi^2=5.79$:
 
-Existe una asociación entre las variables, pero $V$ por sí sola no indica qué categorías explican esa asociación.
+$$V=\sqrt{\frac{5.79}{200(1)}}=0.17$$
 
-::: {.callout-caution}
-## No usar cortes universales
-
-Los puntos de referencia para $V$ dependen de las dimensiones de la tabla. Los valores 0.10, 0.30 y 0.50 solo son una orientación razonable en tablas $2\times2$ [@cohen1988].
-:::
-
----
+La escala va de 0 a 1 y no tiene signo. Valores mayores indican mayor asociación, pero no identifican qué categorías la explican. Revisar las proporciones de la tabla y el IC cuando se estime. Las etiquetas de magnitud dependen de las dimensiones y del contexto; no usar cortes universales. [@cohen1988]
 
 ## Riesgo relativo y diferencia de riesgos {#efecto-riesgo-relativo-y-diferencia-de-riesgos}
 
-Si pueden estimarse riesgos durante un periodo definido, conviene reportar una medida relativa y otra absoluta. [@agresti2013]
+Si el diseño permite estimar riesgos durante un periodo definido, reportar una medida relativa y otra absoluta. Para riesgos $p_1$ en el grupo de interés y $p_0$ en el de referencia: [@agresti2013]
 
-$$
-RR=\frac{p_1}{p_0},\qquad DR=p_1-p_0
-$$
+$$RR=\frac{p_1}{p_0},\qquad DR=p_1-p_0$$
 
-Con riesgos de 10 % en intervención y 20 % en control, $RR=0.50$ y $DR=-0.10$: el riesgo es la mitad y la reducción absoluta es de **10 puntos porcentuales**. Deben acompañarse de sus intervalos de confianza y del periodo de seguimiento.
+Introducir los riesgos como proporciones entre 0 y 1. El RR requiere $p_0>0$ y no tiene unidades; la DR puede expresarse en puntos porcentuales multiplicándola por 100.
 
-En estudios transversales se habla de razón o diferencia de **prevalencias**. En un estudio de casos y controles convencional, la proporción de casos fijada por diseño no permite calcular directamente riesgos.
+**Ejemplo hipotético:** en 12 meses, 10 de 100 participantes de intervención y 20 de 100 de control presentan el evento:
+
+$$p_1=0.10,\quad p_0=0.20,\quad RR=0.50,\quad DR=-0.10$$
+
+El riesgo observado es la mitad en intervención, con una diferencia de −10 puntos porcentuales. Reportar el periodo, los denominadores y los IC. Esta diferencia absoluta no equivale a una reducción relativa del 10 %: la reducción relativa es $1-RR=0.50$, es decir, 50 %.
+
+En estudios transversales se habla de razón o diferencia de **prevalencias**. En casos y controles convencionales, la proporción de casos fijada por diseño no permite calcular directamente riesgos. Si hay censura, los riesgos a un tiempo dado requieren un análisis de [supervivencia](pruebas_estadisticas.qmd#estadistica-supervivencia); no basta dividir los eventos entre el número inicial de participantes.
 
 ## Odds ratio {#efecto-odds-ratio}
 
-El **odds ratio (OR)** compara las *odds* de un desenlace entre dos grupos [@agresti2013].
+El **odds ratio (OR)**, o razón de momios, compara las *odds* de un desenlace entre dos grupos. Las odds son la probabilidad de presentar el desenlace dividida entre la de no presentarlo: $p/(1-p)$. [@agresti2013]
 
-Las odds se calculan como $p/(1-p)$, donde $p$ es una probabilidad. El valor nulo del OR es **1**.
+$$OR=\frac{p_1/(1-p_1)}{p_0/(1-p_0)}$$
+
+La fórmula requiere $0<p_0<1$ y $0<p_1<1$ para obtener odds positivas y finitas. Con ceros en una tabla pueden aparecer estimaciones nulas, infinitas o indefinidas; se necesita un método de estimación e IC adecuado, sin añadir correcciones arbitrarias.
 
 | OR | Lectura |
 |---:|---|
-| 1 | sin asociación |
-| > 1 | odds mayores que en el grupo de referencia |
-| < 1 | odds menores que en el grupo de referencia |
+| 1 | Odds iguales |
+| > 1 | Odds mayores que en el grupo de referencia |
+| < 1 | Odds menores que en el grupo de referencia |
 
-**Ejemplo:** tratamiento frente a control, con hospitalización como desenlace.
+Con los riesgos del ejemplo anterior:
 
-`OR = 0.60; IC del 95 %: 0.42 a 0.86`
+$$OR=\frac{0.10/0.90}{0.20/0.80}=0.44$$
 
-Las *odds* de hospitalización fueron aproximadamente **40 % menores** en el grupo tratado que en el grupo control.
+El OR es aproximadamente 0.44 y el RR es 0.50: aun con los mismos datos, describen comparaciones distintas. Un OR de 2 no significa necesariamente que el desenlace sea dos veces más probable. [@bland2000]
 
-**Ejemplo:** `OR = 2.1`
+**Ejemplo de reporte de otro estudio:** «Las odds de hospitalización fueron 40 % menores en el grupo tratado que en el control (OR = 0.60; IC del 95 %: 0.42 a 0.86)».
 
-Las *odds* del desenlace fueron aproximadamente **2.1 veces las del grupo de referencia**.
-
-::: {.callout-warning}
-## OR no es riesgo relativo
-
-Un OR de 2 no significa necesariamente que el desenlace sea dos veces más probable. *Odds* y probabilidad no son equivalentes [@bland2000].
-:::
-
-::: {.callout-note}
-## La dirección depende del desenlace
-
-Un OR menor de 1 puede ser favorable si el desenlace es adverso, pero desfavorable si el desenlace es deseable. Siempre debe identificarse el desenlace y el grupo de referencia.
-:::
-
----
+Un OR menor de 1 puede ser favorable si el desenlace es adverso y desfavorable si es deseable. Identificar siempre el desenlace, la referencia y si la estimación es cruda o ajustada.
 
 ## Coeficientes de regresión {#efecto-coeficientes-de-regresion}
 
-Los coeficientes de regresión describen cuánto cambia el desenlace en relación con un predictor.
+La interpretación depende del tipo de modelo, la codificación y la escala del predictor. Las lecturas siguientes de regresión lineal corresponden a términos lineales sin interacciones; en modelos más complejos, el cambio puede depender de otros valores de las variables.
 
 ### B: coeficiente no estandarizado {#efecto-b-coeficiente-no-estandarizado}
 
-Un coeficiente no estandarizado conserva las **unidades originales**.
+En regresión lineal, $B$ expresa el cambio medio del desenlace por unidad del predictor, manteniendo constantes las demás variables incluidas.
 
-**Ejemplo:** `B = -2.3`
+**Ejemplo:** si el desenlace es un puntaje y la edad se mide en años, $B=-2.3$ indica que cada año adicional se asocia con un puntaje medio 2.3 puntos menor, condicionado a las demás variables del modelo. No demuestra un cambio causal dentro de cada persona.
 
-Por cada unidad adicional del predictor, el desenlace disminuye en promedio 2.3 unidades, manteniendo constantes las demás variables del modelo.
-
-Su magnitud depende de la escala utilizada. No existen puntos de corte universales para decidir si un $B$ es pequeño o grande.
+Su magnitud depende de la escala: reportar unidades, incremento del predictor e IC. No existen puntos de corte universales para decidir si un coeficiente no estandarizado es pequeño o grande.
 
 ### beta: coeficiente estandarizado {#efecto-beta-coeficiente-estandarizado}
 
-Un coeficiente estandarizado expresa el cambio en **desviaciones estándar**, no en las unidades originales [@bring1994].
+Al estandarizar tanto el predictor continuo como el desenlace en una regresión lineal: [@bring1994]
 
-**Ejemplo:** `beta = 0.38`
+$$\beta_{est}=B\frac{s_X}{s_Y}$$
 
-Por cada incremento de una desviación estándar en el predictor, el desenlace aumenta 0.38 desviaciones estándar.
+$s_X$ y $s_Y$ son las DE del predictor y del desenlace en la muestra analizada, ambas mayores que cero. Por ejemplo, con $B=0.76$, $s_X=5$ y $s_Y=10$, $\beta_{est}=0.38$: por cada DE adicional del predictor, el desenlace medio es 0.38 DE mayor, manteniendo constantes los demás predictores.
 
-La estandarización facilita comparar coeficientes expresados originalmente en escalas diferentes, pero no convierte a $\beta$ en una medida automática de importancia [@bring1994].
-
-::: {.callout-important}
-## B no siempre significa lo mismo que beta
-
-Es frecuente utilizar $B$ para el coeficiente no estandarizado y $\beta$ para el estandarizado, pero la notación no es universal. Debe revisarse cómo los define el programa o artículo.
-:::
+La estandarización facilita expresar coeficientes en una escala común, pero no los convierte en medidas automáticas de importancia ni elimina confusión. Es frecuente usar $B$ para el coeficiente no estandarizado y $\beta$ para el estandarizado, aunque la notación no es universal; comprobar la definición del programa o artículo.
 
 ### Regresión logística {#efecto-regresion-logistica}
 
-En regresión logística, el coeficiente suele transformarse y presentarse como **odds ratio**.
+En regresión logística, $B$ está en logaritmos de odds. Para un término lineal sin interacción, un incremento de una unidad del predictor corresponde a:
 
-**Ejemplo:** `OR ajustado = 1.72; IC del 95 %: 1.18 a 2.51`
+$$OR=e^B$$
 
-Cada incremento de una unidad del predictor se asocia con un aumento del 72 % en las *odds* del desenlace, manteniendo constantes las demás variables del modelo.
+**Ejemplo:** $B=0.542$ produce $OR\approx1.72$. Si el IC del 95 % del OR es de 1.18 a 2.51, puede reportarse: «Cada unidad adicional del predictor se asoció con odds del desenlace 72 % mayores (OR ajustado = 1.72; IC del 95 %: 1.18 a 2.51), manteniendo constantes las demás variables del modelo».
 
----
+Para un predictor categórico, interpretar el OR frente a la categoría de referencia; para uno continuo, precisar el incremento. Una estimación ajustada está condicionada a las variables incluidas, sin garantizar control de toda confusión. Consultar [regresión logística](pruebas_estadisticas.qmd#estadistica-regresion-logistica).
 
-## Atlas rápido {#efecto-atlas-rapido}
+## Magnitud y precisión en el reporte {#efecto-reporte}
 
-| Medida | ¿Qué describe? | Valor nulo | Lectura básica |
-|---|---|---:|---|
-| $d$ de Cohen | Diferencia de medias | 0 | desviaciones estándar de diferencia |
-| $g$ de Hedges | Diferencia de medias | 0 | igual que $d$, con corrección de sesgo |
-| $r_{rb}$ | Diferencia basada en rangos | 0 | dirección y magnitud |
-| $r$ de Rosenthal | Efecto derivado de $Z$ | 0 | magnitud tipo $r$ |
-| $r$ / $\rho$ | Correlación | 0 | dirección y magnitud |
-| $V$ de Cramér | Asociación categórica | 0 | intensidad, sin dirección |
-| RR | Comparación de riesgos | 1 | razón entre riesgos en un periodo definido |
-| Diferencia de riesgos | Comparación absoluta de riesgos | 0 | diferencia en puntos porcentuales |
-| OR | Asociación con un desenlace | 1 | razón entre odds |
-| $B$ | Regresión lineal | 0 | cambio en unidades originales |
-| $\beta$ | Regresión estandarizada | 0 | cambio en desviaciones estándar |
+Reportar la estimación con su IC, la unidad o denominador, el orden de comparación y el ajuste si corresponde. El IC permite valorar si los datos son compatibles con efectos clínicamente relevantes, incluso cuando incluyen el valor nulo. Su interpretación se desarrolla en [estimación, IC y valor p](pruebas_estadisticas.qmd#estadistica-introduccion).
 
-::: {.callout-important}
-## Para la discusión
+Para el ejemplo de dos medias independientes, el IC calculado con la prueba $t$ de Student es:
 
-No basta con escribir que una diferencia o asociación fue «estadísticamente significativa». El tamaño del efecto permite decir **qué tan grande fue**, **en qué dirección** y, junto con su intervalo de confianza, **con qué precisión se estimó** [@sullivan2012; @fritz2012].
-:::
+> La media del grupo 1 fue 6.0 puntos mayor que la del grupo 2 (25 participantes por grupo; IC del 95 % de la diferencia: 0.3 a 11.7 puntos; g de Hedges ≈ 0.59).
+
+El intervalo corresponde a la diferencia de medias, no a $g$. Si se requiere un IC de la medida estandarizada, calcularlo con el método correspondiente. El intervalo del ejemplo es amplio: no permite precisar si la diferencia es pequeña o clínicamente relevante sin conocer la escala y el criterio clínico. [@sullivan2012; @fritz2012]
+
+## Material complementario {#efecto-material-complementario}
+
+La visualización [Understanding Cohen's d](https://rpsychologist.com/cohend/) muestra cómo cambia la separación entre dos distribuciones al variar la diferencia estandarizada. Para representar estimaciones e IC, consultar la [galería de gráficos](galeria_graficos.ipynb#galeria-estimaciones-e-incertidumbre).

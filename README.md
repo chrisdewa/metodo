@@ -31,6 +31,7 @@ La galería produce las figuras a 600 dpi. `libro/galeria.css` ajusta su ancho a
 ## Archivos principales
 
 - `_quarto.yml`: configuración, formato y orden de capítulos.
+- `styles.css`: ajustes compartidos para tablas y fórmulas en pantallas estrechas.
 - `index.qmd` y `libro/*.qmd`: contenido del libro.
 - `libro/galeria_graficos.ipynb`: ejemplos y gráficos en Python.
 - `references.bib`: bibliografía.

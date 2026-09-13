@@ -6,7 +6,7 @@ El tamaño de muestra se calcula a partir del [objetivo primario](objetivos_hipo
 
 Definiciones previas: [población, marco muestral y muestra](poblacion.qmd#poblacion-conceptos), [unidad de análisis](poblacion.qmd#poblacion-unidades), [criterios de selección](criterios_seleccion.qmd#seleccion-criterios) y [método de muestreo](metodologia_muestreo.qmd#muestreo-metodos).
 
-## 1. Definición del objetivo {#muestra-del-objetivo-al-calculo}
+## Definición del objetivo {#muestra-del-objetivo-al-calculo}
 
 | Objetivo | Criterio para planificar | Definiciones previas |
 |---|---|---|
@@ -14,7 +14,7 @@ Definiciones previas: [población, marco muestral y muestra](poblacion.qmd#pobla
 | **Contrastar** una diferencia o asociación | Potencia para detectar un efecto de interés | Hipótesis nula ($H_0$), análisis, efecto esperado, $\alpha$ y potencia |
 | **Evaluar concordancia** entre métodos | Cumplimiento de un criterio de acuerdo | Diferencia aceptable y método de concordancia |
 
-## 2. Selección del cálculo {#muestra-guia-rapida-de-seleccion}
+## Selección del cálculo {#muestra-guia-rapida-de-seleccion}
 
 Cada enlace lleva a una ficha con fórmula y ejemplo. La última columna indica qué cuenta el resultado, antes de ajustar por pérdidas.
 
@@ -58,7 +58,7 @@ Todas estas fichas requieren **$\alpha$, lateralidad y potencia**, además de lo
 Conglomerados, modelos con varios predictores, más de dos grupos, estructuras adicionales de medidas repetidas, no inferioridad y múltiples desenlaces primarios requieren un cálculo específico compatible con el análisis. No elegir una fórmula solo por el tipo de variable.
 :::
 
-## 3. Especificación de los parámetros {#muestra-parametros-que-aparecen-con-frecuencia}
+## Especificación de los parámetros {#muestra-parametros-que-aparecen-con-frecuencia}
 
 | Parámetro | Valor requerido | Ejemplo o fuente |
 |---|---|---|
@@ -89,7 +89,7 @@ Las fórmulas básicas suponen unidades independientes, o pares independientes e
 
 Base metodológica: [@garcia2013; @chow2008; @wang2020].
 
-## 4. Fórmulas y sustitución de valores {#muestra-formulas}
+## Fórmulas y sustitución de valores {#muestra-formulas}
 
 Los ejemplos aplican las convenciones anteriores y expresan el tamaño analizable, salvo que se indique reclutamiento.
 
@@ -359,7 +359,7 @@ $$n=\left[\frac{2.802}{\operatorname{atanh}(0.30)-\operatorname{atanh}(0)}\right
 
 Referencia: [@cohen1988].
 
-## 5. Concordancia {#muestra-estudios-de-concordancia}
+## Concordancia {#muestra-estudios-de-concordancia}
 
 ### Concordancia dentro de un intervalo aceptable {#muestra-concordancia-entre-dos-metodos-mediante-un-intervalo-aceptable}
 
@@ -396,7 +396,7 @@ Para $k\geq1$, buscar el menor entero $n$ que cumpla la [condición binomial](#e
 
 Referencia: [@liao2010].
 
-## 6. Supervivencia {#muestra-estudios-de-supervivencia}
+## Supervivencia {#muestra-estudios-de-supervivencia}
 
 ### Comparar dos curvas de supervivencia {#muestra-comparar-dos-curvas-de-supervivencia}
 
@@ -421,7 +421,10 @@ $$ {#eq-supervivencia-total}
 
 **Sustitución**
 
-1. **Eventos:** $D=(2.802)^2/[0.50(0.50)\ln(0.70)^2]=246.86\rightarrow247$.
+1. **Eventos:**
+
+   $$D=\frac{(2.802)^2}{0.50(0.50)[\ln(0.70)]^2}=246.86\rightarrow247$$
+
 2. **Participantes:** $N=247/0.70=352.86\rightarrow353$.
 3. **Asignación 1:1:** subir al siguiente total par.
 
@@ -468,7 +471,7 @@ $$n\approx\left[\frac{0.5(1.645+0.842)}{0.1611}\right]^2\approx59.6$$
 
 Referencia: [@nagashima2021].
 
-## 7. Exactitud diagnóstica {#muestra-estudios-de-exactitud-diagnostica}
+## Exactitud diagnóstica {#muestra-estudios-de-exactitud-diagnostica}
 
 ### Estimar el AUC {#muestra-estimar-el-auc}
 
@@ -584,7 +587,7 @@ El tamaño de cada estrato se calcula por separado, sin dividir por prevalencia:
 
 **Fuentes del método:** Buderer, pp. 897–898, pasos 2–6 (cálculos por condición, ajuste por prevalencia y selección del mayor); Malhotra e Indrayan, secciones «Materials and Methods» y «Result» (semiamplitud del IC y regla del máximo). [@buderer1996; @malhotra2010]
 
-## 8. Ajustes y redondeo {#muestra-ajustes-finales}
+## Ajustes y redondeo {#muestra-ajustes-finales}
 
 ### Corrección por población finita {#muestra-correccion-por-poblacion-finita}
 
@@ -643,7 +646,7 @@ Referencia: [@garcia2013; @chow2008].
 | ¿El resultado es decimal? | Redondear hacia arriba y respetar la asignación entre grupos. |
 | ¿El tamaño es viable? | Revisar los supuestos y la precisión o potencia alcanzable; aumentar $n$ no corrige sesgo de selección. |
 
-## 9. Registro del cálculo en el protocolo {#muestra-que-escribir-en-el-protocolo}
+## Registro del cálculo en el protocolo {#muestra-que-escribir-en-el-protocolo}
 
 | Campo | Información requerida |
 |---|---|

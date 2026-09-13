@@ -1,0 +1,18 @@
+/* Las tablas y fórmulas anchas se desplazan sin ensanchar la página. */
+@media (max-width: 991.98px) {
+  main table {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+  }
+
+  main .math.display {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+  }
+
+  main .csl-entry a {
+    overflow-wrap: anywhere;
+  }
+}
