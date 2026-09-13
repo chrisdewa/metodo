@@ -2,30 +2,27 @@
 title: Consideraciones bioéticas y de bioseguridad
 ---
 
-Este apartado explica **por qué es éticamente aceptable realizar el estudio, qué compromisos asumen los investigadores y cómo se protegerá a los participantes**. Debe describir decisiones concretas del proyecto, sustentadas en los principios bioéticos y la normativa aplicable.
+Las consideraciones bioéticas justifican la realización del estudio y describen cómo se protegerá a quienes participan. Las de bioseguridad identifican los peligros de materiales y procedimientos, así como las medidas para controlarlos. En el protocolo, ambas deben traducirse en decisiones, responsables y recursos, sustentados en los principios bioéticos y la normativa aplicable.
 
-El consentimiento, el asentimiento y el aviso de privacidad se desarrollarán en un capítulo independiente.
+Este capítulo orienta la redacción del apartado; no desarrolla los formatos de consentimiento, asentimiento ni aviso de privacidad. El protocolo debe identificar el proceso previsto y los documentos que correspondan, sin limitarse a mencionar que existirán anexos.
 
 ## Qué debe contener el apartado {#consideraciones-redaccion}
 
 | Componente | Contenido necesario |
 |---|---|
 | **Pertinencia ética** | Justificación de la población y los procedimientos; beneficios esperados y cargas que implica participar |
-| **Compromiso de los investigadores con el paciente** | Prioridad del bienestar sobre los intereses del estudio, trato digno, respeto a sus decisiones y atención ante daños relacionados con la investigación |
-| **Principios y fundamentos** | Aplicación de los principios bioéticos y de los códigos, leyes y normas pertinentes |
-| **Nivel de riesgo y protección** | Categoría del artículo 17 del Reglamento, justificación, medidas preventivas y responsables de atender incidentes |
-| **Bioseguridad** | Peligros de los materiales y procedimientos, controles, manejo de residuos y respuesta ante accidentes, o justificación de su ausencia |
-| **Revisión y seguimiento** | Comités, autorizaciones previas, notificación de incidencias, modificaciones e informes |
+| **Compromiso con los participantes** | [Prioridad del bienestar](#consideraciones-compromiso), trato digno, respeto a sus decisiones y atención ante daños relacionados con la investigación |
+| **Principios y fundamentos** | Aplicación de los [principios bioéticos](#consideraciones-principios) y de las [disposiciones pertinentes](#consideraciones-marco-mexicano) |
+| **Nivel de riesgo y protección** | [Categoría del artículo 17](#consideraciones-riesgo), justificación, medidas preventivas y responsables de atender incidentes |
+| **Participación y confidencialidad** | [Proceso de decisión y protección de datos](#consideraciones-participacion-datos), responsables y documentos aplicables |
+| **Bioseguridad** | [Peligros y controles](#consideraciones-bioseguridad), manejo de residuos y respuesta ante accidentes, o justificación de su ausencia |
+| **Revisión y seguimiento** | [Comités y autorizaciones](#consideraciones-reforma-comites), notificación de incidencias, modificaciones e informes |
 
-::: {.callout-tip}
-## Criterio de redacción
+Cada medida debe relacionar la situación que se prevé, la protección y su responsable. Por ejemplo: «Para proteger la privacidad durante las mediciones, estas se realizarán en un espacio individual; el personal evaluador verificará esta condición antes de cada sesión».
 
-Cada medida debe relacionar **situación del estudio → protección prevista → responsable**. Por ejemplo: «Las mediciones se realizarán en un espacio individual; el personal evaluador verificará esta condición antes de cada sesión».
-:::
+## Compromiso con los participantes {#consideraciones-compromiso}
 
-## Compromiso con el paciente {#consideraciones-compromiso}
-
-El apartado debe expresar las responsabilidades que adquiere el equipo investigador: **anteponer el bienestar del paciente a los objetivos científicos**, evitar daños innecesarios, respetar sus decisiones sin afectar la atención que le corresponde y responder ante problemas derivados del estudio. Estos compromisos también protegen a los participantes que no son pacientes. [@wma_helsinki2024; @reglamento_investigacion2014]
+El equipo investigador se compromete a anteponer el bienestar de los participantes a los objetivos científicos, evitar daños innecesarios, respetar sus decisiones y responder ante problemas derivados del estudio. En quienes reciben atención médica, participar o retirarse no debe afectar la atención que les corresponde. [@wma_helsinki2024; @reglamento_investigacion2014]
 
 Una redacción adaptable es:
 
@@ -40,9 +37,9 @@ El compromiso debe respaldarse con **responsables y recursos disponibles**. El a
 | **Autonomía y respeto por las personas** | Cómo se evitarán presiones, especialmente ante dependencia asistencial, académica o laboral |
 | **Beneficencia** | Qué utilidad se espera y para quién; distinguir beneficio individual de generación de conocimiento |
 | **No maleficencia** | Qué molestias o daños se prevén y cómo se reducirán |
-| **Justicia** | Por qué son adecuados los criterios de selección y las protecciones ante situaciones de vulnerabilidad |
+| **Justicia** | Por qué son adecuados los [criterios de selección](criterios_seleccion.qmd#seleccion-criterios) y las protecciones ante situaciones de vulnerabilidad |
 
-La justificación debe considerar también si el diseño permite responder la pregunta sin imponer cargas innecesarias. No debe prometerse beneficio terapéutico cuando el estudio no lo ofrece. [@belmont1979; @unesco_bioetica2005; @cioms2016]
+La justificación debe considerar también si el [diseño y el análisis corresponden a la pregunta](concordancia_general.qmd#concordancia-componentes) y permiten responderla sin imponer cargas innecesarias. No debe prometerse beneficio terapéutico cuando el estudio no lo ofrece. [@belmont1979; @unesco_bioetica2005; @cioms2016]
 
 ### Códigos y declaraciones de referencia {#consideraciones-fundamentos}
 
@@ -60,7 +57,7 @@ Estos referentes tienen distinto origen y alcance; no equivalen a leyes mexicana
 
 ## Nivel de riesgo y medidas de protección {#consideraciones-riesgo}
 
-La categoría se justifica con los procedimientos reales y las características de la población, conforme al **artículo 17 del Reglamento de la LGS en Materia de Investigación para la Salud**. [@reglamento_investigacion2014]
+La categoría se justifica con los procedimientos reales y las características de la población, conforme al **artículo 17 del Reglamento de la Ley General de Salud (LGS) en Materia de Investigación para la Salud**. [@reglamento_investigacion2014]
 
 | Categoría | Criterio resumido |
 |---|---|
@@ -76,9 +73,22 @@ La tabla orienta la clasificación; debe consultarse la fracción completa. Por 
 
 La propuesta se somete a evaluación del comité. La categoría «sin riesgo» no elimina las obligaciones éticas ni constituye una aprobación. [@reglamento_investigacion2014]
 
+## Participación y protección de datos {#consideraciones-participacion-datos}
+
+El apartado debe permitir reconocer cómo se respetará la decisión de participar y cómo se protegerá la información. [@wma_helsinki2024; @cioms2016]
+
+| Decisión | Qué especificar en el protocolo |
+|---|---|
+| **Invitación y consentimiento** | Quién informará, en qué momento, cómo se resolverán dudas y cómo se evitarán presiones; identificar los documentos aplicables y, cuando corresponda, el asentimiento y la intervención del representante legal |
+| **Solicitud de dispensa** | Si se propone una dispensa, justificarla y presentarla para evaluación del comité; no asumirla por tratarse de expedientes o por proponer la categoría «sin riesgo» |
+| **Acceso a información identificable** | Qué datos se necesitan, quién podrá consultarlos y para qué; evitar recoger identificadores innecesarios |
+| **Resguardo y comunicación** | Cómo se codificarán los registros, dónde se almacenarán, quién custodiará la clave de identificación, cuánto tiempo se conservarán y cómo se eliminarán o archivarán conforme a las disposiciones aplicables |
+
+Una base codificada sigue siendo identificable si existe una clave que permite vincularla con las personas. Al comunicar resultados, prever la identificación indirecta por combinaciones de datos o grupos muy pequeños. Las medidas deben corresponder a la [base de datos prevista](variables.qmd#variables-de-la-tabla-de-variables-a-la-base-de-datos).
+
 ## Bioseguridad {#consideraciones-bioseguridad}
 
-La descripción debe cubrir **materiales y procedimientos → peligros → controles → responsables**, considerando participantes, personal y ambiente. [@reglamento_investigacion2014; @lgs2026]
+Identificar los materiales y procedimientos, sus peligros, los controles y los responsables, considerando participantes, personal y ambiente. [@reglamento_investigacion2014; @lgs2026]
 
 | Cuando se utilizan muestras, agentes o equipos con peligros específicos | Cuando el estudio es exclusivamente documental |
 |---|---|
@@ -109,12 +119,6 @@ La reforma de la LGS del **15 de enero de 2026** modificó los artículos 41 Bis
 Para la presentación se preparan versión y fecha, equipo, sede, cronograma, presupuesto, apoyos, conflictos de interés y permisos aplicables, según los formatos institucionales. El Reglamento y la NOM conservan denominaciones anteriores de los comités; debe atenderse al esquema de la LGS reformada y al procedimiento institucional vigente. [@nom0122012; @reglamento_investigacion2014; @lgs2026]
 
 En el **protocolo**, las revisiones pendientes se describen como tales y el inicio se condiciona a los dictámenes favorables y autorizaciones aplicables. En la **tesis terminada**, se consignan instancias, folios, fechas, versión aprobada y modificaciones relevantes. También se documentan incidencias, informes y cierre. El dictamen de un comité no sustituye la autorización sanitaria cuando esta proceda.
-
-::: {.callout-important}
-## Revisión del apartado
-
-Debe existir correspondencia entre los procedimientos, los riesgos, las medidas de protección y los compromisos asumidos. Cada compromiso necesita un responsable y condiciones que permitan cumplirlo.
-:::
 
 ## Consulta normativa {#consideraciones-fuentes}
 

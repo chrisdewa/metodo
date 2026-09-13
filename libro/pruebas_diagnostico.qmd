@@ -2,25 +2,53 @@
 title: Pruebas diagnósticas
 ---
 
-Una prueba diagnóstica se evalúa comparando una **prueba índice** contra un **estándar de referencia**. En un estudio básico, los mismos participantes deben contar con ambos resultados. La muestra debe parecerse, en lo posible, a la población en la que se pretende utilizar la prueba; comparar únicamente casos muy evidentes contra controles completamente sanos puede sobreestimar su desempeño @bossuyt2015_stard.
+La exactitud de una **prueba índice**, la que se desea evaluar, se estudia comparándola con un **estándar de referencia**, el procedimiento que determina la presencia o ausencia de la condición. Este capítulo muestra cómo calcular e interpretar sus medidas de desempeño. [@bossuyt2015_stard]
 
-Los resultados deben interpretarse sin conocer los de la otra prueba cuando sea factible, y el intervalo entre ambas debe evitar cambios relevantes en la condición. Un estándar imperfecto, la verificación selectiva o la exclusión de resultados indeterminados pueden sesgar las estimaciones; deben documentarse. [@bossuyt2015_stard]
+| Para conocer… | Consultar |
+|---|---|
+| Cuántos casos detecta y cuántas personas sin la condición clasifica correctamente | [Sensibilidad y especificidad](#diagnostico-sensibilidad-y-especificidad) |
+| Qué significa obtener un resultado positivo o negativo en una población | [Valores predictivos](#diagnostico-valores-predictivos) y [prevalencia](#diagnostico-influencia-de-la-prevalencia) |
+| Cómo cambia la probabilidad de la condición después de la prueba | [Razones de verosimilitud](#diagnostico-razones-de-verosimilitud) |
+| Cómo evaluar una prueba con resultados continuos | [Puntos de corte](#diagnostico-puntos-de-corte), [curva ROC](#diagnostico-curva-roc) e [índice de Youden](#diagnostico-indice-de-youden) |
+| Cuántos participantes se requieren | [Cálculo de muestra para exactitud diagnóstica](calculo_tamano_muestra.qmd#muestra-estudios-de-exactitud-diagnostica) |
+
+## Condiciones del estudio {#diagnostico-condiciones}
+
+En el diseño básico, cada participante debe contar con el resultado de ambas pruebas. Para interpretar las estimaciones, documentar lo siguiente: [@bossuyt2015_stard]
+
+| Aspecto | Condición que debe revisarse |
+|---|---|
+| Selección | Incluir participantes semejantes a la población de uso; comparar solo casos evidentes con controles completamente sanos puede sobreestimar el desempeño |
+| Referencia e interpretación | Justificar el estándar y, cuando sea factible, interpretar cada prueba sin conocer el resultado de la otra |
+| Intervalo entre pruebas | Evitar cambios relevantes de la condición entre ambas mediciones |
+| Resultados incompletos o indeterminados | Informar cuántos hay y cómo se trataron; excluirlos o verificar solo a ciertos participantes puede sesgar las estimaciones |
+
+Un estándar de referencia imperfecto puede clasificar incorrectamente la condición. Las medidas estimadas describen el desempeño frente a ese estándar y deben interpretarse con esta limitación.
 
 ## Tabla 2 × 2 {#diagnostico-tabla-2-2}
 
 El resultado de la prueba índice y del estándar de referencia se resume en una tabla 2 × 2:
 
-| | Condición presente | Condición ausente |
-|---|---:|---:|
-| **Prueba positiva** | VP (a) | FP (b) |
-| **Prueba negativa** | FN (c) | VN (d) |
+| Prueba índice | Condición presente | Condición ausente | Total |
+|---|---:|---:|---:|
+| **Positiva** | VP (a) | FP (b) | VP + FP |
+| **Negativa** | FN (c) | VN (d) | FN + VN |
+| **Total** | VP + FN | FP + VN | $n$ |
 
 - **VP:** verdadero positivo.
 - **FP:** falso positivo.
 - **FN:** falso negativo.
 - **VN:** verdadero negativo.
 
-Aunque algunas fórmulas utilizan `a`, `b`, `c` y `d`, suele ser más fácil trabajar con VP, FP, FN y VN.
+Las columnas corresponden al estándar de referencia. Las fórmulas siguientes usan VP, FP, FN y VN como recuentos; cada denominador debe ser mayor que cero. Si hay varias observaciones de una misma persona, el análisis de incertidumbre debe considerar esa dependencia.
+
+**Ejemplo hipotético:** se aplica una prueba con punto de corte ≥15 y el estándar de referencia a 300 participantes, una vez por persona.
+
+| Prueba índice | Condición presente | Condición ausente | Total |
+|---|---:|---:|---:|
+| Positiva | 70 | 20 | 90 |
+| Negativa | 30 | 180 | 210 |
+| Total | 100 | 200 | 300 |
 
 ## Sensibilidad y especificidad {#diagnostico-sensibilidad-y-especificidad}
 
@@ -37,9 +65,7 @@ Sensibilidad =
 \frac{VP}{\text{Personas con la condición}}
 $$
 
-Una sensibilidad de 90 % significa que la prueba detecta al 90 % de las personas que presentan la condición según el estándar de referencia.
-
-**Mayor sensibilidad → menos falsos negativos.**
+En el ejemplo, $Se=70/(70+30)=0.70$: se detectaron 70 de las 100 personas con la condición. La proporción de falsos negativos entre quienes la presentan es $1-Se=0.30$.
 
 ### Especificidad {#diagnostico-especificidad}
 
@@ -52,9 +78,7 @@ Especificidad =
 \frac{VN}{\text{Personas sin la condición}}
 $$
 
-Una especificidad de 90 % significa que la prueba clasifica correctamente como negativas al 90 % de las personas que no presentan la condición.
-
-**Mayor especificidad → menos falsos positivos.**
+En el ejemplo, $Sp=180/(180+20)=0.90$: se clasificaron correctamente 180 de las 200 personas sin la condición. La proporción de falsos positivos entre quienes no la presentan es $1-Sp=0.10$.
 
 ## Valores predictivos {#diagnostico-valores-predictivos}
 
@@ -68,8 +92,10 @@ $$
 VPP =
 \frac{VP}{VP+FP}
 =
-\frac{VP}{Positivos}
+\frac{VP}{\text{Resultados positivos}}
 $$
+
+En el ejemplo, $VPP=70/90=0.778$: el 77.8 % de los resultados positivos corresponde a personas con la condición.
 
 ### Valor predictivo negativo {#diagnostico-valor-predictivo-negativo}
 
@@ -79,8 +105,10 @@ $$
 VPN =
 \frac{VN}{VN+FN}
 =
-\frac{VN}{Negativos}
+\frac{VN}{\text{Resultados negativos}}
 $$
+
+En el ejemplo, $VPN=180/210=0.857$: el 85.7 % de los resultados negativos corresponde a personas sin la condición.
 
 ## Influencia de la prevalencia {#diagnostico-influencia-de-la-prevalencia}
 
@@ -88,7 +116,7 @@ La sensibilidad y la especificidad se calculan dentro de personas con y sin la c
 
 Por eso, si la proporción de personas con la condición de la muestra fue fijada por el diseño, los valores predictivos observados en esa muestra no deben trasladarse directamente a la población.
 
-Si se dispone de una prevalencia esperada $P$, pueden calcularse valores predictivos para esa prevalencia:
+Si se dispone de una prevalencia esperada $P$, pueden calcularse valores predictivos para esa población. Introducir prevalencia, sensibilidad y especificidad como proporciones entre 0 y 1; por ejemplo, 5 % corresponde a $0.05$.
 
 $$
 VPP =
@@ -102,12 +130,12 @@ VPN =
 {[(1-Sensibilidad)P] + [Especificidad(1-P)]}
 $$
 
-Por ejemplo, con sensibilidad de 90 % y especificidad de 90 %:
+En un ejemplo distinto, con sensibilidad de 90 % y especificidad de 90 %:
 
 | Prevalencia | VPP | VPN |
 |---:|---:|---:|
 | 50 % | 90 % | 90 % |
-| 5 % | 32 % | 99 % |
+| 5 % | 32.1 % | 99.4 % |
 
 En este ejemplo se mantienen fijas sensibilidad y especificidad y solo cambia la prevalencia. En la práctica, ambas también pueden variar con la gravedad, el espectro de pacientes y las condiciones de aplicación.
 
@@ -115,7 +143,7 @@ Este cálculo supone que la sensibilidad y la especificidad estimadas son razona
 
 ## Razones de verosimilitud {#diagnostico-razones-de-verosimilitud}
 
-Las razones de verosimilitud (*likelihood ratios*, LR) resumen cuánto favorece un resultado la presencia o ausencia de la condición @deeks2004_lr.
+Las razones de verosimilitud (*likelihood ratios*, LR) comparan la probabilidad de un resultado entre personas con y sin la condición. Permiten actualizar las *odds* previas: la probabilidad de presentar la condición dividida entre la de no presentarla. Las LR no tienen unidades. [@deeks2004_lr]
 
 ### Resultado positivo {#diagnostico-resultado-positivo}
 
@@ -128,6 +156,8 @@ $$
 - $LR+ = 1$: el resultado positivo no discrimina.
 - Cuanto mayor sea el $LR+$, mayor evidencia aporta un resultado positivo a favor de la condición.
 
+Un $LR+<1$ indica que un resultado positivo es menos probable entre quienes tienen la condición; revisar la orientación y la interpretación de la prueba.
+
 ### Resultado negativo {#diagnostico-resultado-negativo}
 
 $$
@@ -139,7 +169,28 @@ $$
 - $LR- = 1$: el resultado negativo no discrimina.
 - Cuanto más cercano sea el $LR-$ a 0, mayor evidencia aporta un resultado negativo contra la presencia de la condición.
 
-Para actualizar una probabilidad: $\text{odds previas}=p/(1-p)$; $\text{odds posteriores}=\text{odds previas}\times LR$; $p_{posterior}=\text{odds posteriores}/(1+\text{odds posteriores})$. Un LR no es una probabilidad y su utilidad depende de la probabilidad previa.
+Un $LR->1$ indica que un resultado negativo es más probable entre quienes tienen la condición. Si el denominador de una LR es cero, no se obtiene una razón finita; observar cero errores en una muestra tampoco demuestra desempeño perfecto en la población.
+
+### De la probabilidad previa a la posterior {#diagnostico-probabilidad-posterior}
+
+Usar $LR+$ para un resultado positivo y $LR-$ para uno negativo. Con $0<p_{previa}<1$:
+
+1. Convertir la probabilidad previa a *odds*: $O_{previas}=p_{previa}/(1-p_{previa})$.
+2. Incorporar el resultado: $O_{posteriores}=O_{previas}\times LR$.
+3. Volver a probabilidad: $p_{posterior}=O_{posteriores}/(1+O_{posteriores})$.
+
+Con sensibilidad y especificidad de 90 %, $LR+=0.90/(1-0.90)=9$. Si la probabilidad previa es 5 % y la prueba resulta positiva:
+
+$$
+O_{previas}=\frac{0.05}{0.95}=0.0526,\qquad
+O_{posteriores}=0.0526\times9\approx0.4737
+$$
+
+$$
+p_{posterior}=\frac{0.4737}{1+0.4737}\approx0.321=32.1\,\%
+$$
+
+La probabilidad previa debe corresponder al contexto de aplicación; puede diferir de la prevalencia general por la selección o las características de las personas evaluadas. La LR utilizada también debe ser aplicable a ese contexto.
 
 ## Puntos de corte {#diagnostico-puntos-de-corte}
 
@@ -147,10 +198,10 @@ Muchas pruebas producen un valor continuo: una concentración, una puntuación o
 
 Si valores mayores indican mayor probabilidad de la condición:
 
-- **bajar el punto de corte** → más resultados positivos → mayor sensibilidad y menor especificidad;
-- **subir el punto de corte** → menos resultados positivos → menor sensibilidad y mayor especificidad.
+- **Bajar el punto de corte** aumenta o mantiene la sensibilidad y reduce o mantiene la especificidad.
+- **Subir el punto de corte** reduce o mantiene la sensibilidad y aumenta o mantiene la especificidad.
 
-Ejemplo:
+Ejemplo hipotético de desempeño al variar el corte; la fila ≥15 coincide con la tabla de 300 participantes:
 
 | Punto de corte | Sensibilidad | Especificidad | $1-Especificidad$ |
 |---:|---:|---:|---:|
@@ -159,10 +210,10 @@ Ejemplo:
 | ≥ 15 | 0.70 | 0.90 | 0.10 |
 | ≥ 20 | 0.45 | 0.97 | 0.03 |
 
-No existe necesariamente un punto de corte universalmente mejor.
-
 - Si importa especialmente **no perder casos**, se favorece sensibilidad.
 - Si importa especialmente **evitar falsos positivos**, se favorece especificidad.
+
+La elección debe considerar el uso previsto, las consecuencias de cada error y los procedimientos disponibles después del resultado. Estas preferencias no fijan por sí solas un corte clínico.
 
 ## Curva ROC {#diagnostico-curva-roc}
 
@@ -178,19 +229,12 @@ $$
 
 Por tanto, la curva ROC muestra el intercambio entre sensibilidad y especificidad para todos los puntos de corte posibles.
 
-El área bajo la curva, **AUC**, resume la capacidad de discriminación de la prueba:
+El área bajo la curva, **AUC**, resume la capacidad de discriminación de la prueba en una escala de 0 a 1, sin unidades:
 
-$$
-AUC = 0.5
-$$
-
-indica ausencia de discriminación global según esta medida, aunque no obliga a que toda la curva coincida con la diagonal. Por su parte:
-
-$$
-AUC = 1
-$$
-
-indica discriminación perfecta.
+| AUC | Interpretación |
+|---|---|
+| $0.5$ | Ausencia de discriminación global según esta medida; no obliga a que toda la curva coincida con la diagonal |
+| $1$ | Discriminación perfecta en los datos evaluados |
 
 Con valores altos orientados hacia la condición, el AUC estima la probabilidad de que una persona con la condición obtenga un puntaje mayor que una sin ella, contando los empates como media concordancia. Un AUC menor de 0.5 obliga a revisar la orientación de la escala. [@hanley1982]
 
@@ -198,7 +242,7 @@ El AUC describe la **discriminación global** de la prueba. No indica cuál punt
 
 ## Índice de Youden {#diagnostico-indice-de-youden}
 
-Una forma simple de buscar un punto de corte que equilibre sensibilidad y especificidad es el índice de Youden @youden1950:
+El índice de Youden suma sensibilidad y especificidad con el mismo peso. Se calcula con proporciones entre 0 y 1. [@youden1950]
 
 $$
 J =
@@ -216,19 +260,30 @@ Aplicado al ejemplo anterior:
 
 Aquí, el punto ≥15 maximiza $J$.
 
-Youden identifica el mejor **compromiso matemático** cuando sensibilidad y especificidad reciben el mismo peso. No necesariamente identifica el mejor punto de corte clínico: no incorpora por sí solo la prevalencia ni las consecuencias de falsos positivos y falsos negativos.
+Maximizar $J$ equivale a maximizar la suma de sensibilidad y especificidad. Este criterio no incorpora por sí solo la prevalencia ni las consecuencias de falsos positivos y falsos negativos, por lo que el corte elegido requiere una justificación según el uso previsto.
 
 El punto de corte debe preespecificarse o declararse exploratorio. Seleccionarlo y estimar su desempeño con la misma muestra suele producir optimismo; se requiere validación posterior. [@bossuyt2015_stard]
 
-## Interpretación mínima {#diagnostico-interpretacion-minima}
+## Reporte e interpretación {#diagnostico-interpretacion-minima}
 
-Un resultado puede reportarse de forma directa:
+Reportar el estándar de referencia, el punto de corte y su origen, los recuentos de la tabla 2 × 2, los resultados no evaluables y las estimaciones con sus **intervalos de confianza (IC)**. El nivel de confianza debe estar preespecificado; aquí se usa 95 %. [@bossuyt2015_stard]
 
-> Con un punto de corte ≥15, la prueba presentó una sensibilidad de 70 % y una especificidad de 90 %. Detectó al 70 % de quienes presentaban la condición y clasificó correctamente como negativos al 90 % de quienes no la presentaban.
+Para el ejemplo de 300 participantes, los IC binomiales de Wilson son:
 
-Si se reportan VPP o VPN, debe quedar claro a qué prevalencia corresponden.
+| Medida | Cálculo | Estimación | IC del 95 % |
+|---|---|---:|---:|
+| Sensibilidad | $70/100$ | 70.0 % | 60.4 a 78.1 % |
+| Especificidad | $180/200$ | 90.0 % | 85.1 a 93.4 % |
+| VPP | $70/90$ | 77.8 % | 68.2 a 85.1 % |
+| VPN | $180/210$ | 85.7 % | 80.3 a 89.8 % |
 
-Las medidas principales deben acompañarse de sus **intervalos de confianza del 95 %** @bossuyt2015_stard.
+Los IC se calcularon como proporciones binomiales, suponiendo participantes independientes y un corte fijado de antemano. Los de VPP y VPN describen la población muestreada; no corresponden a una extrapolación con prevalencia externa.
+
+Una redacción del resultado principal sería:
+
+> Con el punto de corte ≥15, la prueba identificó a 70 de las 100 personas con la condición: sensibilidad de 70.0 % (IC del 95 %: 60.4 a 78.1 %). Clasificó como negativas a 180 de las 200 personas sin la condición: especificidad de 90.0 % (IC del 95 %: 85.1 a 93.4 %), frente al estándar de referencia utilizado.
+
+En un informe real, nombrar el estándar. Si se reportan VPP o VPN, indicar a qué prevalencia corresponden; en esta muestra, $100/300=33.3\,\%$. El desempeño diagnóstico por sí solo no demuestra que utilizar la prueba mejore los desenlaces de salud.
 
 ## Para saber más {#diagnostico-para-saber-mas}
 

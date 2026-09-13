@@ -2,13 +2,13 @@
 title: Cálculo del tamaño de muestra
 ---
 
-**El cálculo parte del objetivo primario y del análisis previsto.** El selector permite identificar la ficha correspondiente, los parámetros requeridos y su sustitución en la fórmula.
+El tamaño de muestra se calcula a partir del [objetivo primario](objetivos_hipotesis.qmd#objetivos-objetivo-primario-y-objetivos-secundarios) y del [análisis previsto](pruebas_estadisticas.qmd#estadistica-antes-de-elegir-una-prueba). El [selector](#muestra-guia-rapida-de-seleccion) indica la fórmula, los datos necesarios y si el resultado cuenta participantes, pares o eventos.
 
 Definiciones previas: [población, marco muestral y muestra](poblacion.qmd#poblacion-conceptos), [unidad de análisis](poblacion.qmd#poblacion-unidades), [criterios de selección](criterios_seleccion.qmd#seleccion-criterios) y [método de muestreo](metodologia_muestreo.qmd#muestreo-metodos).
 
 ## 1. Definición del objetivo {#muestra-del-objetivo-al-calculo}
 
-| Objetivo | El cálculo debe asegurar… | Definiciones previas |
+| Objetivo | Criterio para planificar | Definiciones previas |
 |---|---|---|
 | **Estimar** una prevalencia, media o exactitud diagnóstica | Precisión del intervalo de confianza (IC) | Parámetro esperado, confianza y margen de error $d$ |
 | **Contrastar** una diferencia o asociación | Potencia para detectar un efecto de interés | Hipótesis nula ($H_0$), análisis, efecto esperado, $\alpha$ y potencia |
@@ -16,7 +16,7 @@ Definiciones previas: [población, marco muestral y muestra](poblacion.qmd#pobla
 
 ## 2. Selección del cálculo {#muestra-guia-rapida-de-seleccion}
 
-Cada enlace abre la ficha con la fórmula y un ejemplo. **La última columna indica qué cuenta el resultado, antes de ajustar por pérdidas.**
+Cada enlace lleva a una ficha con fórmula y ejemplo. La última columna indica qué cuenta el resultado, antes de ajustar por pérdidas.
 
 ### Estimar con una precisión determinada
 
@@ -48,7 +48,7 @@ Todas estas fichas requieren **$\alpha$, lateralidad y potencia**, además de lo
 
 | Finalidad | Ficha de cálculo | Datos requeridos |
 |---|---|---|
-| Acuerdo entre dos métodos dentro de una diferencia aceptable | [Criterio de Liao](#muestra-concordancia-entre-dos-metodos-mediante-un-intervalo-aceptable) | Intervalo aceptable, discordancia $a$, tolerancia $b$, máximo $k$ |
+| Acuerdo entre dos métodos dentro de una diferencia aceptable | [Criterio de Liao](#muestra-concordancia-entre-dos-metodos-mediante-un-intervalo-aceptable) | Intervalo aceptable, discordancia máxima $a$, confianza unilateral $b$, máximo $k$ |
 | Muestrear sin reemplazo una población finita | [Corrección por población finita](#muestra-correccion-por-poblacion-finita) | Tamaño inicial $n_0$, población $N$ |
 | Compensar pérdidas o datos incompletos | [Ajuste por pérdidas](#muestra-perdidas-o-datos-no-analizables) | Tamaño analizable, pérdidas $L$ |
 
@@ -71,21 +71,27 @@ Conglomerados, modelos con varios predictores, más de dos grupos, estructuras a
 | Pérdidas $L$ | Fracción esperada sin datos analizables | 10 % se introduce como $0.10$ |
 | Tamaño $n$ | Revisar si es total, por grupo o por pares | Redondear hacia arriba en la unidad indicada |
 
+$Z_u$ es el cuantil de la distribución normal estándar que deja una probabilidad $u$ a su izquierda. Por ejemplo, $Z_{0.975}=1.96$. DE significa desviación estándar e IC, intervalo de confianza.
+
+Los valores esperados deben provenir de estudios comparables o de una justificación explícita. Si son inciertos, repetir el cálculo con valores plausibles y comparar los tamaños resultantes; un piloto pequeño puede estimar la DE o la frecuencia de eventos con poca precisión.
+
 ::: {.callout-important}
 ## Convenciones de los ejemplos
 
 - **Estimación:** IC del 95 %, $Z=1.96$.
-- **Contraste:** $\alpha=0.05$ bilateral y potencia 80 %; $Z_\alpha+Z_\beta=1.96+0.842=2.802$.
+- **Contraste:** $\alpha=0.05$ bilateral y potencia 80 %; $Z_{1-\alpha/2}+Z_{1-\beta}=1.96+0.842=2.802$.
 - **Excepción:** supervivencia de un grupo usa $\alpha=0.05$ unilateral, $Z_{1-\alpha}=1.645$.
-- **Alcance:** las fórmulas con $Z$ son aproximaciones de planificación. Verificar los contrastes de medias con el método $t$ correspondiente; para proporciones extremas o pocos eventos, usar métodos para datos discretos.
+- **Lateralidad:** en un contraste unilateral justificado de antemano, sustituir $Z_{1-\alpha/2}$ por $Z_{1-\alpha}$; no elegir la dirección después de conocer los resultados.
+- **Alcance:** las fórmulas con $Z$ son aproximaciones de planificación. Verificar los cálculos de medias con el método $t$ correspondiente cuando la DE se estima; para proporciones extremas o pocos eventos, usar métodos para datos discretos.
 :::
+
+Las fórmulas básicas suponen unidades independientes, o pares independientes entre sí en diseños pareados. Para estimaciones poblacionales, el muestreo debe permitir la inferencia propuesta; alcanzar el tamaño calculado no corrige un sesgo de selección. Los valores intermedios se muestran redondeados, pero se conservan sus decimales para calcular el resultado final.
 
 Base metodológica: [@garcia2013; @chow2008; @wang2020].
 
 ## 4. Fórmulas y sustitución de valores {#muestra-formulas}
 
-En cada ficha: **uso → parámetros → fórmula → sustitución → resultado**. Los ejemplos aplican las convenciones anteriores.
-
+Los ejemplos aplican las convenciones anteriores y expresan el tamaño analizable, salvo que se indique reclutamiento.
 
 ### Estimar una proporción {#muestra-estimar-una-proporcion}
 
@@ -113,7 +119,6 @@ $$n_0=\frac{1.96^2(0.30)(0.70)}{0.05^2}=322.69$$
 
 Referencia: [@garcia2013; @wang2020].
 
-
 ### Estimar una media {#muestra-estimar-una-media}
 
 **Aplicación:** estimar un promedio con un margen de error elegido.
@@ -136,10 +141,9 @@ $$n_0=\frac{1.96^2(12^2)}{3^2}=61.47$$
 
 **Resultado:** **62 sujetos totales** para DE de 12 y precisión de ±3 unidades.
 
-**Consideraciones:** La corrección finita usa [](#eq-proporcion-finita), bajo sus condiciones de muestreo.
+**Consideraciones:** Si la DE se estima y la muestra es pequeña, verificar el cálculo con la distribución $t$. Revisar también las condiciones de la [corrección por población finita](#muestra-correccion-por-poblacion-finita).
 
 Referencia: [@garcia2013; @chow2008].
-
 
 ### Comparar dos proporciones independientes {#muestra-comparar-dos-proporciones-independientes}
 
@@ -170,7 +174,6 @@ $$n=\frac{[1.96\sqrt{2(0.325)(0.675)}+0.842\sqrt{0.40(0.60)+0.25(0.75)}]^2}{(0.4
 
 Referencia: [@chow2008].
 
-
 ### Comparar dos proporciones pareadas {#muestra-comparar-dos-proporciones-pareadas}
 
 **Aplicación:** desenlace binario antes/después o en pares; prueba de McNemar, $H_0:p_{01}=p_{10}$.
@@ -196,7 +199,6 @@ $$n=\frac{[1.96\sqrt{0.08+0.20}+0.842\sqrt{0.08+0.20-(0.08-0.20)^2}]^2}{(0.08-0.
 **Consideraciones:** Se necesitan las proporciones de cambios discordantes; las proporciones globales antes y después no bastan.
 
 Referencia: [@chow2008].
-
 
 ### Comparar una proporción con una referencia {#muestra-comparar-una-proporcion-con-un-valor-de-referencia}
 
@@ -224,7 +226,6 @@ $$n=\frac{[1.96\sqrt{0.20(0.80)}+0.842\sqrt{0.30(0.70)}]^2}{(0.30-0.20)^2}=136.8
 
 Referencia: [@chow2008].
 
-
 ### Comparar dos medias pareadas {#muestra-comparar-dos-medias-pareadas}
 
 **Aplicación:** dos mediciones por sujeto o pares emparejados; prueba $t$ pareada, $H_0:\mu_D=0$.
@@ -251,7 +252,6 @@ $$n=\frac{(2.802)^2(10^2)}{5^2}=31.40$$
 
 Referencia: [@garcia2013; @chow2008].
 
-
 ### Comparar dos medias: DE común {#muestra-comparar-dos-medias-independientes-con-varianzas-iguales}
 
 **Aplicación:** dos grupos independientes, varianza común y asignación 1:1; prueba $t$ de Student, $H_0:\mu_1=\mu_2$.
@@ -277,7 +277,6 @@ $$n=\frac{2(12^2)(2.802)^2}{8^2}=35.33$$
 **Consideraciones:** Justificar la DE común y comprobar el tamaño final con la prueba $t$.
 
 Referencia: [@garcia2013; @chow2008].
-
 
 ### Comparar dos medias: DE distintas {#muestra-comparar-dos-medias-independientes-sin-asumir-varianzas-iguales}
 
@@ -307,7 +306,6 @@ $$n_1=\frac{(2.802)^2(10^2+16^2/1)}{8^2}=43.67,\qquad n_2=1\times n_1$$
 
 Referencia: [@chow2008].
 
-
 ### Comparar dos medias: efecto estandarizado {#muestra-comparar-dos-medias-mediante-una-diferencia-estandarizada}
 
 **Aplicación:** dos grupos independientes, DE común y asignación 1:1 cuando el efecto se expresa como $d$ de Cohen; $H_0:\mu_1=\mu_2$.
@@ -330,10 +328,9 @@ $$n=\frac{2(2.802)^2}{0.60^2}=43.62$$
 
 **Resultado:** **44 sujetos por grupo; 88 en total**, por aproximación normal.
 
-**Consideraciones:** $d_s$ es un efecto estandarizado; no es el margen de precisión $d$ ni el efecto de un diseño pareado.
+**Consideraciones:** $d_s$ es un [efecto estandarizado](tamanos_efecto.qmd#efecto-d-de-cohen); no es el margen de precisión $d$ ni el efecto de un diseño pareado. Justificar su valor por la diferencia de interés y la DE esperada, sin elegirlo solo por la etiqueta «pequeño», «moderado» o «grande».
 
 Referencia: [@cohen1988; @chow2008].
-
 
 ### Detectar una correlación {#muestra-detectar-una-correlacion}
 
@@ -362,19 +359,17 @@ $$n=\left[\frac{2.802}{\operatorname{atanh}(0.30)-\operatorname{atanh}(0)}\right
 
 Referencia: [@cohen1988].
 
-
 ## 5. Concordancia {#muestra-estudios-de-concordancia}
-
 
 ### Concordancia dentro de un intervalo aceptable {#muestra-concordancia-entre-dos-metodos-mediante-un-intervalo-aceptable}
 
-**Aplicación:** evaluar dos métodos por la frecuencia de diferencias fuera de un intervalo clínicamente aceptable; criterio de Liao.
+**Aplicación:** evaluar dos métodos por la frecuencia de diferencias fuera de un intervalo clínicamente aceptable, mediante el criterio de Liao. Cada par contiene las mediciones de ambos métodos en una unidad; los pares son independientes entre sí.
 
 | Parámetro | Datos requeridos |
 |---|---|
 | Intervalo aceptable | Límites clínicos fijados antes del estudio; un par fuera de ellos es discordante. |
 | $a$ | Tasa máxima de discordancia compatible con concordancia. |
-| $b$ | Probabilidad de observar más de $k$ discordancias si la tasa fuera $a$. |
+| $b$ | Confianza unilateral requerida para el límite superior de discordancia; bajo una tasa $a$, se exige que la probabilidad de observar más de $k$ discordancias sea al menos $b$. |
 | $k$ | Máximo de pares discordantes permitidos; la primera fórmula usa $k=0$. |
 
 **Fórmula**
@@ -389,21 +384,19 @@ $$ {#eq-concordancia-k}
 
 **Sustitución**
 
-Con $a=0.05$, $b=0.80$ y $k=0$:
+Con $a=0.05$, $b=0.95$ y $k=0$:
 
-$$n\geq\frac{\ln(0.20)}{\ln(0.95)}=31.38$$
+$$n\geq\frac{\ln(0.05)}{\ln(0.95)}=58.40$$
 
-Para $k\geq1$, buscar el menor entero $n$ que cumpla [](#eq-concordancia-k).
+Para $k\geq1$, buscar el menor entero $n$ que cumpla la [condición binomial](#eq-concordancia-k).
 
-**Resultado:** **32 pares completos**, con ninguna discordancia permitida.
+**Resultado:** **59 pares completos**, con ninguna discordancia permitida.
 
-**Consideraciones:** $b$ no es la potencia de una comparación de medias. El ejemplo permite un límite superior unilateral de confianza del 80 % de aproximadamente 4.9 % para la discordancia si no se observa ninguna. No calcula la precisión de los límites de Bland–Altman; correlación alta tampoco implica concordancia.
+**Consideraciones:** si no se observa ninguna discordancia en 59 pares, el límite superior unilateral de confianza del 95 % es $1-0.05^{1/59}=0.0495$, menor que el máximo de 5 %. Si aparece alguna, no se cumple el criterio preespecificado de $k=0$. Este cálculo no fija la potencia bajo una tasa alternativa ni calcula la precisión de los [límites de Bland–Altman](galeria_graficos.ipynb#galeria-blandaltman); una correlación alta tampoco implica concordancia.
 
 Referencia: [@liao2010].
 
-
 ## 6. Supervivencia {#muestra-estudios-de-supervivencia}
-
 
 ### Comparar dos curvas de supervivencia {#muestra-comparar-dos-curvas-de-supervivencia}
 
@@ -411,7 +404,7 @@ Referencia: [@liao2010].
 
 | Parámetro | Datos requeridos |
 |---|---|
-| $HR$ | Hazard ratio de interés. |
+| $HR$ | Razón de tasas instantáneas de evento (*hazard ratio*) de interés; ver [su interpretación](pruebas_estadisticas.qmd#estadistica-supervivencia). |
 | $q_1,q_2$ | Fracciones asignadas a cada grupo; suman 1. |
 | $P(E)$ | Fracción esperada con evento durante el estudio, considerando reclutamiento, seguimiento y censura. |
 | $\alpha$, $1-\beta$ | Error tipo I, lateralidad y potencia. |
@@ -438,10 +431,9 @@ $$ {#eq-supervivencia-total}
 
 Referencia: [@schoenfeld1983; @chow2008; @wang2020].
 
-
 ### Supervivencia de un grupo frente a una referencia {#muestra-supervivencia-de-un-solo-grupo-frente-a-una-referencia}
 
-**Aplicación:** contrastar supervivencia a un tiempo fijo $t$ contra una referencia. Con transformación creciente: $H_0:\varepsilon\leq0$, $H_1:\varepsilon>0$.
+**Aplicación:** contrastar supervivencia a un tiempo fijo $t$ contra una referencia tratada como fija. Con transformación creciente: $H_0:\varepsilon\leq0$, $H_1:\varepsilon>0$. El ejemplo busca detectar una supervivencia mayor que la de referencia.
 
 | Parámetro | Datos requeridos |
 |---|---|
@@ -468,24 +460,23 @@ A 12 meses: $S_0=0.60$, $S_1=0.75$, sin censura, $g(S)=\arcsin\sqrt S$ y $\tau_1
 
 $$\varepsilon=\arcsin\sqrt{0.75}-\arcsin\sqrt{0.60}=0.1611$$
 
-$$n=\left[\frac{0.5(1.645+0.842)}{0.1611}\right]^2=59.58$$
+$$n\approx\left[\frac{0.5(1.645+0.842)}{0.1611}\right]^2\approx59.6$$
 
 **Resultado:** **60 sujetos totales**.
 
-**Consideraciones:** Con censura, recalcular $\tau_1$ según su patrón; no asumir $0.5$. Si $g$ es decreciente, como $\log(-\log S)$, mejorar supervivencia da una diferencia negativa: invertir el sentido del contraste.
+**Consideraciones:** calcular $\arcsin$ en radianes. Con censura, estimar $\tau_1$ mediante un método que incorpore la distribución prevista del evento, el reclutamiento y el seguimiento; no asumir $0.5$ ni sustituir este paso por un ajuste genérico por pérdidas. Si $g$ es decreciente, como $\log(-\log S)$, mejorar supervivencia da una diferencia negativa: invertir el sentido del contraste.
 
 Referencia: [@nagashima2021].
-
 
 ## 7. Exactitud diagnóstica {#muestra-estudios-de-exactitud-diagnostica}
 
 ### Estimar el AUC {#muestra-estimar-el-auc}
 
-**Aplicación:** estimar el área bajo la curva ROC con una precisión determinada. Esta aproximación supone igual número de sujetos con y sin la condición y varianzas iguales en ambos grupos.
+**Aplicación:** estimar el [área bajo la curva ROC (AUC)](pruebas_diagnostico.qmd#diagnostico-curva-roc) con una precisión determinada. Esta aproximación supone un modelo binormal: los valores de la prueba siguen distribuciones normales en personas con y sin la condición, con varianzas iguales. Se planifica igual número de participantes independientes en ambos grupos.
 
 | Parámetro | Datos requeridos |
 |---|---|
-| $A$ | AUC esperado. |
+| $A$ | AUC esperado, entre 0 y 1, sin incluir los extremos. |
 | $d$ | Margen de error absoluto deseado. |
 | $Z_{1-\alpha/2}$ | Valor correspondiente al nivel de confianza; para 95 %, $Z=1.96$. |
 
@@ -501,7 +492,7 @@ $$
 a=\sqrt{2}\,\Phi^{-1}(A)
 $$
 
-En Excel, $\Phi^{-1}(A)$ puede obtenerse con `NORM.S.INV(A)`.
+$\Phi^{-1}(A)$ es el cuantil de la normal estándar para la probabilidad $A$. Para $A=0.80$, vale aproximadamente $0.8416$.
 
 Después:
 
@@ -511,10 +502,10 @@ $$ {#eq-auc-var}
 
 **Sustitución**
 
-Con $A=0.80$, $d=0.15$ e IC del 95 %:
+Con $A=0.80$, $d=0.05$ e IC del 95 %:
 
 $$
-a=\sqrt{2}\times\texttt{NORM.S.INV}(0.80)
+a=\sqrt{2}\,\Phi^{-1}(0.80)
 =\sqrt{2}(0.8416)=1.1902
 $$
 
@@ -525,28 +516,27 @@ $$
 $$
 n_D=n_{\bar D}
 =
-\frac{1.96^2(0.11945)}{0.15^2}
+\frac{1.96^2(0.11945)}{0.05^2}
 =
-20.39
+183.55
 $$
 
-**Resultado:** **21 sujetos con la condición y 21 sin ella; 42 en total**.
+**Resultado:** **184 sujetos con la condición y 184 sin ella; 368 en total**.
 
-**Consideraciones:** $d=0.15$ corresponde a una precisión de ±0.15 unidades de AUC. El valor $a$ es solo un paso auxiliar del cálculo.
+**Consideraciones:** $d=0.05$ corresponde a una precisión de ±0.05 unidades de AUC. Los tamaños $n_D$ y $n_{\bar D}$ cuentan personas con y sin la condición, respectivamente. Si el modelo binormal o la proporción 1:1 no corresponden al estudio, se requiere otro cálculo; esta fórmula tampoco sirve para comparar dos AUC.
 
 Referencia: [@hajiantilaki2014].
 
-
 ### Estimar sensibilidad y especificidad {#muestra-estimar-sensibilidad-especificidad}
 
-**Aplicación:** estimación por precisión de sensibilidad y especificidad mediante el método de Buderer, en una muestra poblacional con prevalencia esperada conocida. Cuando se requiere una precisión determinada para ambas, se realizan **los dos cálculos y se selecciona el mayor**.
+**Aplicación:** estimación por precisión de [sensibilidad y especificidad](pruebas_diagnostico.qmd#diagnostico-sensibilidad-y-especificidad) mediante el método de Buderer, en una muestra poblacional con prevalencia esperada conocida. Cuando se requiere una precisión determinada para ambas, se realizan **los dos cálculos y se selecciona el mayor**.
 
 | Parámetro | Datos requeridos |
 |---|---|
 | $\widehat{Se}$ | Sensibilidad esperada para planificar. |
 | $\widehat{Sp}$ | Especificidad esperada para planificar. |
 | $d_{Se},d_{Sp}$ | Semiamplitud deseada de cada IC (margen a cada lado, no ancho total); puede ser distinta para cada estimación. |
-| $Prev$ | Prevalencia esperada en la población muestreada. |
+| $Prev$ | Prevalencia esperada en la población muestreada, con $0<Prev<1$. |
 | $Z_{1-\alpha/2}$ | Cuantil del nivel de confianza de cada intervalo. |
 
 **Fórmulas**
@@ -594,13 +584,11 @@ El tamaño de cada estrato se calcula por separado, sin dividir por prevalencia:
 
 **Fuentes del método:** Buderer, pp. 897–898, pasos 2–6 (cálculos por condición, ajuste por prevalencia y selección del mayor); Malhotra e Indrayan, secciones «Materials and Methods» y «Result» (semiamplitud del IC y regla del máximo). [@buderer1996; @malhotra2010]
 
-
 ## 8. Ajustes y redondeo {#muestra-ajustes-finales}
-
 
 ### Corrección por población finita {#muestra-correccion-por-poblacion-finita}
 
-**Aplicación:** muestreo aleatorio sin reemplazo de una población conocida, con inferencia limitada a esa población.
+**Aplicación:** estimar una proporción o media mediante muestreo aleatorio simple sin reemplazo de una población conocida, con inferencia limitada a esa población. Esta corrección no se aplica automáticamente a todas las fórmulas del capítulo.
 
 | Parámetro | Datos requeridos |
 |---|---|
@@ -623,7 +611,6 @@ $$n=\frac{322.6944}{1+(322.6944-1)/1000}=244.15$$
 
 Referencia: [@cochran1977; @garcia2013].
 
-
 ### Pérdidas o datos no analizables {#muestra-perdidas-o-datos-no-analizables}
 
 **Aplicación:** convertir el tamaño analizable en el número que se debe reclutar.
@@ -645,10 +632,9 @@ $$n_{reclutar}=\frac{152}{1-0.10}=168.89$$
 
 **Resultado:** **169 sujetos a reclutar**; si se requerían 152 **por grupo**, reclutar **169 por grupo (338 en total)**.
 
-**Consideraciones:** Dividir entre $1-L$, no multiplicar por $1+L$. Para datos pareados, prever la pérdida de pares completos.
+**Consideraciones:** dividir entre $1-L$, con $0\leq L<1$. Para datos pareados, prever la pérdida de pares completos; si las pérdidas esperadas difieren entre grupos, ajustar cada uno por separado. Reclutar más personas no corrige el sesgo que puede causar la pérdida de seguimiento; definir también el [tratamiento de datos faltantes](variables.qmd#variables-valores-perdidos).
 
 Referencia: [@garcia2013; @chow2008].
-
 
 | Comprobación final | Acción |
 |---|---|
