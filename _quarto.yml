@@ -18,6 +18,10 @@ book:
     - name: Juan Antonio Suárez Cuenca
       orcid: 0000-0002-2098-5658
       email: suarej05@gmail.com
+    
+    - name: Silvia García
+      orcid: 0000-0003-1760-3150
+      email: rolasil@yahoo.com.mx
 
   chapters:
     - index.qmd
