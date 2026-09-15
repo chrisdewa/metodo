@@ -1,0 +1,153 @@
+---
+title: Procedimientos, instrumentos y materiales
+---
+
+
+
+Los procedimientos describen **cómo se ejecutará el estudio**: quién realizará cada actividad, con qué recursos, en qué momento y cómo quedará registrada. Deben permitir que otro equipo comprenda y reproduzca la obtención de los datos.
+
+La [tabla de variables](variables.qmd#variables-definicion-conceptual-y-operacional) establece qué se medirá y cómo se definirá cada valor. Este apartado organiza las actividades necesarias para obtenerlo, desde la incorporación de las unidades hasta la entrega de una base revisada para el análisis.
+
+## Qué corresponde a cada componente {#procedimientos-componentes}
+
+| Componente | Qué describe | Ejemplo |
+|---|---|---|
+| **Procedimiento** | Secuencia de acciones y reglas para ejecutarlas | Revisar el expediente, localizar la medición basal y transcribirla conforme a una regla temporal |
+| **Instrumento de medición** | Medio utilizado para medir una característica | Escala de síntomas, dinamómetro o ensayo de laboratorio |
+| **Formato de recolección** | Medio para registrar o extraer los datos | Cédula de revisión de expedientes o formulario electrónico |
+| **Materiales y equipo** | Insumos, dispositivos y recursos necesarios para las actividades | Tubos, reactivos, equipo de medición y sistema de captura |
+
+Un equipo de medición puede figurar también entre los recursos materiales. Basta con describir sus características una vez y enlazar esa descripción. El expediente es una **fuente de datos**; la cédula utilizada para extraer información es un instrumento de recolección. Una cédula que registra edad, fechas y resultados no constituye, por ese hecho, una escala que requiera un coeficiente de consistencia interna.
+
+## Secuencia de ejecución {#procedimientos-secuencia}
+
+Organizar las actividades en el orden en que ocurrirán. Para cada una, precisar **responsable, lugar, momento, método y registro**. La siguiente secuencia se adapta al diseño; no todos los estudios incluyen intervención, muestras biológicas o seguimiento.
+
+| Etapa | Decisiones que deben quedar escritas | Registro esperado |
+|---|---|---|
+| **Preparación** | Autorizaciones aplicables, acceso a fuentes, capacitación, prueba de formatos y disponibilidad de recursos | Versiones de documentos, capacitación y verificación de equipo |
+| **Selección e incorporación** | Quién identifica unidades, verifica elegibilidad y realiza el proceso de consentimiento que corresponda | Registro de selección e identificador del estudio |
+| **Evaluación inicial** | Orden de actividades, condiciones de medición y datos basales | Formato con fecha, hora cuando sea relevante y responsable |
+| **Intervención o exposición** | Cómo se administra la intervención, si existe; o cómo se obtiene información sobre la exposición observada | Administración, adherencia o fuente de la exposición |
+| **Seguimiento** | Visitas, ventanas de tiempo, medios de contacto y reglas ante inasistencia | Mediciones, contactos, eventos y motivos de datos faltantes |
+| **Revisión y cierre de datos** | Quién comprueba integridad, resuelve discrepancias y autoriza la versión para análisis | Consultas resueltas, cambios documentados y base fechada |
+
+La selección debe concordar con los [criterios de elegibilidad](criterios_seleccion.qmd) y el [muestreo](metodologia_muestreo.qmd). Describir por separado las actividades de atención habitual y las que se realizan por la investigación. El proceso de consentimiento, la protección de datos y las autorizaciones se desarrollan en [consideraciones bioéticas](consideraciones.qmd#consideraciones-participacion-datos).
+
+### Ficha de un procedimiento {#procedimientos-ficha}
+
+Puede utilizarse esta ficha para cada actividad que determine una medición o decisión importante:
+
+| Campo | Contenido |
+|---|---|
+| Nombre y propósito | Actividad y variable o decisión a la que contribuye |
+| Responsable | Función, formación y capacitación necesarias |
+| Lugar y momento | Sede, visita, relación con un evento y ventana permitida |
+| Preparación y recursos | Condiciones previas, instrumento, versión y materiales |
+| Pasos | Orden, duración, repeticiones y regla para obtener el valor final |
+| Registro | Formato, unidad, identificador y evidencia de origen |
+| Incidencias | Cuándo repetir, suspender o considerar no utilizable una medición; quién decide y cómo se documenta |
+
+Cuando se utilice un procedimiento normalizado de operación, citar su **clave, versión y fecha**, indicar dónde puede consultarse y resumir las decisiones que afectan los resultados. «Según la técnica habitual» no permite identificar qué se hizo.
+
+## Instrumentos de medición y recolección {#procedimientos-instrumentos}
+
+### Selección del instrumento {#procedimientos-seleccion-instrumento}
+
+Elegir el instrumento según la característica que se desea medir, la población, el idioma, el contexto y el uso del resultado. Revisar la evidencia de sus propiedades de medición y la factibilidad de aplicarlo: tiempo, capacitación, costo, permisos y carga para los participantes. [@cosmin_seleccion]
+
+| Aspecto | Qué comprobar |
+|---|---|
+| **Validez** | Evidencia de que la interpretación propuesta de los resultados corresponde a la característica de interés; en cuestionarios, pertinencia, cobertura y comprensión del contenido |
+| **Confiabilidad y error de medición** | Consistencia de las mediciones cuando no hay cambio real y magnitud del error bajo las condiciones pertinentes, como diferentes evaluadores o momentos |
+| **Consistencia interna**, cuando corresponda | Relación entre reactivos de una escala que pretenden reflejar una misma dimensión |
+| **Capacidad de respuesta al cambio** | Evidencia de que el instrumento detecta cambios en la característica de interés, si el objetivo requiere medirlos |
+
+Estas propiedades responden a preguntas distintas. Un alfa de Cronbach elevado no demuestra validez, estabilidad temporal ni acuerdo entre evaluadores; tampoco demuestra por sí solo que una escala mida una sola dimensión. [@mokkink2010_cosmin_clarification]
+
+La expresión «instrumento validado» debe acompañarse de **referencia, versión, población y uso evaluado**. La evidencia de una versión en otro idioma o grupo de edad no se traslada automáticamente. Si se traducen reactivos, se cambia la modalidad de aplicación o se modifica la puntuación, justificar la adaptación y evaluar la evidencia necesaria para ese uso. Si el objetivo es desarrollar o validar un instrumento, esas actividades requieren su propio diseño y análisis.
+
+### Descripción para el protocolo {#procedimientos-descripcion-instrumento}
+
+| Tipo | Información necesaria |
+|---|---|
+| **Cuestionario o escala** | Nombre, autoría, referencia, versión e idioma; quién responde y quién aplica; dimensiones, número de reactivos, opciones de respuesta, periodo de recuerdo, duración y reglas de puntuación |
+| **Equipo de medición** | Fabricante, modelo, rango y resolución pertinentes; configuración, accesorios, calibración o verificaciones y condiciones de uso |
+| **Prueba de laboratorio** | Analito, tipo de muestra, método, plataforma y reactivos; unidades, límites analíticos relevantes y controles de calidad |
+| **Cédula de extracción** | Fuente y ubicación de cada dato, campos, instrucciones, códigos y reglas ante registros repetidos, discordantes o ausentes |
+| **Guía de entrevista u observación** | Temas o conductas, preguntas o categorías, modalidad, duración, formación del personal y forma de registro, transcripción y desidentificación |
+
+Para los puntajes, especificar dirección, rango posible, reactivos invertidos, cálculo de subescalas y manejo de respuestas incompletas conforme al manual. Los puntos de corte deben tener fundamento para el uso previsto; conservar el puntaje original. Véanse [variables derivadas](variables.qmd#variables-variables-derivadas).
+
+Incluir en los anexos la versión utilizable del formato y sus instrucciones. Para instrumentos de terceros, verificar las condiciones de uso y reproducción; si no puede incorporarse el contenido íntegro, proporcionar la referencia y el medio autorizado de acceso.
+
+## Materiales y equipo {#procedimientos-materiales}
+
+Relacionar cada recurso con el procedimiento que lo necesita. Las características que afectan la medición deben figurar en el método; las cantidades y disponibilidad permiten comprobar la factibilidad.
+
+| Recurso | Qué especificar |
+|---|---|
+| **Consumibles** | Tipo, características relevantes, cantidad por unidad o sesión y previsión justificada de reposición |
+| **Reactivos y kits** | Fabricante, referencia, almacenamiento y criterios de aceptación; registro de lote y caducidad durante la ejecución |
+| **Equipo e instalaciones** | Modelo o requisitos técnicos, accesorios, disponibilidad, mantenimiento y responsable |
+| **Material de intervención** | Nombre, contenido, versión, forma de entrega y acceso al manual o material utilizado |
+| **Captura y almacenamiento** | Plataforma y versión pertinente, dispositivos, permisos de acceso y respaldo |
+
+**Ejemplo de cálculo de insumos, no de indicación clínica:** si un protocolo prevé 80 participantes, dos tomas por participante y un tubo por toma, requiere $80 \times 2 \times 1 = 160$ tubos. Una reserva operativa de 10 % elevaría la compra a 176 tubos; ese porcentaje es hipotético y debe justificarse. La reserva de insumos no autoriza tomas adicionales ni aumenta el tamaño de muestra.
+
+Cuando existan muestras biológicas, describir obtención, identificación, volumen, recipiente, procesamiento, tiempo hasta el análisis, transporte, almacenamiento, criterios de rechazo y disposición final. Los parámetros concretos dependen del analito y del método. Vincularlos con los procedimientos de [bioseguridad](consideraciones.qmd#consideraciones-bioseguridad).
+
+## Ajustes según el estudio {#procedimientos-diseno}
+
+| Situación | Detalles que deben añadirse |
+|---|---|
+| **Revisión de expedientes o bases existentes** | Periodo de los registros y fechas de extracción; fuente prioritaria; definición del evento inicial; ventana para cada dato; manejo de duplicados, múltiples visitas y discrepancias |
+| **Mediciones prospectivas** | Preparación, orden y condiciones de aplicación; evaluador; número de mediciones y regla de resumen; ventanas y medios de seguimiento |
+| **Intervención** | Contenido de cada grupo, incluido el comparador; proveedor, modalidad, lugar, dosis o intensidad, frecuencia, duración, adaptaciones permitidas y comprobación de lo recibido |
+| **Exactitud diagnóstica** | Procedimiento de la prueba índice y del estándar de referencia, intervalo entre ambos, umbrales y acceso de los evaluadores a los otros resultados; resultados indeterminados y pruebas no realizadas |
+
+En estudios observacionales, explicar si las fuentes y los métodos de medición son comparables entre grupos. [@vandenbroucke2007_strobe] Para describir intervenciones puede utilizarse [TIDieR](https://www.bmj.com/content/348/bmj.g1687), que incluye materiales, procedimientos, responsables, intensidad, adaptaciones y cumplimiento previsto y observado. [@hoffmann2014_tidier] Para exactitud diagnóstica, consultar [STARD 2015](https://www.bmj.com/content/351/bmj.h5527) y el capítulo de [pruebas diagnósticas](pruebas_diagnostico.qmd). [@bossuyt2015_stard]
+
+En ensayos aleatorizados, documentar generación de la secuencia, ocultamiento de la asignación y quién incorpora y asigna participantes. Precisar también quién desconoce el grupo asignado durante la evaluación. El ocultamiento evita anticipar la siguiente asignación; el cegamiento limita el conocimiento de la asignación después de realizarla. Véanse [diseños intervencionales](diseños_estudio.qmd#disenos-intervencionales).
+
+## Prueba piloto y control de calidad {#procedimientos-calidad}
+
+La **prueba piloto** comprueba si el circuito puede ejecutarse: comprensión de instrucciones, duración, disponibilidad de insumos, funcionamiento de formularios y dificultades de extracción. Definir qué se probará, con qué unidades y qué resultado exigirá corregir el procedimiento. Documentar los cambios y decidir de antemano bajo qué condiciones los datos piloto podrían incorporarse al estudio principal. Un piloto operativo no sustituye la evaluación de las propiedades de medición de una escala.
+
+| Momento | Control concreto |
+|---|---|
+| **Antes de recolectar** | Capacitar con el mismo manual, practicar casos y verificar equipo y formularios; definir criterios de aceptación y acciones correctivas |
+| **Durante la obtención** | Registrar evaluador, fecha, versión y condiciones relevantes; comprobar identificadores y campos necesarios; documentar fallas sin completar datos por suposición |
+| **Durante la revisión** | Contrastar los datos críticos con la fuente; definir alcance y selección de registros para revisión independiente y quién resolverá discrepancias |
+| **Antes del análisis** | Revisar duplicados, unidades, fechas y valores fuera de rango; resolver consultas; conservar el dato original y el historial de correcciones; fechar la base y el diccionario utilizados |
+
+Un valor fuera de rango exige revisión, no corrección o eliminación automática. Si la fuente confirma un resultado extremo, conservarlo y aplicar el plan de análisis. Las correcciones deben permitir identificar **valor previo, valor nuevo, motivo, fecha y responsable**. El manejo de datos faltantes se especifica en la [codificación](variables.qmd#variables-valores-perdidos) y en el plan de análisis.
+
+Registrar las desviaciones del protocolo con la actividad afectada, su causa y la acción tomada. Distinguir pérdida de una medición, suspensión de una intervención y retiro del estudio; véanse [situaciones posteriores al ingreso](criterios_seleccion.qmd#seleccion-seguimiento). Los cambios al protocolo deben seguir el proceso de [revisión y seguimiento institucional](consideraciones.qmd#consideraciones-reforma-comites).
+
+## Ejemplo: extracción de datos de expedientes {#procedimientos-ejemplo}
+
+**Ejemplo hipotético:** estudio de la concentración de hemoglobina al ingreso hospitalario en adultos. Se supone que el protocolo ya define población, selección y autorizaciones. El procedimiento de extracción podría escribirse así:
+
+> Un revisor capacitado identificará el primer ingreso elegible de cada persona durante el periodo del estudio y le asignará un código. Registrará la fecha y hora de ingreso desde el registro de admisiones. En el sistema de laboratorio localizará la primera muestra obtenida entre el ingreso y las 24 horas siguientes con un resultado numérico de hemoglobina; utilizará la hora de obtención de la muestra, no la de liberación del informe. Si existen resultados corregidos, conservará como dato de análisis la versión final del laboratorio y documentará la sustitución. Ante marcas de tiempo iguales que impidan determinar el orden, un segundo revisor verificará los identificadores de las muestras; si no puede resolverse, se registrará la ambigüedad y no se seleccionará un valor arbitrariamente.
+>
+> Se transcribirán el valor y la unidad originales en la cédula HE-01, versión 1.0, junto con la fecha de la muestra y su identificador de origen. Los valores en g/L se dividirán entre 10 para obtener g/dL, conservando ambos campos. Si no hay un resultado utilizable en la ventana definida, se registrará el dato como faltante y su motivo. Un segundo revisor comprobará en todos los expedientes el ingreso de referencia, la muestra seleccionada, el valor y la unidad. Las discrepancias se resolverán mediante consulta de la fuente y quedarán en la bitácora de cambios.
+
+En este ejemplo, los recursos son el acceso autorizado a admisiones y laboratorio, la cédula, su instructivo y el sistema de captura y resguardo. El equipo no obtiene muestras nuevas. Para interpretar los resultados, debe documentar el método analítico utilizado por el laboratorio durante el periodo y sus cambios, cuando esa información esté disponible.
+
+## Redacción y anexos {#procedimientos-redaccion}
+
+| Documento | Qué presentar |
+|---|---|
+| **Protocolo** | Actividades previstas, responsables, recursos, tiempos, controles y reglas ante incidencias |
+| **Informe, artículo o tesis** | Lo que efectivamente se realizó; versiones utilizadas, cambios respecto del protocolo y su justificación |
+| **Anexos o material suplementario** | Instrumentos y formatos permitidos, instructivos, calendario de evaluaciones y procedimientos detallados identificados por versión |
+
+**Plantilla breve:** «En [lugar y momento], [responsable y capacitación] realizará [actividad] mediante [instrumento, versión y procedimiento]. Registrará [datos y unidades] en [formato]. Se comprobará [criterio de calidad] mediante [verificación y responsable]. Ante [incidencia], se aplicará [regla] y se documentará en [registro]».
+
+El apartado debe permitir seguir una variable desde su fuente o medición hasta la base de análisis. Los anexos amplían los detalles operativos; las decisiones que determinan cómo se obtienen los resultados deben quedar visibles en el método.
+
+## Referencias {#procedimientos-referencias}
+
+::: {#refs}
+:::

@@ -46,7 +46,7 @@ Esquemas por documento: [protocolo](#mapa-protocolo) · [artículo original](#ma
 | Componente | Consulta en el libro |
 |---|---|
 | Variables: características que se medirán y su definición | [Tipo, escala, función y definiciones](variables.qmd) |
-| Procedimientos e instrumentos: actividades y medios de medición | Apoyo: [fuente, instrumento y momento de medición](variables.qmd#variables-definicion-operacional) |
+| Procedimientos, instrumentos y materiales: actividades y recursos para obtener los datos | [Secuencia de ejecución](procedimientos.qmd#procedimientos-secuencia) · [Instrumentos](procedimientos.qmd#procedimientos-instrumentos) · [Materiales y equipo](procedimientos.qmd#procedimientos-materiales) |
 | Manejo de datos: organización, codificación y validación | [Base de datos](variables.qmd#variables-de-la-tabla-de-variables-a-la-base-de-datos) · [Codificación](variables.qmd#variables-codificacion) · [Datos faltantes](variables.qmd#variables-valores-perdidos) |
 | Plan de análisis: métodos estadísticos para cada objetivo | [Decisiones previas](pruebas_estadisticas.qmd#estadistica-antes-de-elegir-una-prueba) · [Pruebas estadísticas](pruebas_estadisticas.qmd#estadistica-resumen-rapido) · [Medidas del efecto](tamanos_efecto.qmd) |
 | Tamaño de muestra: número de unidades y su justificación | [Selección del cálculo, fórmulas y parámetros](calculo_tamano_muestra.qmd) |
@@ -67,8 +67,8 @@ Esquemas por documento: [protocolo](#mapa-protocolo) · [artículo original](#ma
 | Actividad | Consulta en el libro |
 |---|---|
 | Selección e incorporación de unidades | [Registro del muestreo](metodologia_muestreo.qmd#muestreo-registro) |
-| Aplicación de procedimientos y obtención de datos | Apoyo: [reglas de medición](variables.qmd#variables-definicion-operacional) y [codificación](variables.qmd#variables-codificacion) |
-| Control de calidad y seguimiento | Apoyo: [situaciones posteriores al ingreso](criterios_seleccion.qmd#seleccion-seguimiento) y [datos faltantes](variables.qmd#variables-valores-perdidos) |
+| Aplicación de procedimientos y obtención de datos | [Ficha de procedimiento](procedimientos.qmd#procedimientos-ficha) · [Ajustes según el estudio](procedimientos.qmd#procedimientos-diseno) |
+| Control de calidad y seguimiento | [Prueba piloto y controles](procedimientos.qmd#procedimientos-calidad) · [Situaciones posteriores al ingreso](criterios_seleccion.qmd#seleccion-seguimiento) · [Datos faltantes](variables.qmd#variables-valores-perdidos) |
 | Registro de incidencias y modificaciones al protocolo | Apoyo: [seguimiento ante los comités](consideraciones.qmd#consideraciones-reforma-comites) |
 
 ## Resultados, discusión y conclusiones {#mapa-analisis}

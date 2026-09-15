@@ -34,6 +34,7 @@ book:
     - libro/criterios_seleccion.qmd
     - libro/metodologia_muestreo.qmd
     - libro/variables.qmd
+    - libro/procedimientos.qmd
     - libro/calculo_tamano_muestra.qmd
     - libro/consideraciones.qmd
     - libro/pruebas_diagnostico.qmd
